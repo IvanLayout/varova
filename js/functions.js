@@ -56,65 +56,6 @@ $(() => {
 		$('.overlay-catalog').removeClass('_show')
 	})
 
-
-	// Мини всплывающие окна
-	$('.mini-modal__btn').click(function (e) {
-		e.preventDefault()
-
-		const parent = $(this).closest('.mini-modal')
-
-		if ($(this).hasClass('_active')) {
-			$(this).removeClass('_active')
-			$('.mini-modal__modal').removeClass('_active')
-
-			$('body').removeClass('_lock-mini')
-
-			if (is_touch_device()) $('body').css('cursor', 'default')
-		} else {
-			$('.mini-modal__btn').removeClass('_active')
-			$(this).addClass('_active')
-
-			$('.mini-modal__modal').removeClass('_active')
-			parent.find('.mini-modal__modal').addClass('_active')
-
-			if( $(this).hasClass('mini-modal__btn_look') ) {
-				$('body').addClass('_lock-mini')
-			}
-
-			if (is_touch_device()) $('body').css('cursor', 'pointer')
-		}
-	})
-
-	// Закрываем всплывашку при клике за её пределами
-	$(document).click((e) => {
-		if ( !e.target.closest('.mini-modal') ) {
-			$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
-			$('body').removeClass('_lock-mini')
-
-			if (is_touch_device()) $('body').css('cursor', 'default')
-		}
-	})
-
-	$('body').on('click', '.mini-overlay, [data-mini-close]', function(e) {
-		e.preventDefault()
-
-		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
-		$('body').removeClass('_lock-mini')
-
-		if (is_touch_device()) $('body').css('cursor', 'default')
-	})
-
-
-	// Плавная прокрутка к якорю
-	$('.scroll-btn').click(function(e) {
-		e.preventDefault()
-
-		let href = $(this).data('anchor')
-
-		$('html, body').stop().animate({ scrollTop: $(href).offset().top }, 1000)
-	})
-
-
 	// Табы
 	var locationHash = window.location.hash
 
@@ -208,41 +149,6 @@ $(() => {
 	Fancybox.bind("[data-fancybox-video]", {})
 
 
-	// Выбор файла
-	$('.file-selection input[type=file]').change(function(){
-		var val = $(this).val()
-
-		var parent = $(this).closest('.file-selection')
-
-		parent.find('.file-selection__path-name').text(val)
-
-		parent.find('.file-selection__path').addClass('_active')
-
-		if(parent.find('.file-selection__path-name').text() == '') {
-			let defoultText = parent.find('.file-selection__path-name').data('text')
-			
-			parent.find('.file-selection__path-name').html(defoultText)
-
-			parent.find('.file-selection__path').removeClass('_active')
-		}
-	})
-
-	$('body').on('click', '.open-menu-mob', function (e) {
-		e.preventDefault()
-
-		if ( $(this).hasClass('_active') ) {
-			$(this).removeClass('_active') 
-
-			$('.header').removeClass('_show')
-			$('body').removeClass('_lock')
-		} else{
-			$(this).addClass('_active') 
-
-			$('.header').addClass('_show')
-			$('body').addClass('_lock')
-		}
-	})
-
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
 		e.preventDefault()
@@ -293,23 +199,7 @@ $(() => {
 
 
 $(window).on('load', () => {
-	if ( $('.product-fixed').length ) {
-		if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
-			$('.product-fixed').addClass('_show')
-		} else {
-			$('.product-fixed').removeClass('_show')
-		}
-	}
-
-	$(window).on('scroll', () => {
-		if ( $('.product-fixed').length ) {
-			if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
-				$('.product-fixed').addClass('_show')
-			} else {
-				$('.product-fixed').removeClass('_show')
-			}
-		}
-	})
+	
 })
 
 
