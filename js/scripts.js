@@ -92,7 +92,26 @@ $(() => {
 
 
 $(window).on('load', () => {
-	
+	let informationAnim = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".main-about",
+			scrub: true,
+			start: "top",
+			end: "bottom",
+			pin: true,
+			// duration: 100,
+			// markers: true,
+			onUpdate: (self) => console.log("direction:", self.direction),
+			onToggle: (self) => {
+				if (self.isActive == true ){
+					$('.main-about').addClass('index')
+				} else {
+					$('.main-about').removeClass('index')
+				}
+			},
+		}
+	})
+	informationAnim.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")
 });
 
 
