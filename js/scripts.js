@@ -10,6 +10,74 @@ if (document.body.clientWidth < 405) {
 }
 
 $(() => {
+	if ($('.products-slider').length) {
+		new Swiper('.products-slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 12,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 16,
+					slidesPerView: 4,
+				}
+			}
+		})
+	}
+	
+	// Добавление/Удаление (избранное)
+	$('body').on('click', '.favorite-js', function (e) {
+		e.preventDefault()
+	
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+	
+	
+	// Добавление/Удаление (корзина)
+	$('body').on('click', '.cart-js', function (e) {
+		e.preventDefault()
+	
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+		} else {
+			$(this).addClass('_active')
+		}
+	})
+
 	$('body').on('submit', '.form-ajax', function (e) {
 		e.preventDefault()
 
