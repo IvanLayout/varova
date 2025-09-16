@@ -1979,7 +1979,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     z-index: 10;
     top: 50%;
 
-    color: #051824;
+    color: #2C2927;
 
     display: flex;
     overflow: hidden;
@@ -1988,15 +1988,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
     align-items: center;
     flex-wrap: wrap;
 
-    width: 60px;
-    height: 60px;
-    margin-top: -30px;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
 
     cursor: pointer;
 
-    border: 1px solid transparent;
     border-radius: 50%;
-    background: #FFF;
+    background: #EFEFEF;
 
     transition: color .2s linear, background .2s linear;
 }
@@ -2006,7 +2005,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     top: 0;
 
-    margin-top: -110px;
+    margin-top: -64px;
 }
 
 .slider-button-prev.slider-button-prev_grey,
@@ -2025,7 +2024,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
         color: #FFF;
 
-        background: #4DBD3C;
+        background: #2C2927;
     }
 }
 
@@ -2034,10 +2033,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     display: block;
 
-    width: 8px;
+    width: 9px;
     height: 14px;
 
-    fill: currentColor;
+    stroke: currentColor;
 }
 
 .slider-button-prev
@@ -2049,7 +2048,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .slider-button-prev._top
 {
-    right: 80px;
+    right: 56px;
     left: auto;
 }
 
@@ -2069,7 +2068,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     cursor: default;
     pointer-events: none;
 
-    opacity: .5;
+    opacity: .3;
+	color: #D0C7C0;
+	border: 1px solid #D0C7C0;
+	background: none;
 }
 
 .swiper-button-lock
@@ -2583,6 +2585,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 100%);
 }
 
+.product-info::after
+{
+	height: 100%;
+	background: rgba(9, 9, 9, 0.5);
+}
+
 .product__img
 {
 	display: block;
@@ -2767,8 +2775,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	display: block;
 
-	width: 14px;
-	height: 15px;
+	width: 16px;
+	height: 17px;
 
 	stroke: #DCD9D3;
 	opacity: 1;
@@ -2840,6 +2848,141 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.product__info
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	padding: 30px 40px;
+	z-index: 1;
+}
+
+.product__info-title
+{
+	font-family: var(--font-family2);
+	font-size: 30px;
+	line-height: 1.2;
+	display: block;
+}
+
+.product__desc
+{
+	margin-top: 16px;
+	display: block;
+}
+
+.product__trip
+{
+	margin-top: 24px;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+.product__text
+{
+	display: block;
+	font-size: 14px;
+}
+
+.product__day
+{
+	font-size: 24px;
+	line-height: 49px;
+	font-family: var(--font-family2);
+	color: #2C2927;
+	display: block;
+	background: #D0C7C0;
+	border-radius: 8px;
+	padding: 0 20px;
+	margin-left: 24px;
+}
+
+.product__more
+{
+	margin-top: 73px;
+	display: block;
+	font-size: 14px;
+	text-align: right;
+}
+
+.product__more span
+{
+	padding-right: 21px;
+	position: relative;
+	display: inline-block;
+}
+
+.product__more span::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 9px;
+	height: 15px;
+	margin-top: -7.5px;
+
+	background: url(../images/ic_arrow.svg) 50% 50% no-repeat;
+}
+
+
+/*------------
+    main-purpose
+------------*/
+
+.main-purpose__items
+{
+	margin: 16px 0 0 -16px;
+}
+
+.main-purpose__item
+{
+	display: block;
+	width: calc(100%/4 - 16px);
+	margin: 16px 0 0 16px;
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	font-weight: 600;
+}
+
+.main-purpose__img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 428 / 200;
+	object-fit: cover;
+	border-radius: 8px;
+	transition: transform .4s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .main-purpose__item:hover .main-purpose__img
+	{
+        transform: scale(1.05);
+    }
+}
+
+.main-purpose__name
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	display: block;
+
+	padding: 20px 30px;
+}
 /*------------
     commit
 ------------*/

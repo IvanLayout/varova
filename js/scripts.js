@@ -51,6 +51,11 @@ $(() => {
 					spaceBetween: 16,
 					slidesPerView: 4,
 				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
 			}
 		})
 	}
