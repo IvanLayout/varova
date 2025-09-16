@@ -2983,6 +2983,96 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 	padding: 20px 30px;
 }
+
+
+/*------------
+    main-news
+------------*/
+
+.main-news__grid
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 3 колонки одинаковой ширины */
+	gap: 16px; /* расстояние между элементами */
+
+	margin-top: 32px;
+}
+
+.main-news__item
+{
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+.main-news__item._big
+{
+	overflow: hidden;
+	border-radius: 8px;
+	grid-column: 1 / 3; /* занимает первую и вторую колонку */
+}
+
+.main-news__box
+{
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.main-news__img
+{
+	display: block;
+	aspect-ratio: 1;
+	object-fit: cover;
+	
+	transition: transform .4s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .main-news__item:hover .main-news__img
+	{
+        transform: scale(1.03);
+    }
+}
+
+.main-news__item._big .main-news__img
+{
+	height: 100%;
+	aspect-ratio: 872 / 526;
+}
+
+.main-news__title
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+	padding: 50px;
+	font-size: 30px;
+	line-height: 1.1;
+	color: #fff;
+}
+
+.main-news__name
+{
+	display: block;
+	text-decoration: none;
+	margin-top: 22px;
+
+	font-weight: 600;
+	color: #2C2927;
+}
+
+.main-news__desc
+{
+	font-size: 14px;
+	color: #606060;
+	margin-top: 12px;
+	display: block;
+}
 /*------------
     commit
 ------------*/
