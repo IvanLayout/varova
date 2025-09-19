@@ -1779,7 +1779,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-left: 72px;
 }
 
-.tabs__button-btn
+.tabs__button_btn
 {
 	position: relative;
 
@@ -1801,14 +1801,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
     transition: background .2s linear, color .2s linear, border .2s linear;
 }
 
-.tabs__button-btn._active
+.tabs__button_btn._active
 {
     color: #FFF;
 	border-color: #2C2927;
     background: #2C2927;
 }
 
-.tabs__button-btn + .tabs__button-btn
+.tabs__button_btn + .tabs__button_btn
 {
 	margin-left: 8px;
 }
@@ -3022,6 +3022,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .main-news__img
 {
+	width: 100%;
 	display: block;
 	aspect-ratio: 1;
 	object-fit: cover;
@@ -3247,6 +3248,104 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	height: 100%;
 	object-fit: cover;
 	border-radius: 8px;
+}
+
+.main-info{
+	padding: 50px 0;
+}
+
+
+.main-info__wrap{
+	position: relative;
+}
+
+.main-info__tabs{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.tabs__button_icon{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: currentColor;
+	display: block;
+	text-align: center;
+}
+
+.tabs__button-icon{
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	background: #fff;
+	color: #2C2927;
+	transition: background .2s linear, color .2s linear;
+}
+
+.tabs__button_icon._active .tabs__button-icon{
+	color: #fff;
+	background: #2C2927;
+}
+
+@media (any-hover: hover){
+	.tabs__button_icon:hover .tabs__button-icon{
+		color: #fff;
+		background: #2C2927;
+	}
+}
+
+.tabs__button-icon svg{
+	display: block;
+	width: 32px;
+	height: 32px;
+
+	fill: currentColor;
+}
+
+.tabs__button-name{
+	display: block;
+	margin-top: 6px;
+}
+
+.main-info__cols{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.main-info__col{
+	width: calc(50% - 8px);
+}
+
+.main-info__title{
+	font-family: var(--font-family2);
+	font-weight: 400;
+	font-size: 150px;
+	line-height: 1;
+	color: currentColor;
+}
+
+.main-info__desc{
+	font-size: 21px;
+	line-height: 1.5;
+	margin-top: 40px;
+	width: 58%;
+}
+
+.main-info__btn{
+	margin-top: 32px;
+}
+
+.main-info__btn-black{
+	padding-left: 11px;
+	padding-right: 11px;
 }
 /*------------
     footer
