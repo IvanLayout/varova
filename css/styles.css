@@ -2041,7 +2041,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .slider-button-prev
 {
-    left: 30px;
+    left: -15px;
 
     transform: rotate(180deg);
 }
@@ -2054,7 +2054,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .slider-button-next
 {
-    right: 30px;
+    right: -15px;
 }
 
 .slider-button-next._top
@@ -2172,7 +2172,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .swiper-scrollbar
 {
-    display: none;
+    /* display: none; */
 
     transition: opacity 0s .1s linear;
 }
@@ -2192,15 +2192,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
     left: 0;
 
     width: 100%;
-    height: 5px;
-    margin-top: 10px;
+    height: 1px;
+    margin-top: 32px;
 
-    background: #F5F5F5;
+    
+	background: rgba(0, 0, 0, .1);
 }
 
 .swiper .swiper-scrollbar-drag
 {
-    background: #E5E5E5;
+    background: #2C2927;
 }
 
 /*------------------------
@@ -3074,6 +3075,179 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 12px;
 	display: block;
 }
+
+
+/*------------
+    choose-product
+------------*/
+
+.choose-product .cont
+{
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
+}
+
+.choose-product__info
+{
+	width: 27%;
+}
+
+.choose-product__title
+{
+	font-family: var(--font-family2);
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.choose-product__sub-title
+{
+	color: #6E6E6E;
+	font-size: 14px;
+	margin-top: 24px;
+}
+
+.choose-product__wrap
+{
+	width: calc(73% - 16px);
+	margin-left: 16px;
+	max-width: 1104px;
+}
+
+.choose-product__tabs
+{
+	margin-bottom: 24px;
+
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.choose-product__tabs-title
+{
+	padding: 0 15px;
+	width: 100%;
+	font-size: 21px;
+}
+
+.tabs__button_number + .tabs__button_number
+{
+	margin-left: 15px;
+}
+
+.tabs__button_number
+{
+	flex-shrink: 0;
+	background: #EFEFEF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	color: #6E6E6E;
+	font-size: 16px;
+	line-height: 42px;
+	transition: background .2s linear, color .2s linear;
+}
+
+@media (any-hover: hover) 
+{
+	.tabs__button_number:hover
+	{
+		background: #6E6E6E;
+		color: #fff;
+	}
+}
+
+.tabs__button_number._active
+{
+	background: #6E6E6E;
+	color: #fff;
+}
+
+.choose-slider__item
+{
+	display: block;
+	text-decoration: none;
+	position: relative;
+	color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.choose-slider__img
+{
+	display: block;
+	aspect-ratio: 358 / 138;
+	width: 100%;
+	object-fit: cover;
+
+	transition: transform .4s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .choose-slider__item:hover .choose-slider__img
+	{
+        transform: scale(1.03);
+    }
+}
+
+.choose-slider__name
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+	width: 100%;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*------------
+    reviews
+------------*/
+
+.reviews__slider
+{
+	margin-top: 32px;
+}
+
+.reviews__img
+{
+	display: block;
+	text-decoration: none;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.reviews__img img
+{
+	display: block;
+	width: 100%;
+
+	aspect-ratio: 280 / 519;
+	object-fit: cover;
+
+	transition: transform .4s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .reviews__img:hover img
+	{
+        transform: scale(1.03);
+    }
+}
+
+.reviews__name
+{
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
 /*------------
     commit
 ------------*/
