@@ -3249,6 +3249,67 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 /*------------
+    portfolio
+------------*/
+
+.portfolio__slider
+{
+	margin-top: 32px;
+}
+
+.portfolio__flex
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	margin-top: -16px;
+}
+
+.portfolio__img
+{
+	display: block;
+	text-decoration: none;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.portfolio__flex .portfolio__img
+{
+	width: calc(50% - 8px);
+	margin-top: 16px;
+}
+
+.portfolio__img img
+{
+	display: block;
+}
+
+.portfolio__name
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	padding: 24px;
+}
+
+.portfolio__info
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	display: block;
+
+
+}
+
+
+/*------------
     commit
 ------------*/
 .main-about{
