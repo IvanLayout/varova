@@ -3263,6 +3263,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: absolute;
 	right: 0;
 	top: 0;
+	z-index: 10;
 }
 
 .tabs__button_icon{
@@ -3272,6 +3273,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	color: currentColor;
 	display: block;
 	text-align: center;
+}
+
+.tabs__button_icon + .tabs__button_icon{
+	margin-top: 24px;
 }
 
 .tabs__button-icon{
@@ -3306,7 +3311,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	width: 32px;
 	height: 32px;
 
-	fill: currentColor;
+	stroke: currentColor;
 }
 
 .tabs__button-name{
@@ -3322,6 +3327,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .main-info__col{
 	width: calc(50% - 8px);
+	display: flex;
+	flex-direction: column;
+}
+
+.main-info__top{
+	flex-grow: 1;
 }
 
 .main-info__title{
@@ -3346,6 +3357,82 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .main-info__btn-black{
 	padding-left: 11px;
 	padding-right: 11px;
+}
+
+.main-info__images{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: nowrap;
+	margin-top: -20%;
+}
+
+.main-info__img1{
+	width: 65.48%;
+}
+
+.main-info__img1 .main-info__img{
+	margin-left: 0;
+}
+
+.main-info__img1 .main-info__img img{
+    aspect-ratio: 1/.5;
+}
+
+.main-info__images-flex{
+	width: 34.52%;
+}
+
+.main-info__img{
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+.main-info__img img{
+	display: block;
+	width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+	border-radius: 8px;
+}
+
+.main-info__col._flex{
+	flex-direction: row;
+	align-items: flex-end;
+	align-content: flex-end;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.main-info__gallery{
+	margin-left: -16px;
+	width: 69.04%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.main-info__gallery .main-info__img{
+	width: calc(50% - 16px);
+}
+
+.main-info__gallery .main-info__img:first-child{
+	width: calc(100% - 16px);
+}
+
+.main-info__gallery .main-info__img:first-child img{
+	aspect-ratio: 1/.9676;
+}
+
+.main-info__video{
+	margin-left: 16px;
+	width: 30.96%;
+	display: block;
+	text-decoration: none;
 }
 /*------------
     footer
