@@ -1,6 +1,118 @@
 @media (max-width: 1399px)
 {
-    /*------------
+    body
+	{
+		font-size: 15px;
+	}
+	
+
+	.main-title 
+	{
+        font-size: 36px;
+    }
+
+
+	.header-cats__wrap
+	{
+		padding: 25px;
+	}
+
+	.nav-menu__item + .nav-menu__item 
+	{
+        margin-left: 20px;
+    }
+
+
+	.first-section__title 
+	{
+        font-size: 64px;
+    }
+
+	.first-section__img 
+	{
+        height: 260px;
+    }
+
+	.first-section__abs1
+	{
+		height: 350px;
+	}
+
+	.first-section__abs2
+	{
+		height: 170px;
+		border-radius: 50px;
+	}
+
+	.first-section__desc 
+	{
+        font-size: 17px;
+    }
+
+
+	.main-cats__item + .main-cats__item 
+	{
+		margin-left: 30px;
+	}
+
+
+	.product__top, 
+	.product__bot 
+	{
+        padding: 20px;
+    }
+
+	.product__price
+	{
+		font-size: 19px;
+	}
+
+	.product__info
+	{
+		padding: 20px;
+	}
+
+
+	.product__info-title
+	{
+		font-size: 26px;
+	}
+
+	.product__day
+	{
+		font-size: 20px;
+	}
+
+	.choose-product__title
+	{
+		font-size: 28px;
+	}
+
+	.choose-product__tabs-title 
+	{
+        font-size: 17px;
+    }
+
+
+	.advantages__title 
+	{
+        font-size: 54px;
+    }
+
+	.advantages__pad 
+	{
+        padding-left: 90px;
+    }
+
+
+	.main-news__title 
+	{
+        font-size: 24px;
+        padding: 25px;
+    }
+
+
+	/*------------
 		commit
 	------------*/
 }

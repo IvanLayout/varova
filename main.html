@@ -39,6 +39,12 @@
 			<!-- Шапка -->
 			<header class="header">
 				<div class="cont _flex">
+					<div class="header__logo header__logo-mob">
+						<a href="/">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
 					<div class="header-catalog">
 						<button type="button" class="header-catalog__open">
 							<svg>
@@ -49,6 +55,14 @@
 					</div>
 
 					<div class="header__wrap">
+						<div class="header__wrap-top">
+							<div class="header__mob-logo">
+								<img data-src="images/logo_dark_mob.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+
+							<button type="button" class="header__close"></button>
+						</div>
+
 						<div class="nav-menu _flex">
 							<div class="nav-menu__box _flex">
 								<div class="nav-menu__item">
@@ -127,20 +141,29 @@
 								<use xlink:href="images/sprite.svg#cart"></use>
 							</svg>
 						</a>
+						<button type="button" class="header__btn header__btn-burger">
+							<img data-src="images/ic_burger.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</button>
 					</div>
 				</div>
 			</header>
 
 			<div class="header-cats">
 				<div class="cont">
-					<button type="button" class="header-cats__close">Каталог</button>
+					<div class="header-cats__top">
+						<div class="header-cats__logo">
+							<img data-src="images/logo_dark_mob.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</div>
+
+						<button type="button" class="header-cats__close"><span>Каталог</span></button>
+					</div>
 
 					<div class="header-cats__wrap">
 						<div class="header-cats__title">Каталог товаров</div>
 
 						<div class="header-cats__items _flex">
 							<div class="header-cats__item">
-								<div class="header-cats__name">Кольца</div>
+								<div class="header-cats__name header-cats__item-open">Кольца</div>
 
 								<div class="header-cats__data">
 									<div class="header-cats__link">
@@ -165,7 +188,7 @@
 							</div>
 
 							<div class="header-cats__item">
-								<div class="header-cats__name">Серьги</div>
+								<div class="header-cats__name header-cats__item-open">Серьги</div>
 
 								<div class="header-cats__data">
 									<div class="header-cats__link">
@@ -190,7 +213,7 @@
 							</div>
 
 							<div class="header-cats__item">
-								<div class="header-cats__name">Кулоны</div>
+								<div class="header-cats__name header-cats__item-open">Кулоны</div>
 
 								<div class="header-cats__data">
 									<div class="header-cats__link">
@@ -215,7 +238,7 @@
 							</div>
 
 							<div class="header-cats__item">
-								<div class="header-cats__name">Браслеты</div>
+								<div class="header-cats__name header-cats__item-open">Браслеты</div>
 
 								<div class="header-cats__data">
 									<div class="header-cats__link">

@@ -1,5 +1,172 @@
 @media (max-width: 1299px)
 {
+	body 
+	{
+		font-size: 14px;
+	}
+
+
+	.main-title 
+	{
+		font-size: 34px;
+	}
+
+
+	.header__logo 
+	{
+		width: 180px;
+	}
+
+	.nav-menu__item 
+	{
+		font-size: 13px;
+	}
+
+	.header__btn + .header__btn 
+	{
+		margin-left: 20px;
+	}
+
+	.header-cats__items
+	{
+		margin-left: -16px;
+	}
+
+	.header-cats__item 
+	{
+		width: calc(100% / 5 - 16px);
+		margin: 16px 0 0 16px;
+	}
+
+
+	.first-section__title 
+	{
+		font-size: 60px;
+	}
+
+	.first-section__img 
+	{
+		height: 240px;
+	}
+
+
+	.product__more
+	{
+		font-size: 13px;
+		margin-top: 20px;
+	}
+
+	.product__day 
+	{
+		font-size: 18px;
+		line-height: 42px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 15px;
+	}
+
+	.product__text
+	{
+		font-size: 13px;
+	}
+
+	.product__info-title 
+	{
+		font-size: 24px;
+	}
+
+	.product__title
+	{
+		font-size: 13px;
+	}
+
+	.product__name
+	{
+		font-size: 15px;
+	}
+
+	.product__price 
+	{
+		font-size: 17px;
+	}
+
+
+	.choose-product__info 
+	{
+		width: 25%;
+	}
+
+	.choose-product__wrap 
+	{
+		width: calc(75% - 16px);
+	}
+
+
+	.advantages__title 
+	{
+		font-size: 48px;
+	}
+
+	.advantages__img 
+	{
+        max-width: 390px;
+    }
+
+
+	.advantages__bg-logo img
+	{
+		max-width: 100%;
+	}
+
+	.advantages__bg-logo 
+	{
+        width: 320px;
+        height: 320px;
+    }
+
+	.advantages__pad 
+	{
+		padding-left: 70px;
+	}
+
+
+	.portfolio__name
+	{
+		font-size: 14px;
+	}
+
+
+	.choose-size__desc 
+	{
+        max-width: 370px;
+    }
+
+	.choose-size__link 
+	{
+        margin-left: 30px;
+    }
+
+	.choose-size__bg::after
+	{
+		background: radial-gradient(circle at 40% 50%, rgba(44, 41, 39, 0) 0%, rgba(44, 41, 39, 0.57) 20%, rgba(44, 41, 39, 1) 100%);
+	}
+
+
+	.main-news__title
+	{
+		font-size: 22px;
+	}
+
+	.main-cats__item + .main-cats__item 
+	{
+		margin-left: 25px;
+	}
+
+	.main-cats__img img
+	{
+		aspect-ratio: 80 / 80;
+	}
+
 	/*------------
 		commit
 	------------*/

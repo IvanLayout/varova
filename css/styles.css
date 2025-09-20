@@ -527,6 +527,32 @@ button
 	width: 100%;
 }
 
+.header__wrap-top
+{
+	display: none;
+}
+
+.header__close
+{
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+
+.header__close::before
+{
+	position: absolute;
+	content: '';
+
+	display: block;
+
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: url(../images/close_dark.svg) 50% 50% no-repeat;
+}
+
 
 .header__btns
 {
@@ -563,9 +589,19 @@ button
 	transition: stroke .2s linear;
 }
 
-.header__logo
+.header__btn-burger
 {
-	
+	display: none;
+}
+
+.header__logo-mob
+{
+	display: none;
+}
+
+.header-cats__logo
+{
+	display: none;
 }
 
 .header__logo a
@@ -2448,6 +2484,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .first-section__video-img img
 {
 	display: block;
+	width: 100%;
 	aspect-ratio: 279 / 157;
 	transition: transform .4s linear;
 }
@@ -3760,11 +3797,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	z-index: 1;
 	margin-left: -204px;
 	opacity: .2;
+
+	width: 433px;
+	height: 433px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .advantages__bg-logo img
 {
 	display: block;
+	max-width: 100%;
+	max-height: 100%;
 	pointer-events: none;
 }
 /*------------
@@ -4790,135 +4838,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     }
 
 
-	/*------------
-		commit
-	------------*/
-}
-
-@media (max-width: 1399px)
-{
-	body
+	.advantages__bg-logo
 	{
-		font-size: 15px;
+		width: 380px;
+		height: 380px;
 	}
-	
-
-	.main-title 
-	{
-        font-size: 36px;
-    }
-
-
-	.header-cats__wrap
-	{
-		padding: 25px;
-	}
-
-	.nav-menu__item + .nav-menu__item 
-	{
-        margin-left: 20px;
-    }
-
-
-	.first-section__title 
-	{
-        font-size: 64px;
-    }
-
-	.first-section__img 
-	{
-        height: 260px;
-    }
-
-	.first-section__abs1
-	{
-		height: 350px;
-	}
-
-	.first-section__abs2
-	{
-		height: 170px;
-		border-radius: 50px;
-	}
-
-	.first-section__desc 
-	{
-        font-size: 17px;
-    }
-
-
-	.main-cats__item + .main-cats__item 
-	{
-		margin-left: 30px;
-	}
-
-
-	.product__top, 
-	.product__bot 
-	{
-        padding: 20px;
-    }
-
-	.product__price
-	{
-		font-size: 19px;
-	}
-
-	.product__info
-	{
-		padding: 20px;
-	}
-
-
-	.product__info-title
-	{
-		font-size: 26px;
-	}
-
-	.product__day
-	{
-		font-size: 20px;
-	}
-
-
-	.choose-product__info 
-	{
-		width: 30%;
-	}
-
-	.choose-product__wrap
-	{
-		width: calc(70% - 16px);
-	}
-
-	.choose-product__title
-	{
-		font-size: 28px;
-	}
-
-	.choose-product__tabs-title 
-	{
-        font-size: 17px;
-    }
-
-
-	.advantages__title 
-	{
-        font-size: 54px;
-    }
-
-	.advantages__pad 
-	{
-        padding-left: 90px;
-    }
-
-
-	.main-news__title 
-	{
-        font-size: 24px;
-        padding: 25px;
-    }
-
 
 	/*------------
 		commit

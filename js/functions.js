@@ -31,7 +31,7 @@ $(() => {
 
 	// Закрываем всплывашку при клике за её пределами
 	$(document).click((e) => {
-		if ( !e.target.closest('.header-catalog') && !e.target.closest('.header-catalog__open') ) {
+		if ( !e.target.closest('.header-cats__wrap') && !e.target.closest('.header-catalog__open') ) {
 			$('.header-catalog__open').removeClass('_active')
 			$('.header-cats').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
@@ -53,6 +53,43 @@ $(() => {
 
 		$('.header-catalog__open').removeClass('_active')
 		$('.header-cats').removeClass('_show')
+		$('.overlay-catalog').removeClass('_show')
+	})
+
+	$('body').on('click', '.header-cats__item-open', function () {
+		if( $(window).width() < 1024 )
+		{
+			// if ($(this).hasClass('_active')) {
+			// 	$(this).removeClass('_active')
+			// 	$(this).next().removeClass('_show')
+			// } else {
+			// 	$(this).addClass('_active')
+			// 	$(this).next().addClass('_show')
+			// }
+
+			if ($(this).hasClass('_active')) {
+				$(this).removeClass('_active')
+				$(this).next().slideUp(300)
+			} else {
+				$(this).addClass('_active')
+				$(this).next().slideDown(300)
+			}
+		}
+	})
+
+	// Открываем каталог в шапке
+	$('body').on('click', '.header__btn-burger', function (e) {
+		e.preventDefault()
+
+		$('.header__wrap').addClass('_show')
+		$('.overlay-catalog').addClass('_show')
+	})
+
+	// Закрываем каталог в шапке
+	$('body').on('click', '.header__close', function (e) {
+		e.preventDefault()
+
+		$('.header__wrap').removeClass('_show')
 		$('.overlay-catalog').removeClass('_show')
 	})
 

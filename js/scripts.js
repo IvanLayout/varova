@@ -137,6 +137,10 @@ $(() => {
 				},
 				'1024': {
 					spaceBetween: 16,
+					slidesPerView: 4,
+				},
+				'1200': {
+					spaceBetween: 16,
 					slidesPerView: 5,
 				},
 				'1500': {
