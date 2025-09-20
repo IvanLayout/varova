@@ -250,6 +250,10 @@ $(window).on('load', () => {
 		}
 	})
 	informationAnim.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")
+
+	if ( $('.main-info__top').length ) {
+		setHeight($('.main-info__top'))
+	}
 });
 
 
@@ -276,5 +280,11 @@ $(window).on('resize', () => {
 			fakeResize = false
 			fakeResize2 = true
 		}
+	}
+
+	if ( $('.main-info__top').length ) {
+		$('.main-info__top').height('auto')
+
+		setHeight($('.main-info__top'))
 	}
 });
