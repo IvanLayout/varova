@@ -1840,6 +1840,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 /*---------------
 	Page head
 ---------------*/
+._padt{
+	padding-top: 80px;
+}
+
+._padb{
+	padding-bottom: 80px;
+}
 
 ._marg
 {
@@ -3748,7 +3755,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     commit
 ------------*/
 .main-about{
-	background: url(../images/main_about_line.svg) 50% 0/100% auto no-repeat;
+	background: url(../images/main_about_line.svg) 0 100%/100% auto no-repeat;
 	/* min-height: 1500px; */
 }
 
@@ -3920,7 +3927,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 .main-info{
-	padding: 50px 0;
+	padding-top: 50px;
 }
 
 
