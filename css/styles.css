@@ -3417,6 +3417,133 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 20px;
 }
 
+/*------------
+    choose-size
+------------*/
+
+.choose-size__wrap
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+
+	position: relative;
+	padding: 46px 60px;
+	color: #fff;
+
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.choose-size__abs1
+{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+
+	display: block;
+	z-index: 2;
+}
+
+.choose-size__abs2
+{
+	position: absolute;
+	bottom: 57px;
+	right: 50%;
+
+	display: block;
+	z-index: 1;
+	margin-right: 55px;
+}
+
+.choose-size__bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+.choose-size__bg img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.choose-size__bg::after
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	background: radial-gradient(circle at 41% 50%,rgba(44, 41, 39, 0) 0%,rgba(44, 41, 39, 0.57) 25%,rgba(44, 41, 39, 1) 100%);
+}
+
+.choose-size__title
+{
+	font-family: var(--font-family2);
+	font-size: 30px;
+	line-height: 1.2;
+	position: relative;
+	z-index: 3;
+}
+
+.choose-size__desc
+{
+	max-width: 540px;
+	font-size: 14px;
+	margin-left: auto;
+	position: relative;
+	z-index: 3;
+}
+
+.choose-size__link
+{
+	flex-shrink: 0;
+	margin-left: 64px;
+	position: relative;
+	z-index: 3;
+}
+
+.choose-size__link a
+{
+	text-decoration: none;
+	transition: .2s linear;
+	color: #2C2927;
+	line-height: 40px;
+	white-space: nowrap;
+	padding: 0 16px;
+	display: block;
+	background: #D0C7C0;
+	border-radius: 8px;
+	font-size: 12px;
+	transition: background .2s linear, color .2s linear;
+}
+
+@media (any-hover: hover) 
+{
+	.choose-size__link a:hover
+	{
+		background: #6E6E6E;
+		color: #fff;
+	}
+}
 
 /*------------
     commit
