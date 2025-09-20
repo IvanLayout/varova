@@ -3673,6 +3673,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .advantages__box
 {
 	width: calc(50% - 8px);
+	position: relative;
 }
 
 .advantages__box:first-child
@@ -3716,7 +3717,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	border-radius: 100px;
 }
 
-.advantages__img img
+.advantages__img span img
 {
 	position: absolute;
 	top: 0;
@@ -3726,6 +3727,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 	width: 100%;
 	height: 100%;
+}
+
+.advantages__bg-logo
+{
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	z-index: 1;
+	margin-left: -204px;
+	opacity: .2;
+}
+
+.advantages__bg-logo img
+{
+	display: block;
+	pointer-events: none;
 }
 /*------------
     commit
