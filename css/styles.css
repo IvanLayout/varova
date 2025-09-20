@@ -3546,6 +3546,86 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 /*------------
+    advantages
+------------*/
+
+.advantages__tabs
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	margin-top: 80px;
+}
+
+.advantages__tabs .tabs__button_icon + .tabs__button_icon
+{
+	margin-top: 0;
+	margin-left: 32px;
+}
+
+.tabs__button-icon._fill svg
+{
+	stroke: none;
+	fill: currentColor;
+}
+
+
+.advantages__wrap
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.advantages__box
+{
+	width: calc(50% - 8px);
+}
+
+.advantages__box:first-child
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.advantages__title
+{
+	font-family: var(--font-family2);
+	font-size: 70px;
+	line-height: 1;
+}
+
+.advantages__pad
+{
+	padding-left: 120px;
+}
+
+.advantages__grey
+{
+	color: #6E6E6E;
+}
+
+.advantages__img
+{
+	position: relative;
+}
+
+.advantages__img img
+{
+	display: block;
+	aspect-ratio: 493 / 493;
+	object-fit: cover;
+
+	position: relative;
+	border-radius: 100px;
+}
+/*------------
     commit
 ------------*/
 .main-about{
