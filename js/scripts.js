@@ -5,8 +5,8 @@ WW = window.innerWidth || document.clientWidth || document.querySelector('body')
 fakeResize = false
 fakeResize2 = true
 
-if (document.body.clientWidth < 390) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
+if (document.body.clientWidth < 375) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 }
 
 $(() => {
@@ -243,6 +243,26 @@ $(() => {
 			type: 'inline'
 		}])
 	})
+
+	if ( $(window).width() < 1024 && !$('.main-info__images').hasClass('_mob') ) {	
+		$('.main-info__images').removeClass('_pc')
+		$('.main-info__images').addClass('_mob')
+
+		$('.main-info__cols').find('.main-info__images').each(function() {
+			let thisEl = $(this)
+			$(this).find('.main-info__img1').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__gallery')
+
+				$(this).appendTo(parent)
+			})
+
+			$(this).find('.main-info__images-flex').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__gallery')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
 });
 
 
@@ -271,6 +291,10 @@ $(window).on('load', () => {
 	if ( $('.main-info__top').length ) {
 		setHeight($('.main-info__top'))
 	}
+
+	if ( $('.main-about__coll').length ) {
+		setHeight($('.main-about__coll'))
+	}
 });
 
 
@@ -292,7 +316,7 @@ $(window).on('resize', () => {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 405) document.getElementsByTagName('meta')['viewport'].content = 'width=405, user-scalable=no'
+			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true
@@ -303,5 +327,51 @@ $(window).on('resize', () => {
 		$('.main-info__top').height('auto')
 
 		setHeight($('.main-info__top'))
+	}
+
+	if ( $('.main-about__coll').length ) {
+		$('.main-about__coll').height('auto')
+
+		setHeight($('.main-about__coll'))
+	}
+
+	if ( $(window).width() < 1024 && !$('.main-info__images').hasClass('_mob') ) {	
+		$('.main-info__images').removeClass('_pc')
+		$('.main-info__images').addClass('_mob')
+
+		$('.main-info__cols').find('.main-info__images').each(function() {
+			let thisEl = $(this)
+			$(this).find('.main-info__img1').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__gallery')
+
+				$(this).appendTo(parent)
+			})
+
+			$(this).find('.main-info__images-flex').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__gallery')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
+	if ( $(window).width() > 1023 && !$('.main-info__images').hasClass('_pc') ) {
+		$('.main-info__images').removeClass('_mob')
+		$('.main-info__images').addClass('_pc')
+
+		$('.main-info__cols').find('.main-info__gallery').each(function() {
+			let thisEl = $(this)
+			$(this).find('.main-info__img1').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__images')
+
+				$(this).appendTo(parent)
+			})
+
+			$(this).find('.main-info__images-flex').each(function() {
+				let parent = thisEl.closest('.main-info__cols').find('.main-info__images')
+
+				$(this).appendTo(parent)
+			})
+		})
 	}
 });

@@ -171,4 +171,16 @@
 	/*------------
 		commit
 	------------*/
+	.main-info .tabs__button-icon{
+		width: 46px;
+		height: 46px;
+	}
+
+	.main-about__name {
+		font-size: 100px;
+	}
+
+	.main-info__title {
+		font-size: 100px;
+	}
 }
