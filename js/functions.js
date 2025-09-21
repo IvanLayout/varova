@@ -35,6 +35,7 @@ $(() => {
 			$('.header-catalog__open').removeClass('_active')
 			$('.header-cats').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
+			$('body').removeClass('_lock-add')
 		}
 	})
 
