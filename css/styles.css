@@ -268,6 +268,16 @@ button
     min-height: 100%;
 }
 
+.wrap_inner::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 936px;
+	background: linear-gradient(180deg, #e1dfdb 0%, #e1dfdb 8.6%, #e1e3e3 39.6%, rgba(253, 253, 253, 0) 100%);
+}
+
 .main
 {
     flex: 1 0 auto;
@@ -346,17 +356,22 @@ button
 {
 	padding: 30px 0;
 
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 
 	width: 100%;
 	z-index: 10;
+	color: #2C2927;
 }
 
-.header_inner
+.header._white{
+	color: #fff;
+}
+
+.header._main
 {
-	position: relative;
+	position: absolute;
 }
 
 .header .cont
@@ -375,7 +390,7 @@ button
 .header-catalog__open
 {
 	position: relative;
-    color: #fff;
+    color: currentColor;
     font-size: 14px;
     display: block;
     padding-left: 30px;
@@ -540,7 +555,7 @@ button
 .header__wrap-logo img
 {
 	display: block;
-	max-width: 100%;
+	max-width: 1127px;
 }
 
 .header__wrap-close
@@ -590,13 +605,14 @@ button
 	flex-wrap: wrap;
 
 	height: 17px;
+	color: currentColor;
 }
 
 .header__btn svg
 {
 	display: block;
 
-	stroke: #DCD9D3;
+	stroke: currentColor;
 	transition: stroke .2s linear;
 }
 
@@ -649,7 +665,7 @@ button
 .nav-menu__item a
 {
 	text-decoration: none;
-	color: #fff;
+	color: currentColor;
 	border-bottom: 1px solid transparent;
 	transition: .2s linear;
 }
@@ -664,7 +680,7 @@ button
 
 	.nav-menu__item a:hover
 	{
-		border-color: #fff;
+		border-color: currentColor;
 	}
 }
 
@@ -692,14 +708,18 @@ button
     pointer-events: none;
 
     opacity: 0;
+	visibility: hidden;
     background: rgba(44, 41, 39, .75);
+	backdrop-filter: blur(3px);
 
-    transition: opacity .2s linear;
+    transition: opacity .2s linear, visibility .2s linear;
 }
 
 .overlay-catalog._show
 {
     opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
 }
 /*------------
     BTNS
@@ -4479,6 +4499,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     padding: 40px 0 60px;
 	border-top: 1px solid #EFEFEF;
+	background: #fff;
 }
 
 .footer__cols._flex
