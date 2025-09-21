@@ -1,5 +1,72 @@
 @media (max-width: 479px)
 {
+	.btn-black
+	{
+		line-height: 35px;
+	}
+
+
+	.header__logo-mob a
+	{
+		width: 120px;
+	}
+
+	.header-catalog__open svg
+	{
+		margin-top: -8px;
+	}
+
+	.header__btn + .header__btn
+	{
+		margin-left: 28px;
+	}
+
+
+	.first-section 
+	{
+		padding-top: 118px;
+	}
+
+
+	.tabs__button_btn
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.advantages__tabs .tabs__button_icon + .tabs__button_icon
+	{
+		margin-left: 27px;
+	}
+
+	
+	.reviews__name
+	{
+		font-size: 16px;
+	}
+
+
+	.portfolio .main-title._pad-right
+	{
+		padding-right: 0;
+	}
+
+	.portfolio__slider .slider-button-prev,
+	.portfolio__slider .slider-button-next
+	{
+		display: none;
+	}
+
+
+	.main-news__item._big .main-news__img
+	{
+		aspect-ratio: 1;
+	}
+
+	.main-news__title
+	{
+		padding: 20px;
+	}
 	/*------------
 		commit
 	------------*/

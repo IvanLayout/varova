@@ -1906,6 +1906,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-content: center;
 
 	margin-bottom: 24px;
+
+	padding-right: 110px;
 }
 
 .main-title
@@ -1916,6 +1918,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-weight: 400;
 }
 
+.main-title._pad-right
+{
+	padding-right: 110px;
+}
 /*--------------
     Fancybox
 --------------*/
@@ -2565,7 +2571,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	justify-content: center;
 	flex-wrap: nowrap;
-    overflow-y: auto;
 }
 
 .main-cats__item + .main-cats__item

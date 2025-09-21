@@ -5,8 +5,8 @@ WW = window.innerWidth || document.clientWidth || document.querySelector('body')
 fakeResize = false
 fakeResize2 = true
 
-if (document.body.clientWidth < 405) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=405, user-scalable=no'
+if (document.body.clientWidth < 390) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
 }
 
 $(() => {
@@ -125,7 +125,7 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 2
 				},
 				'480': {
 					spaceBetween: 16,
