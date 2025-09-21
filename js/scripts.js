@@ -30,22 +30,18 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
-			// scrollbar: {
-			// 	el: ".swiper-scrollbar",
-			// 	hide: false,
-			// },
 			breakpoints: {
 				'320': {
-					spaceBetween: 12,
+					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
 				'480': {
-					spaceBetween: 12,
+					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
 				'768': {
-					spaceBetween: 12,
-					slidesPerView: 3
+					spaceBetween: 16,
+					slidesPerView: 'auto'
 				},
 				'1024': {
 					spaceBetween: 16,
@@ -66,7 +62,7 @@ $(() => {
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			spaceBetween: 16,
-			slidesPerView: 3,
+			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -83,15 +79,15 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'480': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'768': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'1024': {
 					spaceBetween: 16,
@@ -121,6 +117,10 @@ $(() => {
 				loadedClass: 'loaded',
 				checkInView: true,
 				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
 			},
 			breakpoints: {
 				'320': {
@@ -152,6 +152,11 @@ $(() => {
 				el: ".swiper-scrollbar",
 				hide: false,
 			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+			}
 		})
 	}
 
@@ -161,7 +166,7 @@ $(() => {
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			spaceBetween: 16,
-			slidesPerView: 3,
+			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -178,15 +183,15 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'480': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'768': {
 					spaceBetween: 16,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				},
 				'1024': {
 					spaceBetween: 16,

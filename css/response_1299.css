@@ -162,9 +162,10 @@
 		margin-left: 25px;
 	}
 
-	.main-cats__img img
+	.main-cats__img
 	{
-		aspect-ratio: 80 / 80;
+		width: 80px;
+		height: 80px;
 	}
 
 	/*------------

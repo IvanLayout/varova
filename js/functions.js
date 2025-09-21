@@ -45,6 +45,8 @@ $(() => {
 		$(this).addClass('_active')
 		$('.header-cats').addClass('_show')
 		$('.overlay-catalog').addClass('_show')
+
+		$('body').addClass('_lock-add')
 	})
 
 	// Закрываем каталог в шапке
@@ -54,6 +56,8 @@ $(() => {
 		$('.header-catalog__open').removeClass('_active')
 		$('.header-cats').removeClass('_show')
 		$('.overlay-catalog').removeClass('_show')
+
+		$('body').removeClass('_lock-add')
 	})
 
 	$('body').on('click', '.header-cats__item-open', function () {
@@ -77,20 +81,20 @@ $(() => {
 		}
 	})
 
-	// Открываем каталог в шапке
+	// Открываем меню в шапке
 	$('body').on('click', '.header__btn-burger', function (e) {
 		e.preventDefault()
-
+		
 		$('.header__wrap').addClass('_show')
-		$('.overlay-catalog').addClass('_show')
+		$('body').addClass('_lock-add')
 	})
 
-	// Закрываем каталог в шапке
-	$('body').on('click', '.header__close', function (e) {
+	// Закрываем меню в шапке
+	$('body').on('click', '.header__wrap-close', function (e) {
 		e.preventDefault()
 
 		$('.header__wrap').removeClass('_show')
-		$('.overlay-catalog').removeClass('_show')
+		$('body').removeClass('_lock-add')
 	})
 
 	// Табы

@@ -44,7 +44,7 @@
 
 	.first-section
 	{
-		padding-top: 140px;
+		padding-top: 160px;
 	}
 
 	.first-section__title 
@@ -96,6 +96,7 @@
 	{
 		width: 100%;
 		padding-right: 0;
+		padding-right: 50px;
 	}
 
 	.product__boxr
