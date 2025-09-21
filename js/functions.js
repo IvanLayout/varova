@@ -31,7 +31,7 @@ $(() => {
 
 	// Закрываем всплывашку при клике за её пределами
 	$(document).click((e) => {
-		if ( !e.target.closest('.header-cats__wrap') && !e.target.closest('.header-catalog__open') ) {
+		if ( !e.target.closest('.header-cats') && !e.target.closest('.header-catalog__open') ) {
 			$('.header-catalog__open').removeClass('_active')
 			$('.header-cats').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
@@ -51,7 +51,7 @@ $(() => {
 	})
 
 	// Закрываем каталог в шапке
-	$('body').on('click', '.header-catalog__close', function (e) {
+	$('body').on('click', '.header-cats__close', function (e) {
 		e.preventDefault()
 
 		$('.header-catalog__open').removeClass('_active')
