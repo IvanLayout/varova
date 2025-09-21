@@ -1,5 +1,9 @@
 @media (max-width: 1023px)
 {
+	._lock-menu{
+		overflow: hidden;
+	}
+
 	.header .cont
 	{
 		flex-wrap: wrap;
@@ -340,6 +344,15 @@
 	}
 
 
+	.products .head-section{
+		padding-right: 0;
+	}
+
+
+	.products-slider .swiper-overflow{
+		overflow: visible;
+	}
+
 	.products-slider .swiper-slide
 	{
 		width: 280px;
@@ -483,6 +496,10 @@
 	.portfolio__info
 	{
 		display: none;
+	}
+
+	.portfolio__slider .swiper-overflow{
+		overflow: visible;
 	}
 
 	.portfolio__slider .swiper-slide

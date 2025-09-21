@@ -72,6 +72,16 @@
 	.main-about__name{
 		font-size: 76px;
 	}
+
+	.products .tabs__button_btn {
+		padding-left: 10px;
+		padding-right: 10px;
+		flex-grow: 1;
+	}
+
+	.first-section__title{
+		font-size: 48px;
+	}
 }
 
 @media (max-width: 389px)

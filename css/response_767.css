@@ -20,16 +20,34 @@
 
 	.main-cats__wrap
 	{
-		overflow-y: auto;
-
-		width: calc(100% + 20px);
-		margin-right: -20px;
-		
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.main-cats__items
 	{
 		justify-content: flex-start;
+		overflow: hidden;
+		overflow-x: auto;
+
+		max-width: calc(100% + 40px);
+		width: auto;
+		margin-right: -20px;
+		margin-left: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-cats__items::-webkit-scrollbar{
+		display: none;
+	}
+
+	.main-cats__item{
+		flex-shrink: 0;
 	}
 
 

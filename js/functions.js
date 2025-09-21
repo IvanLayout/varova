@@ -87,7 +87,7 @@ $(() => {
 		e.preventDefault()
 		
 		$('.header__wrap').addClass('_show')
-		$('body').addClass('_lock-add')
+		$('body').addClass('_lock-menu')
 	})
 
 	// Закрываем меню в шапке
@@ -95,7 +95,7 @@ $(() => {
 		e.preventDefault()
 
 		$('.header__wrap').removeClass('_show')
-		$('body').removeClass('_lock-add')
+		$('body').removeClass('_lock-menu')
 	})
 
 	// Табы
