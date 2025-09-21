@@ -136,4 +136,44 @@
 	/*------------
 		commit
 	------------*/
+
+	.main-about__item .cont{
+		flex-direction: column;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		max-height: 774px;
+	}
+
+	.main-about__coll{
+		width: 100%;
+		max-width: none;
+		padding-left: 10px;
+	}
+
+	.main-about__desc{
+		margin-top: 20px;
+	}
+
+	.main-info__title{
+		font-size: 30px;
+	}
+
+	.main-about__colr{
+		margin: 52px 0 0;
+		max-width: none;
+		flex-grow: 1;
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.main-about__img2 {
+		height: calc(63% - 33px);
+		margin-top: 33px;
+	}
+
+	.main-about__name {
+		font-size: 80px;
+		top: 22%;
+	}
 }

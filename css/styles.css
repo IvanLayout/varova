@@ -3862,6 +3862,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
+		justify-content: center;
 }
 
 .main-about__item .cont{
@@ -3873,6 +3874,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	flex-wrap: nowrap;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	max-height: 1080px;
 }
 
 .main-about__coll{
@@ -4039,6 +4041,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	color: currentColor;
 	display: block;
 	text-align: center;
+}
+
+.main-info .tabs__button_icon{
+	width: 100%;
 }
 
 .tabs__button_icon + .tabs__button_icon{
@@ -4262,6 +4268,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	display: block;
 	margin-top: 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .bg1{
@@ -4749,6 +4758,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	/*------------
 		commit
 	------------*/
+
+	.main-info__video-box{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 
 
@@ -4872,4 +4886,25 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	/*------------
 		commit
 	------------*/
+	.main-info__title{
+		font-size: 130px;
+	}
+
+	.main-info__desc{
+		width: 64%;
+		font-size: 18px;
+	}
+
+	.main-about__name{
+		font-size: 130px;
+	}
+
+
+	.first-section__bot {
+		margin-top: 115px;
+	}
+
+	.first-section__video{
+		margin-top: 60px;
+	}
 }

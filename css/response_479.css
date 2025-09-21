@@ -34,11 +34,6 @@
 		padding-right: 15px;
 	}
 
-	.advantages__tabs .tabs__button_icon + .tabs__button_icon
-	{
-		margin-left: 27px;
-	}
-
 	
 	.reviews__name
 	{
@@ -70,4 +65,36 @@
 	/*------------
 		commit
 	------------*/
+	.main-about__colr{
+		margin-top: 40px;
+	}
+
+	.main-about__name{
+		font-size: 76px;
+	}
+}
+
+@media (max-width: 389px)
+{
+	.main-info .tabs__button_icon{
+		min-width: 80px;
+	}
+
+	.advantages__tabs .tabs__button_icon{
+		min-width: 80px;
+	}
+
+	.tabs__button-icon {
+		width: 50px;
+		height: 50px;
+	}
+
+	.main-info .tabs__button-icon {
+		width: 50px;
+		height: 50px;
+	}
+
+	.tabs__button_icon{
+		font-size: 12px;
+	}
 }
