@@ -4,6 +4,16 @@
 		overflow: hidden;
 	}
 
+	.header
+	{
+		border-bottom: 1px solid #D0C7C0;
+	}
+
+	.header._main
+	{
+		border-bottom: none;
+	}
+
 	.header .cont
 	{
 		flex-wrap: wrap;
@@ -633,6 +643,45 @@
 	.footer__bot
 	{
 		padding-top: 0;
+	}
+
+
+	.head-page__col
+	{
+		width: 100%;
+	}
+
+	.head-page__col + .head-page__col
+	{
+		margin-top: 16px;
+	}
+
+
+	.inner-cats__item
+	{
+		width: calc(100% / 4 - 16px);
+	}
+
+	.inner-cats__name
+	{
+		font-size: 16px;
+	}
+
+
+	.faq__col
+	{
+		width: 100%;
+	}
+
+	.faq__col + .faq__col
+	{
+		margin-top: 16px;
+	}
+
+	.faq__box
+	{
+		position: relative;
+		top: 0;
 	}
 	/*------------
 		commit

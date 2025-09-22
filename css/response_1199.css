@@ -1,6 +1,7 @@
 @media (max-width: 1199px)
 {
-	.main-title 
+	.main-title,
+	.page-title
 	{
         font-size: 32px;
     }

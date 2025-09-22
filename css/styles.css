@@ -411,8 +411,13 @@ button
 
 	margin-top: -9px;
 
-	stroke: #DCD9D3;
+	stroke: #2C2927;
 	transition: stroke .2s linear;
+}
+
+.header._white .header-catalog__open svg
+{
+	stroke: #DCD9D3;
 }
 
 .header-cats
@@ -5103,7 +5108,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (max-width: 1499px)
 {
-	.main-title
+	.main-title,
+	.page-title
 	{
 		font-size: 38px;
 	}

@@ -1,6 +1,7 @@
 @media (max-width: 767px)
 {
-	.main-title 
+	.main-title,
+	.page-title
 	{
 		font-size: 30px;
 	}
@@ -139,6 +140,12 @@
 	.footer__creator
 	{
 		margin-top: 10px;
+	}
+
+
+	.inner-cats__item 
+	{
+		width: calc(100% / 3 - 16px);
 	}
 	/*------------
 		commit
