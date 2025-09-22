@@ -98,6 +98,33 @@ $(() => {
 		$('body').removeClass('_lock-menu')
 	})
 
+	$('body').on('click', '.filter-use__link', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use__item').remove()
+	})
+
+
+	$('.filter__item-more').click(function(e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.filter__data').removeClass('_all')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.filter__data').addClass('_all')
+		}
+	})
+
+	$('.filter__data').each(function(){
+		if ( $(this).find('.checkbox').length > 4 ) {
+			$(this).find('.filter__item-more').addClass('_show')
+		}
+	})
+
 	// Табы
 	var locationHash = window.location.hash
 

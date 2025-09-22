@@ -209,6 +209,33 @@ $(() => {
 			}
 		})
 	}
+
+	//Ползунки
+	$priceRange = $("#price_range").ionRangeSlider({
+		type     : 'double',
+		min      : 0,
+		max      : 100000,
+		from     : 0,
+		to       : 100000,
+		step     : 1,
+		onChange : function (data) {
+			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU') )
+			$('.price_range input.do').val( data.to.toLocaleString('ru-RU') )
+		}
+	}).data("ionRangeSlider")
+
+	$('.price_range .range__input').keyup(function() {
+		$priceRange.update({
+			from : $('.price_range input.ot').val().replace(/\s/g,''),
+			to : $('.price_range input.do').val().replace(/\s/g,'')
+		})
+	})
+
+	$('.reset-btn').click(function(){
+		if ( $('.price_range').length ) {
+			$priceRange.reset()
+		}
+	})
 	
 	// Добавление/Удаление (избранное)
 	$('body').on('click', '.favorite-js', function (e) {
