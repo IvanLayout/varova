@@ -212,7 +212,7 @@ $(() => {
 
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
-			spaceBetween: 9,
+			spaceBetween: 5,
 			slidesPerView: 8,
 			direction: 'vertical',
 			loop: false,
@@ -225,7 +225,7 @@ $(() => {
 			},
 			breakpoints: {
 				'768': {
-					spaceBetween: 9,
+					spaceBetween: 5,
 					slidesPerView: 8
 				},
 				'1024': {
@@ -233,18 +233,18 @@ $(() => {
 					slidesPerView: 7
 				},
 				'1320': {
-					spaceBetween: 8,
+					spaceBetween: 5,
 					slidesPerView: 5
 				},
 				'1760': {
-					spaceBetween: 10,
+					spaceBetween: 5,
 					slidesPerView: 5
 				}
 			}
 		})
 
 		new Swiper('.product-images__slider', {
-			spaceBetween: 10,
+			spaceBetween: 5,
 			loop: false,
 			speed: 500,
 			watchOverflow: true,
