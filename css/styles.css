@@ -2664,7 +2664,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 100%);
 }
 
-.product-info::after
+.product__info::after
 {
 	height: 100%;
 	background: rgba(9, 9, 9, 0.5);
@@ -4780,6 +4780,134 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	flex-shrink: 0;
 }
+
+.product-thumbs
+{
+    width: 100px;
+    height: 540px;
+}
+
+.product-thumbs .slider-button-prev
+{
+	top: auto;
+    bottom: 20px;
+    left: 50%;
+	margin-left: -18px;
+	margin-top: 0;
+}
+
+.product-thumbs .slider-button-prev svg
+{
+    transform: rotate(-90deg);
+	margin-top: -3px;
+}
+
+
+.product-thumbs .slider-button-next
+{
+    top: 20px;
+    right: 50%;
+	margin-right: -18px;
+	margin-top: 0;
+}
+
+.product-thumbs .slider-button-next svg
+{
+    transform: rotate(-90deg);
+	margin-top: 0;
+}
+
+.product-thumbs__img
+{
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+	height: 100%;
+
+    border-radius: 8px;
+}
+
+.product-thumbs__img_video::after
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
+
+    background: url(../images/ic_play.svg) 50%/contain no-repeat;
+}
+
+.product-thumbs__img img
+{
+    display: block;
+
+    width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+
+.product-images
+{
+    position: relative;
+
+    width: calc(100% - 105px);
+}
+
+.product-images .slider-pagination
+{
+    display: none;
+}
+
+.product-images__img
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+.product-images__img img
+{
+    display: block;
+
+    width: 100%;
+	aspect-ratio: 535 / 713;
+	object-fit: cover;
+}
+/*------------
+    product-info
+------------*/
+
+.product-info__wrap
+{
+	justify-content: space-between;
+}
+
+.product-info__images
+{
+	width: 35%;
+
+	justify-content: space-between;
+}
+
+.product-info__info
+{
+	width: calc(65% - 60px);
+}
+
 /*------------
     commit
 ------------*/
