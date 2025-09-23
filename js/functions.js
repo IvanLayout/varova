@@ -125,6 +125,23 @@ $(() => {
 		}
 	})
 
+
+	$('body').on('click', '.filter-open', function (e) {
+		e.preventDefault()
+
+		$('.aside-filter').addClass('_show')
+
+		$('body').addClass('_filter-open-mob')
+	})
+
+	$('body').on('click', '.filter-head__close', function (e) {
+		e.preventDefault()
+
+		$('.aside-filter').removeClass('_show')
+
+		$('body').removeClass('_filter-open-mob')
+	})
+
 	// Табы
 	var locationHash = window.location.hash
 

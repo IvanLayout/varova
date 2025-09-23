@@ -86,7 +86,8 @@
 		font-size: 15px;
 	}
 
-	.product__price 
+	.product__price,
+	.product__pre-order
 	{
 		font-size: 17px;
 	}
@@ -167,6 +168,12 @@
 	{
 		width: 80px;
 		height: 80px;
+	}
+
+
+	.filter__item + .filter__item 
+	{
+		margin-top: 40px;
 	}
 
 	/*------------

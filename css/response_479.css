@@ -68,6 +68,16 @@
 	{
 		width: calc(100% / 2 - 16px);
 	}
+
+	.products__grid .product 
+	{
+		width: calc(100% / 1 - 16px);
+	}
+
+	.products__grid .product__img 
+	{
+		aspect-ratio: 350 / 380;
+	}
 	/*------------
 		commit
 	------------*/
