@@ -164,4 +164,9 @@
 	.main-about__item .cont{
 		max-height: 800px;
 	}
+
+
+	.discounts__item-box {
+		padding-left: 16px;
+	}
 }

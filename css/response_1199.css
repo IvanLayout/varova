@@ -258,4 +258,17 @@
 	/*------------
 		commit
 	------------*/
+
+	.section-info__wrap{
+		padding-right: 0;
+	}
+
+	.section-info__wrap .text-block{
+		margin-right: 0;
+	}
+
+
+	.title-big{
+		font-size: 60px;
+	}
 }

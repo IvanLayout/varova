@@ -98,6 +98,32 @@
 	.first-section__title{
 		font-size: 48px;
 	}
+
+
+	.discounts__big-img {
+		min-height: 466px;
+	}
+
+	.discounts__big-box{
+		max-width: 290px;
+	}
+
+	.discounts__item{
+		flex-wrap: wrap;
+	}
+
+	.discounts__item-img{
+		width: 100%;
+	}
+
+	.discounts__item-box{
+		width: 100%;
+		padding: 30px 0 30px 30px;
+	}
+
+	.text-block__grid {
+    	grid-template-columns: 1fr;
+	}
 }
 
 @media (max-width: 389px)
@@ -126,5 +152,24 @@
 
 	.tabs__button_icon{
 		font-size: 12px;
+	}
+
+	.discounts__big-box{
+		max-width: 270px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.discounts__item-box{
+		padding-left: 20px;
+	}
+
+	.discounts__sticker{
+		left: 20px;
+	}
+
+	.discounts__slider .discounts__item-box{
+		padding-left: 20px;
+		padding-top: 20px;
 	}
 }

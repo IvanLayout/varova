@@ -981,4 +981,49 @@
 	.main-info {
 		padding-top: 30px;
 	}
+
+	.discounts__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+	.discounts .main-title._pad-right{
+		padding-right: 0;
+	}
+
+	.discounts__slider .swiper-overflow{
+		overflow: visible;
+	}
+
+	.discounts__slider .discounts__item{
+		width: 260px;
+	}
+
+	.discounts__slider .discounts__item-box{
+		padding-left: 30px;
+	}
+
+	.discounts__slider .slider-button-prev,
+	.discounts__slider .slider-button-next{
+		display: none;
+	}
+
+
+	.section-info__wrap{
+		padding-left: 0;
+	}
+
+	.section-info__back{
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.section-info__wrap .text-block{
+		max-width: none;
+	}
+
+
+	.title-big{
+		font-size: 50px;
+	}
 }
