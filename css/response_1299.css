@@ -176,6 +176,18 @@
 		margin-top: 40px;
 	}
 
+
+	.consultation__bg
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.consultation__info 
+	{
+		width: 400px;
+	}
+
 	/*------------
 		commit
 	------------*/

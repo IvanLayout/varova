@@ -113,6 +113,16 @@
     }
 
 
+	.consultation__info 
+	{
+		width: 440px;
+	}
+
+	.consultation__form 
+	{
+		width: calc(100% - 470px);
+	}
+
 	/*------------
 		commit
 	------------*/

@@ -242,6 +242,19 @@
 	{
 		margin-left: 40px;
 	}
+
+
+	.contacts-socials__item
+	{
+		width: calc(100% / 2 - 20px);
+	}
+
+	.consultation__form 
+	{
+		width: 100%;
+		margin-top: 20px;
+		max-width: 100%;
+	}
 	/*------------
 		commit
 	------------*/
