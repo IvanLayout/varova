@@ -429,38 +429,273 @@
 
 								<div class="product-info__bg">
 									<div class="product-info__box _flex">
-										<div class="product-info__select">
-											<div class="product-info__select-name">Количество</div>
-
-											<div class="select-wrap">
-												<select>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-												</select>
+										<div class="product-info__box-item _flex">
+											<div class="product-info__select">
+												<div class="product-info__select-name">Количество</div>
+	
+												<div class="select-wrap">
+													<select>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</div>
+											</div>
+											<div class="product-info__select">
+												<div class="product-info__select-name">Размер</div>
+	
+												<div class="select-wrap _width">
+													<select>
+														<option value="1">16.5</option>
+														<option value="2">17</option>
+														<option value="3">17.5</option>
+														<option value="4">18</option>
+													</select>
+												</div>
 											</div>
 										</div>
-										<div class="product-info__select">
-											<div class="product-info__select-name">Размер</div>
 
-											<div class="select-wrap _width">
-												<select>
-													<option value="1">16.5</option>
-													<option value="2">17</option>
-													<option value="3">17.5</option>
-													<option value="4">18</option>
-												</select>
+										<div class="product-info__box-item _bot-content">
+											<button type="button" data-content="#modal-size" class="product-info__size-btn modal-btn"><span>Подобрать размер</span></button>
+										</div>
+									</div>
+
+									<div class="product-info__box">
+										<div class="product-info__box-item">
+											<div class="product-info__mini-modal mini-modal">
+												<button type="button" class="mini-modal__btn mini-modal__btn-product"><span>Товар доступен по предзаказу</span></button>
+			
+												<div class="mini-modal__modal mini-modal__info">
+													<div class="text-block">
+														<p>
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam ducimus harum ex cumque maiores nisi rem consequuntur laborum hic id esse libero voluptates cupiditate, qui explicabo unde consequatur commodi perspiciatis est sequi delectus voluptate repudiandae natus. Non, commodi officia.
+														</p>
+	
+														<p>
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam ducimus harum ex cumque maiores nisi rem consequuntur laborum hic id esse libero voluptates cupiditate, qui explicabo unde consequatur commodi perspiciatis est sequi delectus voluptate repudiandae natus. Non, commodi officia.
+														</p>
+													</div>
+												</div>
 											</div>
 										</div>
-
-										<button type="button" data-content="#modal-size" class="product-info__size-btn modal-btn"><span>Подобрать размер</span></button>
 									</div>
 
 									<div class="product-info__box _flex">
-										<div class="product-info__price">23 500 ₽</div>
+										<div class="product-info__box-item _flex">
+											<div class="product-info__price">23 500 ₽</div>
 
-										<div class="product-info__old-price">23 500 ₽</div>
+											<div class="product-info__old-price">23 500 ₽</div>
+										</div>
+										
+										<div class="product-info__box-item">
+											<div class="product-info__btns _flex">
+												<button type="button" class="product-info__buy cart-js">
+													<span class="product-info__buy-icon">
+														<svg>
+															<use xlink:href="images/sprite.svg#cart"></use>
+														</svg>
+													</span>
+			
+													<span class="product-info__buy-text">
+														<span>В корзину</span>
+			
+														<span>В корзине</span>
+													</span>
+												</button>
+	
+												<button type="button" data-content="##modal-fast" class="btn-black modal-btn">Быстрая покупка</button>
+	
+												<button type="button" data-content="##modal-gift" class="product-info__gift modal-btn">
+													<span class="product-info__gift-icon">
+														<svg>
+															<use xlink:href="images/sprite.svg#ic_gift"></use>
+														</svg>
+													</span>
+													
+													Намекнуть о подарке
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-info__box _flex">
+										<div class="product-info__box-item">
+											<div class="product-info__pre-order">Стоимость <br>предзаказа</div>
+										</div>
+
+										<div class="product-info__box-item">
+											<div class="product-info__price">5 000 ₽</div>
+										</div>
+
+										<div class="product-info__box-item">
+											<button type="button" data-content="##modal-pre-order" class="btn-black modal-btn">Предзаказать</button>
+										</div>
+									</div>
+
+									<div class="product-info__box _flex">
+										<div class="product-info__box-item">
+											<div class="product-info__link">
+												<a href="/" class="product-info__link-wrap">
+													<span class="product-info__link-icon">
+														<img data-src="images/ic_gift.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+	
+													<span class="product-info__link-text">Намекнуть о подарке</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="product-info__box-item">
+											<div class="product-info__link">
+												<a href="/" class="product-info__link-wrap">
+													<span class="product-info__link-icon">
+														<img data-src="images/ic_message.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+	
+													<span class="product-info__link-text">Написать менеджеру</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-info__links _flex">
+									<div class="product-info__link">
+										<a href="/" class="product-info__link-wrap">
+											<span class="product-info__link-icon">
+												<img data-src="images/ic_link1.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+
+											<span class="product-info__link-text">Доставка и оплата</span>
+										</a>
+									</div>
+									<div class="product-info__link">
+										<div class="product-info__link-wrap">
+											<span class="product-info__link-icon">
+												<img data-src="images/ic_link2.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+
+											<span class="product-info__link-text">7 дней на возврат</span>
+										</div>
+									</div>
+									<div class="product-info__link">
+										<div class="product-info__link-wrap">
+											<span class="product-info__link-icon">
+												<img data-src="images/ic_link3.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</span>
+
+											<span class="product-info__link-text">15 дней на обмен</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="product-info__feature">
+									<div class="product-info__features-title">Характеристики</div>
+
+									<div class="features features_marg">
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">Цвет</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">Лазурный</div>
+										</div>
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">Покрытие</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">Желтое золото 750 пробы</div>
+										</div>
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">Эмаль</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">Лазурная холодное нанесение</div>
+										</div>
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">Основа</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">Медь</div>
+										</div>
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">ШxГ</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">13×1,5 мм</div>
+										</div>
+										<div class="features__feature _flex">
+											<div class="features__feature-box">
+												<div class="features__feature-name">Вес</div>
+
+												<div class="features__feature-border"></div>
+											</div>
+
+											<div class="features__feature-val">10,8 г.</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="product-info__desc">
+									<div class="product-info__desc-title">Все кольца бренда VAROVA приложены к Стене Плача в Иерусалиме</div>
+
+									<div class="text-block product-info__desc-text-block">
+										<p>Коллекция «Дом/Машина» – символ стабильности, успеха и исполнения материальных желаний. Эти украшения несут в себе энергию достатка и уверенности, помогая вам обрести желаемое: просторный дом, уютное жилье или автомобиль мечты. Они напоминают, что богатство начинается с внутреннего состояния, а затем проявляется в реальности.</p>
+									</div>
+								</div>
+
+
+								<div class="product-info-bonus">
+									<div class="product-info-bonus__items _flex">
+										<div class="product-info-bonus__item">
+											<a href="/" class="product-info-bonus__link">
+												<span class="product-info-bonus__img">
+													<img data-src="images/tmp/bonus_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-info-bonus__desc">
+													Красная Иерусалимская нить <br>в подарок
+												</span>
+											</a>
+										</div>
+										<div class="product-info-bonus__item">
+											<a href="/" class="product-info-bonus__link">
+												<span class="product-info-bonus__img">
+													<img data-src="images/tmp/bonus_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-info-bonus__desc">
+													Украшения упакованы <br>в брендовую коробочку
+												</span>
+											</a>
+										</div>
+										<div class="product-info-bonus__item">
+											<a href="/" class="product-info-bonus__link">
+												<span class="product-info-bonus__img">
+													<img data-src="images/tmp/bonus_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="product-info-bonus__desc">
+													У каждого клиента есть возможность <br>написать записку с желанием к Стене Плача
+												</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
