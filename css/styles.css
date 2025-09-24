@@ -4801,25 +4801,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     height: 520px;
 }
 
-.product-thumbs .slider-button-prev
+.product-thumbs .slider-button-next
 {
 	top: auto;
     bottom: 20px;
-    left: 50%;
-	margin-left: -18px;
-	margin-top: 0;
-}
-
-.product-thumbs .slider-button-prev svg
-{
-    transform: rotate(-90deg);
-	margin-top: -3px;
-}
-
-
-.product-thumbs .slider-button-next
-{
-    top: 20px;
     right: 50%;
 	margin-right: -18px;
 	margin-top: 0;
@@ -4827,7 +4812,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .product-thumbs .slider-button-next svg
 {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+	margin-top: 3px;
+}
+
+
+.product-thumbs .slider-button-prev
+{
+    top: 20px;
+    left: 50%;
+	margin-left: -18px;
+	margin-top: 0;
+}
+
+.product-thumbs .slider-button-prev svg
+{
+    transform: rotate(90deg);
 	margin-top: 0;
 }
 
