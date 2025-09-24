@@ -188,6 +188,13 @@
 		width: 400px;
 	}
 
+
+	.product-info__price, 
+	.product-info__old-price 
+	{
+		font-size: 21px;
+	}
+
 	/*------------
 		commit
 	------------*/

@@ -820,6 +820,31 @@
 		right: auto;
 		left: 0;
 	}
+
+
+	.product-info__images
+	{
+		width: 68%;
+        margin: 0 auto;
+	}
+
+	.product-thumbs 
+	{
+		width: 100px;
+		height: 520px;
+	}
+
+	.product-images 
+	{
+		position: relative;
+		width: calc(100% - 105px);
+	}
+
+	.product-info__info
+	{
+		width: 100%;
+		margin-top: 40px;
+	}
 	/*------------
 		commit
 	------------*/

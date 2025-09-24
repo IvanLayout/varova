@@ -78,6 +78,22 @@
 	{
 		aspect-ratio: 350 / 380;
 	}
+
+
+	.product-info__select-name
+	{
+		font-size: 16px;
+	}
+
+	.select-wrap._width
+	{
+		width: 140px;
+	}
+
+	.product-info .btn-black
+	{
+		line-height: 40px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -128,6 +144,21 @@
 
 @media (max-width: 389px)
 {
+
+	.mini-modal__btn-product
+	{
+		padding-right: 40px;
+	}
+
+	.mini-modal__btn-product::before
+	{
+		right: 20px;
+	}
+
+	/*------------
+		commit
+	------------*/
+
 	.first-section__title {
 		font-size: 46px;
 	}

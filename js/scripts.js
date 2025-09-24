@@ -267,8 +267,8 @@ $(() => {
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
 			spaceBetween: 5,
-			slidesPerView: 8,
-			direction: 'vertical',
+			slidesPerView: 'auto',
+			direction: 'horizontal',
 			loop: false,
 			speed: 500,
 			watchOverflow: true,
@@ -278,21 +278,15 @@ $(() => {
 				prevEl: '.slider-button-prev'
 			},
 			breakpoints: {
+				'320': {
+					spaceBetween: 5,
+					slidesPerView: 'auto',
+					direction: 'horizontal',
+				},
 				'768': {
 					spaceBetween: 5,
-					slidesPerView: 8
-				},
-				'1024': {
-					spaceBetween: 5,
-					slidesPerView: 7
-				},
-				'1320': {
-					spaceBetween: 5,
-					slidesPerView: 5
-				},
-				'1760': {
-					spaceBetween: 5,
-					slidesPerView: 5
+					slidesPerView: 5,
+					direction: 'vertical',
 				}
 			}
 		})
@@ -304,13 +298,6 @@ $(() => {
 			watchOverflow: true,
 			thumbs: {
 				swiper: galleryThumbs
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true,
 			}
 		})
 	}

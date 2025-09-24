@@ -1654,7 +1654,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .select-wrap._width
 {
-	min-width: 160px;
+	width: 160px;
 }
 
 .select-wrap .form__label
@@ -4939,11 +4939,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: calc(100% - 105px);
 }
 
-.product-images .slider-pagination
-{
-    display: none;
-}
-
 .product-images__img
 {
     position: relative;
@@ -5048,6 +5043,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	text-transform: none;
 }
 
+.product-info__favorite-box
+{
+	margin-left: auto;
+}
+
 .product-info__favorite-btn
 {
 	display: flex;
@@ -5055,8 +5055,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-
-	margin-left: auto;
 	font-size: 14px;
 
 	height: 20px;
@@ -5153,6 +5151,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	border-radius: 8px;
 	padding: 10px 40px 40px;
 	margin-top: 40px;
+
+	border: 1px solid #000;
 }
 
 .product-info__box
@@ -5240,7 +5240,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 0 20px;
 
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
@@ -5347,7 +5347,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 0 20px;
 
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
@@ -5410,7 +5410,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 
 	transition: .2s linear;
 	position: relative;
@@ -5424,6 +5424,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	border-bottom: 1px dashed currentColor;
 	transition: border .2s linear;
+	white-space: nowrap;
 }
 
 .product-info__link-icon
@@ -5548,8 +5549,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .features__feature
 {
 	justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .features__feature + .features__feature
@@ -6974,6 +6975,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	{
 		width: 380px;
 		height: 380px;
+	}
+
+
+	.product-info__info 
+	{
+		width: calc(63.6% - 30px);
 	}
 
 	/*------------

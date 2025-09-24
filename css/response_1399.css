@@ -123,6 +123,45 @@
 		width: calc(100% - 470px);
 	}
 
+
+	.product-thumbs 
+	{
+		width: 80px;
+		height: 420px;
+	}
+
+	.product-images 
+	{
+		width: calc(100% - 85px);
+	}
+
+	.product-info__bg
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.product-info__box
+	{
+		margin-left: -20px;
+	}
+
+	.product-info__box-item
+	{
+		margin-left: 20px;
+	}
+
+	.product-info__price,
+	.product-info__old-price
+	{
+		font-size: 19px;
+	}
+
+	.product-info__links .product-info__link 
+	{
+		width: calc(100% / 3 - 30px);
+	}
+
 	/*------------
 		commit
 	------------*/
