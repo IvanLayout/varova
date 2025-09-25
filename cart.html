@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>VAROVA</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1399.css" media="(max-width: 1399px)">
+		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap wrap_inner">
+			<!-- Шапка -->
+			<header class="header">
+				<div class="cont _flex">
+					<div class="header__logo header__logo-mob">
+						<a href="/">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="header-catalog">
+						<button type="button" class="header-catalog__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#rings"></use>
+							</svg>
+							Каталог
+						</button>
+					</div>
+
+					<div class="header__wrap">
+						<div class="header__wrap-top">
+							<div class="header__wrap-logo">
+								<img data-src="images/logo.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+
+							<button type="button" class="header__wrap-close"></button>
+						</div>
+
+						<div class="nav-menu _flex">
+							<div class="nav-menu__box _flex">
+								<div class="nav-menu__item">
+									<a href="/">О компании</a>
+								</div>
+								<div class="nav-menu__item">
+									<a href="/">Преимущества</a>
+								</div>
+								<div class="nav-menu__item">
+									<a href="/">Покупателю</a>
+								</div>
+							</div>
+	
+							<div class="header__logo">
+								<a href="/">
+									<img src="images/logo.svg" alt="">
+								</a>
+							</div>
+							
+							<div class="nav-menu__box _flex">
+								<div class="nav-menu__item">
+									<a href="/">Оплата и доставка</a>
+								</div>
+								<div class="nav-menu__item">
+									<a href="/">Акции</a>
+								</div>
+								<div class="nav-menu__item">
+									<a href="/">Контакты</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="socials header__socials _flex">
+							<a href="/" target="_blank" class="socials-link">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_soc1"></use>
+								</svg>
+							</a>
+							<a href="/" target="_blank" class="socials-link">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_soc2"></use>
+								</svg>
+							</a>
+							<a href="/" target="_blank" class="socials-link">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_soc3"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="main-contacts header__contacts">
+							<div class="main-contacts__title">Звонок по России бесплатный</div>
+
+							<div class="main-contacts__phone">
+								<a href="tel:88008823083">8 800 882-30-83</a>
+							</div>
+
+							<div class="main-contacts__email">
+								<a href="mailto:info@alexandrova.ru" class="header-mob__mail">info@alexandrova.ru</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__btns _flex">
+						<button type="button" class="header__btn">
+							<svg width="17" height="17">
+								<use xlink:href="images/sprite.svg#lupa"></use>
+							</svg>
+						</button>
+						<a href="/" class="header__btn">
+							<svg width="15" height="17">
+								<use xlink:href="images/sprite.svg#user"></use>
+							</svg>
+						</a>
+						<a href="/" class="header__btn">
+							<svg width="19" height="17">
+								<use xlink:href="images/sprite.svg#favorite"></use>
+							</svg>
+						</a>
+						<a href="/" class="header__btn">
+							<svg width="16" height="17">
+								<use xlink:href="images/sprite.svg#cart"></use>
+							</svg>
+						</a>
+						<button type="button" class="header__btn header__btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<div class="header-cats">
+				<div class="cont">
+					<div class="header-cats__top">
+						<div class="header-cats__logo">
+							<img data-src="images/logo.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</div>
+
+						<button type="button" class="header-cats__close"><span>Каталог</span></button>
+					</div>
+
+					<div class="header-cats__wrap">
+						<div class="header-cats__title">Каталог товаров</div>
+
+						<div class="header-cats__items _flex">
+							<div class="header-cats__item">
+								<div class="header-cats__name header-cats__item-open">Кольца</div>
+
+								<div class="header-cats__data">
+									<div class="header-cats__link">
+										<a href="/">Все кольца</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Широкие кольца</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кольца “Ажурная коллекция”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Зеркальная коллекция</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Узкие кольца</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кольца “7 желаний”</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-cats__item">
+								<div class="header-cats__name header-cats__item-open">Серьги</div>
+
+								<div class="header-cats__data">
+									<div class="header-cats__link">
+										<a href="/">Все серьги</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Серьги “2 желания”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Cерьги пусеты</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Серьги желаний</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Серьги “Ажурная коллекция”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Серьги “Сердце”</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-cats__item">
+								<div class="header-cats__name header-cats__item-open">Кулоны</div>
+
+								<div class="header-cats__data">
+									<div class="header-cats__link">
+										<a href="/">Все кулоны</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кулоны “Ажурная коллекция”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кулон “Сердце двойное желание”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кулон-кольцо</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кулон желаний “Сердце”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Кулон “Судьба”</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-cats__item">
+								<div class="header-cats__name header-cats__item-open">Браслеты</div>
+
+								<div class="header-cats__data">
+									<div class="header-cats__link">
+										<a href="/">Все браслеты</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Браслеты “11 желаний”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Браслет “Азбука Морзе”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Широкие браслеты</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Браслеты на шнурке</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Браслеты “Сердце”</a>
+									</div>
+									<div class="header-cats__link">
+										<a href="/">Красная нить</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-cats__item">
+								<div class="header-cats__name">
+									<a href="/">Крестики</a>
+								</div>
+
+								<div class="header-cats__name">
+									<a href="/">Платки</a>
+								</div>
+
+								<div class="header-cats__name">
+									<a href="/">Хранение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="overlay-catalog"></div>
+
+			<!-- End Шапка -->
+
+			<div class="main">
+				<section class="head-page">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a><span class="breadcrumbs_sep"></span>Корзина
+						</div>
+
+						<h1 class="page-title">Корзина</h1>
+					</div>
+				</section>
+
+
+				<section class="_marg">
+					<div class="cont">
+						<table class="cart-table">
+							<tbody>
+								<tr>
+									<td class="cart-table__thumb">
+										<a href="/" class="cart-table__img">
+											<img src="images/tmp/product_cart1.jpg" alt="">
+										</a>
+									</td>
+									<td class="cart-table__info">
+										<div class="cart-table__code"><span>Артикул:</span> MLD543897</div>
+
+										<div class="cart-table__name">
+											<a href="/">Кольцо желаний «Дом / машина»</a>
+										</div>
+									</td>
+									<td class="cart-table__size">
+										<div class="cart-table__select">
+											<div class="cart-table__select-name">Размер:</div>
+
+											<div class="select-wrap">
+												<select>
+													<option value="1">16.5</option>
+													<option value="2">17</option>
+													<option value="3">17.5</option>
+													<option value="4">18</option>
+												</select>
+											</div>
+										</div>
+									</td>
+									<td class="cart-table__size">
+										<div class="cart-table__select">
+											<div class="cart-table__select-name">Количество:</div>
+
+											<div class="select-wrap">
+												<select>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											</div>
+										</div>
+									</td>
+									<td class="cart-table__prices">
+										<div class="cart-table__prices-box">
+											<div class="cart-table__old-price">25 500 ₽</div>
+
+											<div class="cart-table__price">25 500 ₽</div>
+										</div>
+									</td>
+									<td class="cart-table__delete">
+										<button type="button" class="cart-table__delete-btn">
+											<svg>
+												<use xlink:href="#ic_delete"></use>
+											</svg>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+
+				<section class="products _marg">
+					<div class="cont">
+						<div class="main-title _pad-right">Возможно Вам будет интересно</div>
+						
+						<div class="products-slider swiper_visible swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="product__img lazyload">
+
+										<span class="product__top _flex">
+											<button type="button" class="favorite-btn favorite-js">
+												<img data-src="images/ic_favorite.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</button>
+										</span>
+
+										<span class="product__bot _flex">
+											<span class="product__boxl">
+												<span class="product__title">Кольцо желаний</span>
+
+												<span class="product__name">«Любовь»</span>
+											</span>
+
+											<span class="product__boxr">
+												<button type="button" class="cart-btn cart-js">
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</button>
+
+												<span class="product__old-price">27 500 ₽</span>
+
+												<span class="product__price">27 500 ₽</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<img data-src="images/tmp/product7.jpg" src="images/img_plug.png" alt="" class="product__img lazyload">
+
+										<span class="product__top _flex">
+											<span class="stickers">
+												<span class="stickers__sticker">
+													<span>акция</span>
+												</span>
+											</span>
+
+											<button type="button" class="favorite-btn favorite-js">
+												<img data-src="images/ic_favorite.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</button>
+										</span>
+
+										<span class="product__bot _flex">
+											<span class="product__boxl">
+												<span class="product__title">Кольцо желаний</span>
+
+												<span class="product__name">«Любовь»</span>
+											</span>
+
+											<span class="product__boxr">
+												<button type="button" class="cart-btn cart-js">
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</button>
+
+												<span class="product__old-price">27 500 ₽</span>
+
+												<span class="product__price">27 500 ₽</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<img data-src="images/tmp/product8.jpg" src="images/img_plug.png" alt="" class="product__img lazyload">
+
+										<span class="product__top _flex">
+											<span class="stickers">
+												<span class="stickers__sticker">
+													<span>акция</span>
+												</span>
+											</span>
+
+											<button type="button" class="favorite-btn favorite-js">
+												<img data-src="images/ic_favorite.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</button>
+										</span>
+
+										<span class="product__bot _flex">
+											<span class="product__boxl">
+												<span class="product__title">Кольцо желаний</span>
+
+												<span class="product__name">«Любовь»</span>
+											</span>
+
+											<span class="product__boxr">
+												<button type="button" class="cart-btn cart-js">
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</button>
+
+												<span class="product__old-price">27 500 ₽</span>
+
+												<span class="product__price">27 500 ₽</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<img data-src="images/tmp/product9.jpg" src="images/img_plug.png" alt="" class="product__img lazyload">
+
+										<span class="product__top _flex">
+											<span class="stickers">
+												<span class="stickers__sticker">
+													<span>акция</span>
+												</span>
+											</span>
+
+											<button type="button" class="favorite-btn favorite-js">
+												<img data-src="images/ic_favorite.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</button>
+										</span>
+
+										<span class="product__bot _flex">
+											<span class="product__boxl">
+												<span class="product__title">Кольцо желаний</span>
+
+												<span class="product__name">«Любовь»</span>
+											</span>
+
+											<span class="product__boxr">
+												<button type="button" class="cart-btn cart-js">
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</button>
+
+												<span class="product__old-price">27 500 ₽</span>
+
+												<span class="product__price">27 500 ₽</span>
+											</span>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="product">
+										<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="product__img lazyload">
+
+										<span class="product__top _flex">
+											<button type="button" class="favorite-btn favorite-js">
+												<img data-src="images/ic_favorite.svg" src="images/img_plug.png" alt="" class="lazyload">
+											</button>
+										</span>
+
+										<span class="product__bot _flex">
+											<span class="product__boxl">
+												<span class="product__title">Кольцо желаний</span>
+
+												<span class="product__name">«Любовь»</span>
+											</span>
+
+											<span class="product__boxr">
+												<button type="button" class="cart-btn cart-js">
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</button>
+
+												<span class="product__old-price">27 500 ₽</span>
+
+												<span class="product__price">27 500 ₽</span>
+											</span>
+										</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="slider-button-prev _top">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_arrow"></use>
+								</svg>
+							</div>
+							<div class="slider-button-next _top">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_arrow"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont">
+					<div class="footer__cols _flex">
+						<div class="footer__col">
+							<div class="footer__logo">
+								<a href="/">
+									<img data-src="images/lofo_footer.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+							</div>
+
+							<div class="footer__desc">
+								Каждое украшение имеет свое предназначение и приложено к Стене Плача на исполнение определенного желания
+							</div>
+
+							<div class="socials footer__socials _flex">
+								<a href="/" target="_blank" class="socials-link">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc1"></use>
+									</svg>
+								</a>
+								<a href="/" target="_blank" class="socials-link">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc2"></use>
+									</svg>
+								</a>
+								<a href="/" target="_blank" class="socials-link">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc3"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="footer__col _mob-width">
+							<div class="footer__title">Каталог</div>
+
+							<div class="footer__menu _flex">
+								<div class="footer__item">
+									<a href="/">Кольца</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Серьги</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Кулоны</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Крестики</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Платки</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Браслеты</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Паучи</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__col _mob-width">
+							<div class="footer__title">Покупателю</div>
+
+							<div class="footer__menu _flex">
+								<div class="footer__item">
+									<a href="/">О компании</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Преимущества</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Оплата и доставка</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Путь и желания</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Новости</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Предназначение</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Контакты</a>
+								</div>
+								<div class="footer__item">
+									<a href="/">Акции</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__cols _flex">
+						<div class="footer__col">
+							<div class="main-contacts">
+								<div class="main-contacts__title">Звонок по России бесплатный</div>
+
+								<div class="main-contacts__phone">
+									<a href="tel:88008823083">8 800 882-30-83</a>
+								</div>
+
+								<div class="main-contacts__email">
+									<a href="mailto:info@alexandrova.ru" class="header-mob__mail">info@alexandrova.ru</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="footer__col _flex">
+							<div class="footer__box">
+								<div class="footer__title">Адрес компании</div>
+
+								<div class="footer__info">
+									193231, г. Москва, <br>ул. Строителей д. 3/1 <br>офис 301
+								</div>
+							</div>
+
+							<div class="footer__box">
+								<div class="footer__title">График работы</div>
+
+								<div class="footer__info">Ежедневно <br>с 08:00 до 20:00</div>
+							</div>
+						</div>
+						
+						<div class="footer__col">
+							<div class="footer__title">Подписаться на рассылку</div>
+
+							<form action="" class="form-subscribe">
+								<div class="form-subscribe__desc">Оставайтесь в курсе последних событий, новых предложений и специальных акций.</div>
+
+								<button type="submit" class="btn-black form-subscribe__submit">Подписаться</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="footer__cols">
+						<div class="footer__links _flex">
+							<div class="footer__link">
+								<a href="/" target="_blank">Публичная оферта</a>
+							</div>
+							<div class="footer__link">
+								<a href="/" target="_blank">Политика конфиденциальности</a>
+							</div>
+							<div class="footer__link">
+								<a href="/" target="_blank">Условия использования</a>
+							</div>
+							<div class="footer__link">
+								<a href="/" target="_blank">Карта сайта</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__cols">
+						<div class="footer__bot _flex">
+							<div class="footer__copy">Правовая информация &copy; 2018–2023 VAROVA</div>
+
+							<div class="footer__creator">
+								Дизайн, разработка сайта
+
+								<a href="/" class="footer__creator-img">
+									<img src="images/logo_creator.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div id="callback" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Заказать звонок</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__line">
+						<div class="form__label">Ваше имя</div>
+
+						<div class="form__field">
+							<input type="text" value="" placeholder="Например, Иван Иванов..." class="form__input">
+						</div>
+					</div>
+
+					<div class="form__line">
+						<div class="form__label">Ваш номер телефона / WhatsApp / Telegram</div>
+
+						<div class="form__field">
+							<input type="tel" value="" placeholder="+7 (___) ___-__-__" data-mask="+7 (999) 999-99-99" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-green">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="write_us" class="modal">
+			<div class="modal__wrap">
+				<div class="modal__title">Напишите нам</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__line">
+						<div class="form__label">Ваше имя</div>
+
+						<div class="form__field">
+							<input type="text" value="" placeholder="Например, Иван Иванов..." class="form__input">
+						</div>
+					</div>
+
+					<div class="form__line">
+						<div class="form__label">Ваше сообщение</div>
+
+						<div class="form__field">
+							<textarea class="form__textarea"></textarea>
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-green">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
