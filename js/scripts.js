@@ -56,6 +56,52 @@ $(() => {
 		})
 	}
 
+	if ($('.cart-products__slider').length) {
+		new Swiper('.cart-products__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 16,
+					slidesPerView: 4,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+			}
+		})
+	}
+
 	if ($('.choose-slider').length) {
 		new Swiper('.choose-slider', {
 			loop: false,

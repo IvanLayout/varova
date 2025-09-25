@@ -308,7 +308,7 @@
 				</section>
 
 
-				<section class="_marg">
+				<section class="section-cart _marg">
 					<div class="cont">
 						<table class="cart-table">
 							<tbody>
@@ -329,7 +329,7 @@
 										<div class="cart-table__select">
 											<div class="cart-table__select-name">Размер:</div>
 
-											<div class="select-wrap">
+											<div class="select-wrap cart-table__w">
 												<select>
 													<option value="1">16.5</option>
 													<option value="2">17</option>
@@ -363,13 +363,259 @@
 									<td class="cart-table__delete">
 										<button type="button" class="cart-table__delete-btn">
 											<svg>
-												<use xlink:href="#ic_delete"></use>
+												<use xlink:href="images/sprite.svg#ic_delete"></use>
+											</svg>
+										</button>
+									</td>
+								</tr>
+								<tr class="cart-table__delete-product">
+									<td class="cart-table__thumb">
+										<a href="/" class="cart-table__img">
+											<img src="images/tmp/product_cart2.jpg" alt="">
+										</a>
+									</td>
+									<td class="cart-table__info">
+										<div class="cart-table__code"><span>Артикул:</span> MLD543897</div>
+
+										<div class="cart-table__name">
+											<a href="/">Кольцо желаний «Дом / машина»</a>
+										</div>
+									</td>
+									<td class="cart-table__size"></td>
+									<td class="cart-table__size"></td>
+									<td class="cart-table__prices">
+										<div class="cart-table__product-removed">Товар удален</div>
+									</td>
+									<td class="cart-table__delete">
+										<button type="button" class="cart-table__delete-btn">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_arrow_return"></use>
+											</svg>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="cart-table__thumb">
+										<a href="/" class="cart-table__img">
+											<img src="images/tmp/product_cart3.jpg" alt="">
+										</a>
+									</td>
+									<td class="cart-table__info">
+										<div class="cart-table__code"><span>Артикул:</span> MLD543897</div>
+
+										<div class="cart-table__name">
+											<a href="/">Кольцо желаний «Роскошь»</a>
+										</div>
+									</td>
+									<td class="cart-table__size">
+										<div class="cart-table__select">
+											<div class="cart-table__select-name">Размер:</div>
+
+											<div class="select-wrap cart-table__w">
+												<select>
+													<option value="1">16.5</option>
+													<option value="2">17</option>
+													<option value="3">17.5</option>
+													<option value="4">18</option>
+												</select>
+											</div>
+										</div>
+									</td>
+									<td class="cart-table__size">
+										<div class="cart-table__select">
+											<div class="cart-table__select-name">Количество:</div>
+
+											<div class="select-wrap">
+												<select>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+												</select>
+											</div>
+										</div>
+									</td>
+									<td class="cart-table__prices">
+										<div class="cart-table__prices-box">
+											<div class="cart-table__old-price">25 500 ₽</div>
+
+											<div class="cart-table__price">25 500 ₽</div>
+										</div>
+									</td>
+									<td class="cart-table__delete">
+										<button type="button" class="cart-table__delete-btn">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_delete"></use>
 											</svg>
 										</button>
 									</td>
 								</tr>
 							</tbody>
 						</table>
+
+						<div class="section-cart__items _flex">
+							<div class="section-cart__item">
+								<form action="" class="form-code">
+									<div class="form-code__flex _flex">
+										<input type="text" name="" value="" placeholder="Промокод" class="form-code__input">
+	
+										<button type="submit" class="form-code__submit"></button>
+									</div>
+	
+									<div class="form-codes__cods _flex">
+										<button type="button" class="form-codes__btn">
+											<span class="form-codes__cod">LJKHFKJG</span>
+	
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_close"></use>
+											</svg>
+										</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="section-cart__item points">
+								<div class="points__title">Накоплено баллов</div>
+
+								<div class="points__flex _flex">
+									<div class="points__val">1 860</div>
+
+									<button type="button" class="points__btn btn-black">Списать</button>
+								</div>
+							</div>
+
+							<div class="section-cart__item free-ship">
+								<div class="free-ship__title">Бесплатная доставка</div>
+								
+								<div class="free-ship__desc">Еще <span>10 500 ₽</span>, и доставка будет бесплатно</div>
+
+								<div class="free-ship__range">
+									<div class="free-ship__line" style="width: 40%;"></div>
+								</div>
+
+								<div class="free-ship__val _flex">
+									<div>21 000 ₽</div>
+
+									<div>0 ₽</div>
+								</div>
+							</div>
+
+							<div class="section-cart__item total-cart">
+								<div class="total-cart__val">70 500 ₽</div>
+
+								<div class="total-cart__link">
+									<a href="/" class="btn-black">Быстрая покупка</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="cart-products _marg">
+					<div class="cont">
+						<div class="main-title _pad-right">К этому товару покупают</div>
+
+						<div class="cart-products__slider swiper_visible swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="cart-product">
+										<a href="/" class="cart-product__img">
+											<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+
+										<div class="cart-product__info">
+											<a href="/" class="cart-product__name">Кольцо желаний «Любовь»</a>
+
+											<div class="cart-product__prices _flex">
+												<div class="cart-product__old-price">27 500 ₽</div>
+
+												<div class="cart-product__price">27 500 ₽</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cart-product">
+										<a href="/" class="cart-product__img">
+											<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+
+										<div class="cart-product__info">
+											<a href="/" class="cart-product__name">Кольцо желаний «Любовь»</a>
+
+											<div class="cart-product__prices _flex">
+												<div class="cart-product__old-price">27 500 ₽</div>
+
+												<div class="cart-product__price">27 500 ₽</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cart-product">
+										<a href="/" class="cart-product__img">
+											<img data-src="images/tmp/product3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+
+										<div class="cart-product__info">
+											<a href="/" class="cart-product__name">Кольцо желаний «Любовь»</a>
+
+											<div class="cart-product__prices _flex">
+												<div class="cart-product__old-price">27 500 ₽</div>
+
+												<div class="cart-product__price">27 500 ₽</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cart-product">
+										<a href="/" class="cart-product__img">
+											<img data-src="images/tmp/product9.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+
+										<div class="cart-product__info">
+											<a href="/" class="cart-product__name">Кольцо желаний «Любовь»</a>
+
+											<div class="cart-product__prices _flex">
+												<div class="cart-product__old-price">27 500 ₽</div>
+
+												<div class="cart-product__price">27 500 ₽</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="cart-product">
+										<a href="/" class="cart-product__img">
+											<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+
+										<div class="cart-product__info">
+											<a href="/" class="cart-product__name">Кольцо желаний «Любовь»</a>
+
+											<div class="cart-product__prices _flex">
+												<div class="cart-product__old-price">27 500 ₽</div>
+
+												<div class="cart-product__price">27 500 ₽</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="slider-button-prev _top">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_arrow"></use>
+								</svg>
+							</div>
+							<div class="slider-button-next _top">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_arrow"></use>
+								</svg>
+							</div>
+						</div>
 					</div>
 				</section>
 
