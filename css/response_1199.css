@@ -282,6 +282,34 @@
 	{
 		width: 100%;
 	}
+
+
+	.cart-table__select,
+	.cart-table__prices-box
+	{
+		padding-right: 0;
+	}
+
+	.cart-table__size .cart-table__w
+	{
+		width: 150px;
+	}
+
+	
+	.form-code__flex 
+	{
+		width: 210px;
+	}
+
+	.free-ship 
+	{
+		max-width: 330px;
+	}
+
+	.total-cart__val
+	{
+		font-size: 30px;
+	}
 	/*------------
 		commit
 	------------*/

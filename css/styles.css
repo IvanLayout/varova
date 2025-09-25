@@ -1944,6 +1944,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	padding-right: 110px;
 }
+
+.main-title._pad-right-mob
+{
+	padding-right: 110px;
+}
 /*--------------
     Fancybox
 --------------*/
@@ -5859,7 +5864,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 14px;
 }
 
-.cart-table__prices
+.cart-table__prices-box
 {
 	padding-right: 20px;
 }
@@ -6225,6 +6230,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	font-weight: 600;
 	white-space: nowrap;
+	font-size: 16px;
 }
 /*------------
     commit
@@ -7516,6 +7522,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		width: calc(63.6% - 30px);
 	}
 
+
+	.free-ship
+	{
+		max-width: 400px;
+	}
+
+	.total-cart__val
+	{
+		font-size: 38px;
+	}
 	/*------------
 		commit
 	------------*/

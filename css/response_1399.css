@@ -162,6 +162,16 @@
 		width: calc(100% / 3 - 30px);
 	}
 
+
+	.free-ship 
+	{
+        max-width: 350px;
+    }
+
+	.total-cart__val
+	{
+		font-size: 36px;
+	}
 	/*------------
 		commit
 	------------*/

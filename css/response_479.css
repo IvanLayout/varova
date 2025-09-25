@@ -94,6 +94,12 @@
 	{
 		line-height: 40px;
 	}
+
+
+	.cart-table__info
+	{
+		align-self: flex-start;
+	}
 	/*------------
 		commit
 	------------*/

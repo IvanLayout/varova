@@ -6,6 +6,10 @@
 		font-size: 30px;
 	}
 
+	.main-title._pad-right
+	{
+		padding-right: 0;
+	}
 
 	.header__logo-mob a
 	{
@@ -254,6 +258,75 @@
 	{
 		width: calc(100% / 1 - 20px);
 		margin-top: 10px;
+	}
+
+
+	.cart-table td
+	{
+		width: calc(50% - 10px);
+	}
+
+	.cart-table__select
+	{
+		display: block;
+	}
+
+	.cart-table__select-name
+	{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.cart-table__size .cart-table__w,
+	.cart-table__size .select-wrap
+	{
+		width: 100%;
+	}
+	
+	.cart-table__prices-box
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.cart-table__old-price
+	{
+		margin-right: 10px;
+	}
+
+	.cart-table__price
+	{
+		margin-top: 0;
+	}
+
+	.cart-table__delete-btn
+	{
+		margin-left: auto;
+	}
+
+
+	.section-cart__items
+	{
+		margin-top: 0;
+	}
+
+	.section-cart__item
+	{
+		width: 100%;
+		margin-top: 60px;
+	}
+
+	.points
+	{
+		text-align: left;
+	}
+
+	.points__flex
+	{
+		justify-content: flex-start;
 	}
 	/*------------
 		commit

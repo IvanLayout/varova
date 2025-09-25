@@ -195,6 +195,22 @@
 		font-size: 21px;
 	}
 
+
+	.form-code__flex
+	{
+		width: 280px;
+	}
+
+	.total-cart__val
+	{
+		font-size: 34px;
+	}
+
+	.cart-product__price
+	{
+		width: 100%;
+	}
+
 	/*------------
 		commit
 	------------*/
