@@ -306,6 +306,374 @@
 						<h1 class="page-title">Оформление заказа</h1>
 					</div>
 				</section>
+
+
+				<section class="checkout _marg">
+					<div class="cont">
+						<div class="checkout__flex _flex">
+							<div class="checkout__coll">
+								<div class="checkout__box">
+									<div class="checkout__title">Контактные данные</div>
+
+									<div class="checkout__wrap">
+										<form action="" class="form">
+											<div class="form__flex _flex">
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" placeholder="Как к вам обращаться?" class="form__input">
+													</div>
+												</div>
+	
+												<div class="form__line">
+													<div class="form__field">
+														<input type="mail" value="" placeholder="Ваш E-mail" class="form__input">
+													</div>
+												</div>
+							
+												<div class="form__line">
+													<div class="form__field">
+														<input type="tel" value="" placeholder="+7 (___) ___-__-__" data-mask="+7 (999) 999-99-99" class="form__input">
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<div class="checkout__box">
+									<div class="checkout__title">Выберите способ связи</div>
+
+									<div class="checkout__wrap">
+										<div class="radios _flex">
+											<div class="radios__item">
+												<div class="radio">
+													<label class="radio__label">
+														<input type="radio" name="radio_write">
+		
+														<span class="radio__text">Написать в Telegram</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="radios__item">
+												<div class="radio">
+													<label class="radio__label">
+														<input type="radio" name="radio_write" checked>
+		
+														<span class="radio__text">Написать в Whatsapp</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkout__box">
+									<div class="checkout__title">Тип доставки</div>
+
+									<div class="checkout__wrap">
+										<div class="radio-bigs _flex">
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_delivery">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">СДЭК</span>
+
+														<span class="radio-big__desc">до пункта выдачи (Россия)</span>
+													</span>
+												</label>
+											</div>
+
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_delivery">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Курьером</span>
+
+														<span class="radio-big__desc">для России</span>
+													</span>
+												</label>
+											</div>
+
+											<div class="radio-big">
+												<label class="radio-big__label">
+													<input type="radio" name="radio_delivery" checked>
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">EMC</span>
+
+														<span class="radio-big__desc">для СНГ</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkout__box">
+									<div class="checkout__title">Адрес доставки</div>
+
+									<div class="checkout__wrap">
+										<form action="" class="form">
+											<div class="form__flex _flex">
+												<div class="form__line">
+													<div class="select-wrap">
+														<select>
+															<option value="1">Россия</option>
+															<option value="2">Казахстан</option>
+															<option value="3">Монголия</option>
+															<option value="4">Турция</option>
+														</select>
+													</div>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" placeholder="193231" class="form__input">
+													</div>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" placeholder="Москва" class="form__input">
+													</div>
+												</div>
+											</div>
+
+											<div class="form__flex-w _flex">
+												<div class="form__line _big">
+													<div class="form__field">
+														<input type="text" value="" placeholder="улица Ленина" class="form__input">
+													</div>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" placeholder="12/1" class="form__input">
+													</div>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" placeholder="234" class="form__input">
+													</div>
+												</div>
+											</div>
+
+											<div class="form__line">
+												<div class="form__field">
+													<textarea placeholder="Домофон не работает" class="form__textarea"></textarea>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<div class="checkout__box">
+									<div class="checkout__title">Способ оплаты</div>
+
+									<div class="checkout__wrap">
+										<div class="radio-bigs _flex">
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Оплата картой</span>
+
+														<span class="radio-big__desc">Visa, Mastercard для России или оплата через Подели</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Яндекс Сплит и Яндекс ПЭЙ</span>
+
+														<span class="radio-big__desc">Оплата через сервис Яндекса</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment" checked>
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Оплата Долями</span>
+
+														<span class="radio-big__desc">
+															Оплата 4-мя равными платежами каждые 2 недели. Может быть сервисный сбор
+															<span><a href="/">подробнее</a></span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Рассрочка Тинькофф</span>
+
+														<span class="radio-big__desc">Оплата 4-мя равными платежами каждые 2 недели.</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Оплата иностранной картой</span>
+
+														<span class="radio-big__desc">Оплату любой иностранной картой, выпущенной за пределами РФ. Оплата производится в валюте.</span>
+													</span>
+												</label>
+											</div>
+											<div class="radio-big">
+												<label class="radio-big__label _height">
+													<input type="radio" name="radio_payment">
+
+													<span class="radio-big__wrap">
+														<span class="radio-big__name">Кредитной картой</span>
+
+														<span class="radio-big__desc">Visa, Mastercard или PayPal через PayPal</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__colr">
+								<div class="checkout-total">
+									<div class="checkout-total__title">Состав заказа</div>
+
+									<div class="checkout-total__items">
+										<div class="checkout-total__item">
+											<div class="checkout-total__top _flex">
+												<a href="/" class="checkout-total__img">
+													<img data-src="images/tmp/product10.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="checkout-total__info">
+													<div class="checkout-total__name">
+														<a href="/">Кольцо желаний «Дом / машина»</a>
+													</div>
+
+													<div class="checkout-total__box _flex">
+														<div class="checkout-total__val"><span>Размер:</span>16,5</div>
+
+														<div class="checkout-total__val"><span>Количество:</span>1</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="checkout-total__bot _flex">
+												<div class="checkout-total__old-price">25 500 ₽</div>
+
+												<div class="checkout-total__price">23 500 ₽</div>
+											</div>
+										</div>
+										<div class="checkout-total__item">
+											<div class="checkout-total__top _flex">
+												<a href="/" class="checkout-total__img">
+													<img data-src="images/tmp/product6.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="checkout-total__info">
+													<div class="checkout-total__name">
+														<a href="/">Кольцо желаний «Роскошь»</a>
+													</div>
+
+													<div class="checkout-total__box _flex">
+														<div class="checkout-total__val"><span>Размер:</span>16,5</div>
+
+														<div class="checkout-total__val"><span>Количество:</span>1</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="checkout-total__bot _flex">
+												<div class="checkout-total__old-price">25 500 ₽</div>
+
+												<div class="checkout-total__price">23 500 ₽</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="order-feature">
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Способ доставки</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">Курьером (СНГ)</div>
+										</div>
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Стоимость доставки</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">0 ₽</div>
+										</div>
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Способ оплаты</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">Оплата картой</div>
+										</div>
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Товары</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">70 500 ₽</div>
+										</div>
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Скидка</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">6 000 ₽</div>
+										</div>
+										<div class="order-feature__feature _flex">
+											<div class="order-feature__feature-box">
+												<div class="order-feature__feature-name">Бонусы</div>
+
+												<div class="order-feature__feature-border"></div>
+											</div>
+
+											<div class="order-feature__feature-val">-1 860 ₽</div>
+										</div>
+									</div>
+
+									<div class="checkout-total__agree">
+										Нажимая «Рассчитать платежи», «Оформить» или «Оплатить», вы соглашаетесь с условиями обработки моих персональных данных в соответствии с <a href="/">Политикой конфиденциальности</a>.
+									</div>
+
+									<div class="checkout-total__block _flex">
+										<div class="checkout-total__total-val">70 500 ₽</div>
+
+										<a href="/" class="btn-black">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 
 

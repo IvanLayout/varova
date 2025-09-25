@@ -7,7 +7,8 @@
 
 
 	.main-title,
-	.page-title 
+	.page-title,
+	.checkout-total__total-val
 	{
 		font-size: 34px;
 	}

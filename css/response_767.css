@@ -1,7 +1,8 @@
 @media (max-width: 767px)
 {
 	.main-title,
-	.page-title
+	.page-title,
+	.checkout-total__total-val
 	{
 		font-size: 30px;
 	}
@@ -327,6 +328,37 @@
 	.points__flex
 	{
 		justify-content: flex-start;
+	}
+
+
+	.form__flex .form__line 
+	{
+		width: calc(100% / 1 - 16px);
+	}
+
+	.form__flex-w .form__line._big 
+	{
+		width: calc(100% - 16px);
+	}
+
+	.form__flex-w .form__line 
+	{
+		width: calc(50% - 16px);
+	}
+
+	.radio-big 
+	{
+		width: calc(100% / 1 - 16px);
+	}
+
+	.radio-big__label._height 
+	{
+		min-height: 160px;
+	}
+
+	.checkout-total__title
+	{
+		font-size: 24px;
 	}
 	/*------------
 		commit
