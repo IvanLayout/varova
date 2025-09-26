@@ -360,6 +360,103 @@
 	{
 		font-size: 24px;
 	}
+
+
+	.lk-modal__btn
+	{
+		display: block;
+	}
+
+	.lk-modal__modal 
+	{
+		position: absolute;
+		top: calc(100% + 5px);
+		visibility: hidden;
+		pointer-events: none;
+		opacity: 0;
+		background: #fff;
+		width: 100%;
+	}
+
+	.lk-page__links
+	{
+		display: block;
+		border: 1px solid #DEDDDC;
+	}
+
+	.lk-page__link + .lk-page__link
+	{
+		margin-left: 0;
+		border-top: 1px solid #DEDDDC;
+	}
+
+	.lk-page__link a
+	{
+		padding: 15px;
+		border: none;
+	}
+
+	.lk-page__link a._active 
+	{
+		font-weight: 600;
+	}
+
+
+	.lk-page__form-flex
+	{
+		display: block;
+		max-width: 300px;
+	}
+
+	.lk-page__form-flex .form__line + .form__line
+	{
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.lk-page__form-flex .lk-page__form-flex-submit
+	{
+		margin-left: 0;
+		margin-top: 20px;
+		display: inline-block;
+	}
+
+
+	.orders-head
+	{
+		padding-right: 0;
+		justify-content: space-between;
+	}
+
+	.orders-head__item
+	{
+		width: auto;
+		padding-right: 0;
+	}
+
+	.orders-head__item:last-child
+	{
+		width: 100%;
+		padding-right: 30px;
+		margin-top: 10px;
+	}
+
+	.orders-head::after
+	{
+		top: auto;
+		bottom: 25px;
+		margin-top: 0;
+	}
+
+	.orders__col
+	{
+		width: 100%;
+	}
+
+	.orders__col + .orders__col
+	{
+		margin-top: 20px;
+	}
 	/*------------
 		commit
 	------------*/

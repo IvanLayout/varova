@@ -6785,7 +6785,31 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .lk-modal__btn
 {
+	font-size: 16px;
 	display: none;
+	position: relative;
+	padding: 20px 30px 20px 0;
+	border-bottom: 1px solid currentColor;
+	width: 100%;
+	text-align: left;
+}
+
+.lk-modal__btn:after 
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 14px;
+    height: 9px;
+    margin-top: -4px;
+    background: url(../images/ic_arrow2.svg) 50% / contain no-repeat;
+}
+
+.lk-modal__btn._active:after
+{
+	margin-top: -5px;
+    transform: rotate(180deg);
 }
 
 .lk-modal__modal
