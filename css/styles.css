@@ -6443,9 +6443,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
-.checkout-total 
+.checkout__bg
 {
-    padding: 40px;
+	padding: 40px;
     border-radius: 8px;
     background: #FFF;
 }
@@ -6460,6 +6460,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	padding: 20px 0;
 	border-bottom: 1px solid #DEDDDC;
+}
+
+.orders .checkout-total__item:last-child
+{
+	border-bottom: none;
 }
 
 .checkout-total__item:first-child
@@ -6541,6 +6546,23 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-left: 30px;
 }
 
+.checkout-total__info-bot
+{
+	margin-top: 5px;
+	align-items: center;
+	align-content: center;
+}
+
+.checkout-total__info-bot .checkout-total__old-price
+{
+	margin-right: 10px;
+}
+
+.checkout-total__info-bot .checkout-total__price
+{
+	font-size: 14px;
+}
+
 .checkout-total__bot
 {
 	margin-top: 20px;
@@ -6569,8 +6591,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .order-feature
 {
-	margin-top: 40px;
 	font-size: 14px;
+}
+
+.order-feature_marg
+{
+	margin-top: 40px;
 }
 
 .order-feature__feature
@@ -6908,6 +6934,124 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		color: #fff;
 		background: #2C2927;
 	}
+}
+
+
+.orders-head 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px 12px 20px 0;
+	font-size: 14px;
+    cursor: pointer;
+
+	border-bottom: 1px solid #DEDDDC;
+}
+
+.orders__item._active .orders-head,
+.orders__item:last-child .orders-head 
+{
+	border-bottom-color: transparent;
+}
+
+.orders-head::after
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+	width: 14px;
+	height: 9px;
+
+    margin-top: -4px;
+
+	background: url(../images/ic_arrow2.svg) 50%/contain no-repeat;
+}
+
+.accord__item._active .orders-head::after
+{
+	margin-top: -5px;
+    transform: rotate(180deg);
+}
+
+.orders-head__item
+{
+	width: calc(100%/3);
+	padding-right: 30px;
+}
+
+.orders-head__number
+{
+	white-space: nowrap;
+}
+
+.orders-head__status
+{
+	position: relative;
+	padding-left: 18px;
+}
+
+.orders-head__status::after
+{
+	position: absolute;
+	content: '';
+	top: 6px;
+	left: 0;
+
+	display: block;
+
+	width: 8px;
+	height: 8px;
+
+	background: #4A63E0;
+	border-radius: 50%;
+}
+
+.orders-head__status._completed::after
+{
+	background: #32A936;
+}
+
+.orders-head__price span
+{
+	white-space: nowrap;
+}
+
+.accord__data
+{
+    display: none;
+}
+
+.orders__data
+{
+	background: #EFEFEF;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+.orders__cols
+{
+	justify-content: space-between;
+}
+
+.orders__col
+{
+	width: calc(50% - 30px);
+}
+
+.orders__title
+{
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 500;
+	font-family: var(--font-family2);
+	margin-bottom: 15px;
 }
 /*------------
     commit
