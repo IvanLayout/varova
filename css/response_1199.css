@@ -402,4 +402,8 @@
 	.advantages-page__top-title{
 		font-size: 36px;
 	}
+
+	.advantages_bg:before{
+		display: none;
+	}
 }
