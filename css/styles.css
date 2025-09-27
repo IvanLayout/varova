@@ -2367,12 +2367,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     bottom: 0;
     left: 0;
 
-    margin-top: 52px;
-}
-
-.slider-pagination._bot-abs
-{
-    bottom: 30px;
+    margin-top: 34px;
 }
 
 .slider-pagination.swiper-pagination-lock
@@ -2385,30 +2380,25 @@ input[type=checkbox]:checked + .checkbox-btn__text
     position: relative;
 
     display: block;
-    flex-grow: 1;
 
-    max-width: 37px;
-    height: 3px;
+    height: 20px;
+	width: 20px;
     margin: 0;
     padding: 0;
 
-    border-radius: 3px;
-    background: rgba(5, 24, 36, .2);
+    border-radius: 50%;
+    background: #fff;
+	border: 6px solid #E5E9EB;
     box-shadow: none;
 
-    transition: background .2s linear, height .2s linear, width .2s linear;
+    transition: background .2s linear;
 
     appearance: none;
 }
 
-.slider-pagination.slider-pagination__white .slider-dot
-{
-    background: #FFF;
-}
-
 .slider-dot + .slider-dot
 {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .slider-pagination-clickable .slider-dot
@@ -2418,17 +2408,15 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (any-hover: hover)
 {
-    .slider-dot:hover,
-    .slider-pagination.slider-pagination__white .slider-dot:hover
+    .slider-dot:hover
     {
-        background: #4DBD3C;
+        background: #2C2927;
     }
 }
 
-.slider-dot.slider-dot_active,
-.slider-pagination.slider-pagination__white .slider-dot.slider-dot_active
+.slider-dot.slider-dot_active
 {
-    background: #4DBD3C;
+    background: #2C2927;
 }
 
 .swiper-scrollbar
@@ -8142,6 +8130,172 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		background-color: #282828;
 		color: #fff;
 	}
+}
+
+
+.advantages-page{
+	position: relative;
+	overflow: hidden;
+}
+
+.advantages-page__bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 100%;
+	pointer-events: none;
+}
+
+.advantages-page__pattern{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 2236px;
+	height: 2305px;
+	display: block;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.advantages-page::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #e0e2e1 0%, rgba(230, 238, 242, 0) 90%, #e4eef3 100%);
+}
+
+.advantages-page .cont{
+	z-index: 2;
+	max-width: 1480px;
+}
+
+.advantages-page__title{
+	margin: 0 auto;
+	max-width: 1056px;
+}
+
+.advantages-page .page-title{
+	max-width: 864px;
+}
+
+.advantages-page__top{
+	justify-content: space-between;
+	margin-top: 140px;
+	position: relative;
+}
+
+.advantages-page__top-coll{
+	width: 75%;
+	max-width: 1056px;
+}
+
+.advantages-page__top-title{
+	position: absolute;
+	left: 0;
+	top: 9%;
+	font-family: var(--font-family2);
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 1.1;
+	color: #2C2927;
+	width: calc(25.66% - 30px);
+	max-width: 250px;
+}
+
+.advantages-page__top-flex._flex{
+	justify-content: space-between;
+}
+
+.advantages-page__top-item{
+	width: 65%;
+	max-width: 672px;
+}
+
+.advantages-page__top-item img{
+	aspect-ratio: 1/1.335;
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.advantages-page__top-item._small{
+	width: calc(35% - 30px);
+	max-width: 288px;
+	align-self: flex-end;
+	margin-bottom: 12.5%;
+}
+
+.advantages-page__top-colr{
+	width: calc(25% - 30px);
+	max-width: 288px;
+	align-self: center;
+}
+
+.advantages-page__top-wrap .slider-pagination{
+	display: none;
+}
+
+.advantages-page__wrap .slider-pagination{
+	display: none;
+}
+
+.advantages-page__info{
+	margin: 140px auto 0;
+	max-width: 864px;
+
+	font-size: 21px;
+}
+
+.advantages-page__bot{
+	margin-top: 140px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.advantages-page__text{
+	position: absolute;
+	left: 0;
+	top: 17%;
+	width: calc(24% - 30px);
+	max-width: 288px;
+}
+
+.advantages-page__flex._flex{
+	justify-content: space-between;
+}
+
+.advantages-page__item{
+	width: 29%;
+	max-width: 384px;
+}
+
+.advantages-page__item._small{
+	width: calc(25% - 30px);
+	max-width: 288px;
+	align-self: flex-end;
+}
+
+.advantages-page__item._big{
+	width: calc(46% - 30px);
+	max-width: 576px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.advantages-page__item img{
+	aspect-ratio: 1/1.335;
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px;
 }
 /*------------
     footer

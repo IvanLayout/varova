@@ -521,4 +521,75 @@
 	.title-big{
 		font-size: 40px;
 	}
+
+	.page-title._big {
+		font-size: 40px;
+	}
+
+	.advantages-page__top-title{
+		font-size: 24px;
+	}
+
+	.advantages-page{
+		padding-top: 30px;
+	}
+
+	.advantages-page__top-title{
+		width: 100%;
+		position: static;
+		max-width: none;
+		margin-bottom: 40px;
+	}
+
+	.advantages-page__top-coll{
+		width: 100%;
+		order: 2;
+	}
+
+	.advantages-page__top-colr{
+		width: 100%;
+		margin-bottom: 40px;
+		max-width: none;
+	}
+
+	.advantages-page__top-item{
+		max-width: none;
+	}
+
+	.advantages-page__top-item._small{
+		max-width: none;
+	}
+
+	.advantages-page__top-wrap .slider-pagination{
+		display: flex;
+	}
+
+	.advantages-page__wrap .slider-pagination{
+		display: flex;
+	}
+
+
+	.advantages-page__item{
+		max-width: none;
+	}
+
+	.advantages-page__item._small{
+		max-width: none;
+	}
+
+	.advantages-page__item._big{
+		max-width: none;
+		padding: 0;
+	}
+
+	.advantages-page__top-wrap{
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.advantages-page__wrap{
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

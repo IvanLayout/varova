@@ -248,4 +248,25 @@
 	.main-info__title {
 		font-size: 100px;
 	}
+
+
+	.advantages-page__top-title{
+		top: 3%;
+	}
+
+	.advantages-page__top-item._small{
+		margin-bottom: 3%;
+	}
+
+	.advantages-page__top{
+		margin-top: 60px;
+	}
+
+	.advantages-page__info{
+		margin-top: 60px;
+	}
+
+	.advantages-page__bot{
+		margin-top: 60px;
+	}
 }

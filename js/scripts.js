@@ -424,6 +424,14 @@ $(() => {
 			})
 		})
 	}
+
+	if ($('.advantages-page__top-wrap').length){
+		advantagesSlider1()
+	}
+
+	if ($('.advantages-page__wrap').length){
+		advantagesSlider2()
+	}
 });
 
 
@@ -535,4 +543,88 @@ $(window).on('resize', () => {
 			})
 		})
 	}
+
+	if ($('.advantages-page__top-wrap').length){
+		advantagesSlider1()
+	}
+
+	if ($('.advantages-page__wrap').length){
+		advantagesSlider2()
+	}
 });
+
+function advantagesSlider1(){
+	if ( $(window).width() < 768 && !$('.advantages-page__top-wrap').hasClass('swiper-initialized') ) {
+		$('.advantages-page__top-wrap').addClass('swiper')
+		$('.advantages-page__top-flex').addClass('swiper-wrapper').removeClass('_flex')
+		$('.advantages-page__top-item').addClass('swiper-slide')
+
+		advantagesSliderImg1 = new Swiper('.advantages-page__top-wrap', {
+			loop: true,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+		})
+	} else if ($(window).width() > 767 && $('.advantages-page__top-wrap').hasClass('swiper-initialized')) {
+		advantagesSliderImg1.destroy(true, true)
+
+		$('.advantages-page__top-wrap').removeClass('swiper')
+		$('.advantages-page__top-flex').removeClass('swiper-wrapper').addClass('_flex')
+		$('.advantages-page__top-item').removeClass('swiper-slide')
+	}
+}
+
+function advantagesSlider2(){
+	if ( $(window).width() < 768 && !$('.advantages-page__wrap').hasClass('swiper-initialized') ) {
+		$('.advantages-page__wrap').addClass('swiper')
+		$('.advantages-page__flex').addClass('swiper-wrapper').removeClass('_flex')
+		$('.advantages-page__item').addClass('swiper-slide')
+
+		advantagesSliderImg2 = new Swiper('.advantages-page__wrap', {
+			loop: true,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+		})
+	} else if ($(window).width() > 767 && $('.advantages-page__wrap').hasClass('swiper-initialized')) {
+		advantagesSliderImg2.destroy(true, true)
+
+		$('.advantages-page__wrap').removeClass('swiper')
+		$('.advantages-page__flex').removeClass('swiper-wrapper').addClass('_flex')
+		$('.advantages-page__item').removeClass('swiper-slide')
+	}
+}

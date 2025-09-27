@@ -389,4 +389,17 @@
 	.title-big{
 		font-size: 60px;
 	}
+
+
+	.advantages-page__text{
+		top: 12%;
+	}
+
+	.page-title._big {
+		font-size: 60px;
+	}
+
+	.advantages-page__top-title{
+		font-size: 36px;
+	}
 }

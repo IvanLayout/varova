@@ -251,4 +251,21 @@
 	.discounts__item-box {
 		padding-left: 16px;
 	}
+
+
+	.advantages-page__top{
+		margin-top: 80px;
+	}
+
+	.advantages-page__top-item._small{
+		margin-bottom: 6%;
+	}
+
+	.advantages-page__info{
+		margin-top: 80px;
+	}
+
+	.advantages-page__bot{
+		margin-top: 80px;
+	}
 }
