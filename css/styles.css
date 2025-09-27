@@ -902,6 +902,22 @@ button
 	margin-bottom: 20px;
 }
 
+.text-block h1.big-title
+{
+	color: #2c2828;
+	font-size: 150px;
+    line-height: 1;
+    font-family: var(--font-family2);
+    font-weight: 400;
+
+	margin-bottom: 95px;
+}
+
+.big-title span
+{
+	padding-left: 190px;
+}
+
 .text-block h2
 {
     font-family: var(--font-family2);
@@ -920,36 +936,49 @@ button
 
 .text-block h3
 {
-    color: #051824;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.3;
+	font-family: var(--font-family2);
+    color: #2c2828;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
 
-    margin-bottom: 35px;
-
-    letter-spacing: -.02em;
+    margin-bottom: 20px;
 }
 
 .text-block * + h3
 {
-    margin-top: 25px;
+	margin-top: 30px;
 }
 
 .text-block h4
 {
-    color: #051824;
-    font-size: 20px;
+    font-family: var(--font-family2);
+    color: #2c2828;
+	font-size: 24px;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.1;
 
-	margin-bottom: 5px;
-
-    letter-spacing: -.02em;
+	margin-bottom: 20px;
 }
 
 .text-block * + h4
 {
-    margin-top: 25px;
+    margin-top: 30px;
+}
+
+.text-block h5
+{
+    color: #2c2828;
+	font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+
+	margin-bottom: 20px;
+}
+
+.text-block * + h5
+{
+    margin-top: 30px;
 }
 
 
@@ -1012,6 +1041,21 @@ button
 	object-fit: cover;
 	min-height: 100%;
 }
+
+
+.text-block__cols
+{
+	justify-content: space-between;
+	max-width: 1055px;
+}
+
+.text-block__col
+{
+	width: calc(50% - 8px);
+	max-width: 480px;
+}
+
+
 
 .text-block ol
 {
@@ -7397,6 +7441,52 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	flex-shrink: 0;
 	margin-left: 10px;
 }
+
+
+/*------------
+    about-page
+------------*/
+
+
+.about-page .cont
+{
+	max-width: 1480px;
+}
+
+.about-page__coll
+{
+	width: 170px;
+	padding-top: 40px;
+}
+
+.about-page__sub-title
+{
+	opacity: .75;
+	font-size: 14px;
+}
+
+.about-page__colr
+{
+	width: calc(100% - 190px);
+	margin-left: 20px;
+}
+
+.about-page__title
+{
+
+}
+
+/*------------
+    brand-concept
+------------*/
+
+.brand-concept__title
+{
+	font-family: var(--font-family2);
+	font-size: 70px;
+	line-height: 1;
+}
+
 /*------------
     commit
 ------------*/
