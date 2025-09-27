@@ -134,6 +134,12 @@
 		margin-left: 0;
 		margin-top: 5px;
 	}
+
+
+	.costumer-info__title
+	{
+		font-size: 18px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -203,6 +209,17 @@
 	.orders__data
 	{
 		padding: 20px;
+	}
+
+
+	.costumer-head__title
+	{
+		font-size: 38px;
+	}
+
+	.costumer-grid__card-name
+	{
+		font-size: 22px;
 	}
 
 	/*------------

@@ -994,6 +994,82 @@
 		width: 100%;
 		margin-top: 60px;
 	}
+
+
+	.costumer-head__col
+	{
+		width: 100%;
+	}
+
+	.costumer-head__col + .costumer-head__col
+	{
+		margin-top: 40px;
+	}
+
+
+	.costumer-grid
+	{
+		margin-left: 0;
+	}
+
+	.costumer-grid__head
+	{
+		margin-left: 0;
+		width: 100%;
+		float: none;
+		padding-top: 0;
+	}
+
+	.costumer-info__title
+	{
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.costumer-grid__cards
+	{
+		margin-top: 40px;
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+
+	.costumer-grid__items
+	{
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.costumer-grid__info._small
+	{
+		max-width: 100%;
+	}
+
+
+	.certs__item
+	{
+		width: calc(100%/2 - 16px);
+		padding: 30px;
+	}
+
+	.certs__bot
+	{
+		flex-wrap: nowrap;
+	}
+
+	.certs__price
+	{
+		font-size: 30px;
+	}
+
+	.certs__link 
+	{
+		width: auto;
+		margin-left: 10px;
+		margin-top: 0;
+	}
 	/*------------
 		commit
 	------------*/

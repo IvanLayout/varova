@@ -227,6 +227,12 @@
 	{
 		width: calc(50% - 15px);
 	}
+
+
+	.costumer-head__title 
+	{
+		font-size: 48px;
+	}
 	/*------------
 		commit
 	------------*/

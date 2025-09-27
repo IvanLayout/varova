@@ -184,6 +184,27 @@
 	{
         width: calc(100% / 2 - 16px);
     }
+
+	.costumer-head__title 
+	{
+        font-size: 52px;
+    }
+
+	.certs__item
+	{
+		padding: 20px;
+	}
+
+	.certs__price 
+	{
+        font-size: 26px;
+    }
+
+
+	.costumer-info__title
+	{
+		font-size: 21px;
+	}
 	/*------------
 		commit
 	------------*/

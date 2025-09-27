@@ -457,6 +457,22 @@
 	{
 		margin-top: 20px;
 	}
+
+
+	.certs__item
+	{
+		width: calc(100%/1 - 16px);
+	}
+
+	.certs__col
+	{
+		width: 100%;
+	}
+
+	.certs__col + .certs__col
+	{
+		margin-top: 10px;
+	}
 	/*------------
 		commit
 	------------*/

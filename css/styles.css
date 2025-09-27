@@ -7340,7 +7340,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .certs__col
 {
-	width: calc(50% - 5px);
+	width: calc(50% - 8px);
 }
 
 .certs__desc
@@ -7382,6 +7382,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+	flex-wrap: nowrap
 }
 
 .certs__price
@@ -7394,6 +7395,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .certs__link
 {
 	flex-shrink: 0;
+	margin-left: 10px;
 }
 /*------------
     commit
@@ -8556,6 +8558,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		padding: 40px;
 	}
 
+
+	.costumer-head__title
+	{
+		font-size: 64px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -8712,6 +8719,17 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	.checkout__colr 
 	{
 		width: 450px;
+	}
+
+
+	.costumer-head__title
+	{
+		font-size: 56px;
+	}
+
+	.certs__price
+	{
+		font-size: 28px;
 	}
 	/*------------
 		commit
