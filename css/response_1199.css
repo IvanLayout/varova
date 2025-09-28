@@ -373,6 +373,62 @@
 		margin-left: 0;
 		margin-top: 10px;
 	}
+
+
+	.about-page__coll
+	{
+		width: 150px;
+	}
+
+	.about-page__colr
+	{
+		width: calc(100% - 170px);
+	}
+
+
+	.text-block h5 
+	{
+		font-size: 18px;
+	}
+
+	.text-block h1.big-title 
+	{
+		font-size: 84px;
+	}
+
+	.big-title span 
+	{
+		padding-left: 105px;
+	}
+
+
+	.about-page__item-left
+	{
+		width: 280px;
+	}
+
+	.about-page__item-center 
+	{
+		width: calc(100% - 542px);
+		margin-left: 0;
+	}
+
+	.about-page__item-right
+	{
+		width: 230px;
+		padding-top: 60px;
+	}
+
+
+	.brand-concept__title 
+	{
+		font-size: 56px;
+	}
+
+	.brand-concept__big-box
+	{
+		margin-left: 30px;
+	}
 	/*------------
 		commit
 	------------*/

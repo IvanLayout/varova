@@ -473,6 +473,105 @@
 	{
 		margin-top: 10px;
 	}
+
+
+	.text-block h1.big-title 
+	{
+		font-size: 60px;
+	}
+
+	.text-block__col
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.text-block h5
+	{
+		font-size: 16px;
+	}
+
+
+	.about-page__items
+	{
+		margin-top: 10px;
+	}
+
+	.about-page__item-center 
+	{
+		width: calc(50% - 13px);
+	}
+
+	.about-page__item-right 
+	{
+		width: calc(50% - 13px);
+		padding-top: 0;
+	}
+
+
+	.about-page__contacts 
+	{
+		margin-top: 10px;
+	}
+
+
+	.brand-concept__wrap
+	{
+		padding-top: 650px;
+	}
+
+	.brand-concept__items
+	{
+		position: static;
+	}
+
+	.brand-concept__item
+	{
+		position: static;
+	}
+
+	.brand-concept__data
+	{
+		position: static;
+	}
+
+	.brand-concept__tabs
+	{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.brand-concept__info
+	{
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.brand-concept__small-box
+	{
+		position: relative;
+		top: 0;
+		width: 100%;
+		margin-top: 30px;
+
+		max-width: 440px;
+	}
+
+	.brand-concept__big-box
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+
+		max-width: 440px;
+	}
 	/*------------
 		commit
 	------------*/

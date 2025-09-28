@@ -1051,7 +1051,7 @@ button
 
 .text-block__col
 {
-	width: calc(50% - 8px);
+	width: calc(50% - 10px);
 	max-width: 480px;
 }
 
@@ -8895,6 +8895,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		width: calc(100% / 3 - 16px);
 	}
 
+
+	.text-block h1.big-title
+	{
+		font-size: 130px;
+	}
+
+	.big-title span 
+	{
+		padding-left: 160px;
+	}
+
+
+	.brand-concept__title
+	{
+		margin-top: 68px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -8993,6 +9009,43 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 
 	.costumer-head__title
+	{
+		font-size: 64px;
+	}
+
+
+	.text-block h1.big-title 
+	{
+        font-size: 120px;
+    }
+
+	.big-title span 
+	{
+        padding-left: 150px;
+    }
+
+
+	.about-page__items
+	{
+		margin-top: 60px;
+	}
+
+	.about-page__contacts
+	{
+		margin-top: 60px;
+	}
+
+	.brand-concept
+	{
+		margin-top: 80px;
+	}
+
+	.brand-concept__wrap
+	{
+		margin-top: 80px;
+	}
+
+	.brand-concept__title
 	{
 		font-size: 64px;
 	}
@@ -9163,6 +9216,24 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	.certs__price
 	{
 		font-size: 28px;
+	}
+
+
+	.text-block h1.big-title 
+	{
+        font-size: 110px;
+		margin-bottom: 60px;
+    }
+
+	.big-title span 
+	{
+        padding-left: 140px;
+    }
+
+
+	.brand-concept__title
+	{
+		width: calc(100% - 126px);
 	}
 	/*------------
 		commit

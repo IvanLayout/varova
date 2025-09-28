@@ -233,6 +233,22 @@
 	{
 		font-size: 48px;
 	}
+
+
+	.text-block h1.big-title
+	{
+		font-size: 96px;
+	}
+
+	.big-title span 
+	{
+		padding-left: 120px;
+	}
+
+	.brand-concept__big-box
+	{
+		max-width: 500px;
+	}
 	/*------------
 		commit
 	------------*/

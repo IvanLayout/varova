@@ -140,6 +140,42 @@
 	{
 		font-size: 18px;
 	}
+
+
+	.text-block h1.big-title 
+	{
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+
+
+	.about-page__item-center
+	{
+		width: 100%;
+		order: 3;
+		margin-top: 30px;
+	}
+
+	.about-page__item-right
+	{
+		width: 100%;
+	}
+
+
+	.brand-concept__wrap
+	{
+		padding-top: 525px;
+	}
+	
+	.brand-concept__big-box
+	{
+		max-width: 350px;
+	}
+
+	.brand-concept__small-box
+	{
+		max-width: 350px;
+	}
 	/*------------
 		commit
 	------------*/
@@ -221,6 +257,13 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.text-block h1.big-title 
+	{
+		font-size: 50px;
+	}
+	
 
 	/*------------
 		commit

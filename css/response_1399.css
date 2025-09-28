@@ -205,6 +205,47 @@
 	{
 		font-size: 21px;
 	}
+
+
+	.text-block h1.big-title
+	{
+		font-size: 100px;
+		margin-bottom: 40px;
+	}
+
+	.big-title span 
+	{
+        padding-left: 130px;
+    }
+
+	.text-block h5
+	{
+		font-size: 19px;
+	}
+
+
+	.about-page__items 
+	{
+        margin-top: 40px;
+    }
+
+
+	.about-page__contacts
+	{
+		margin-top: 40px;
+	}
+
+
+	.brand-concept__title 
+	{
+        font-size: 62px;
+    }
+
+
+	.brand-concept__wrap
+	{
+		margin-top: 60px;
+	}
 	/*------------
 		commit
 	------------*/
