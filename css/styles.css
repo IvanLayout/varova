@@ -2924,7 +2924,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 100%);
 }
 
-.product__info::after
+.product__bg::after
 {
 	height: 100%;
 	background: rgba(9, 9, 9, 0.5);
@@ -3935,7 +3935,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	z-index: 3;
 }
 
-.choose-size__link a
+.choose-size__link a,
+.choose-size__link button
 {
 	text-decoration: none;
 	transition: .2s linear;
@@ -3952,7 +3953,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (any-hover: hover) 
 {
-	.choose-size__link a:hover
+	.choose-size__link a:hover,
+	.choose-size__link button:hover
 	{
 		background: #6E6E6E;
 		color: #fff;

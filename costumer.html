@@ -410,7 +410,7 @@
 											</div>
 
 											<div class="costumer-grid__link">
-												<a href="/" class="btn-black">Подобрать размер</a>
+												<button type="button" data-content="#modal-size" class="btn-black modal-btn">Подобрать размер</button>
 											</div>
 										</div>
 									</div>
@@ -619,7 +619,7 @@
 
 				<section class="reviews _marg">
 					<div class="cont">
-						<div class="main-title _pad-right-mob">Сбывшиеся желания</div>
+						<div class="main-title _pad-right-mob">Отзывы</div>
 
 						<div class="reviews__slider swiper_visible swiper">
 							<div class="swiper-wrapper">
@@ -958,31 +958,30 @@
 			</div>
 		</div>
 
-		<div id="write_us" class="modal">
+		<div id="modal-size" class="modal modal-size">
 			<div class="modal__wrap">
-				<div class="modal__title">Напишите нам</div>
+				<div class="modal-size__cols _flex">
+					<div class="modal-size__col">
+						<div class="modal__title">Как подобрать размер кольца</div>
 
-				<form action="" class="form modal__form">
-					<div class="form__line">
-						<div class="form__label">Ваше имя</div>
+						<div class="modal__desc">
+							Самый точный способ определить размер, это взять свое кольцо и положить его на линейку, так, чтобы была видна разметка линейки. Важно, чтобы линейка находилась посередине вашего кольца.
+						</div>
 
-						<div class="form__field">
-							<input type="text" value="" placeholder="Например, Иван Иванов..." class="form__input">
+						<div class="modal__link">
+							<a href="/" class="btn-black">Открыть чат</a>
 						</div>
 					</div>
 
-					<div class="form__line">
-						<div class="form__label">Ваше сообщение</div>
-
-						<div class="form__field">
-							<textarea class="form__textarea"></textarea>
+					<div class="modal-size__col">
+						<div class="modal-size__ring">
+							<img data-src="images/modal_size.svg" src="images/img_plug.png" alt="" class="lazyload">
 						</div>
 					</div>
-
-					<button type="submit" class="form__submit-btn btn-green">Отправить</button>
-				</form>
+				</div>
 			</div>
 		</div>
+
 
 
 		<div class="supports-error">
