@@ -166,6 +166,12 @@
 	{
 		padding-top: 150%;
 	}
+
+
+	.modal__title
+	{
+		font-size: 30px;
+	}
 	/*------------
 		commit
 	------------*/
