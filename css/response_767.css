@@ -517,7 +517,7 @@
 
 	.brand-concept__wrap
 	{
-		padding-top: 650px;
+		padding-top: 145%;
 	}
 
 	.brand-concept__items
@@ -558,7 +558,8 @@
 		width: 100%;
 		margin-top: 30px;
 
-		max-width: 440px;
+		/* max-width: 440px; */
+		max-width: 100%;
 	}
 
 	.brand-concept__big-box
@@ -569,8 +570,9 @@
 		width: 100%;
 		max-width: 100%;
 		margin-left: 0;
+		max-width: 100%;
 
-		max-width: 440px;
+		/* max-width: 440px; */
 	}
 	/*------------
 		commit

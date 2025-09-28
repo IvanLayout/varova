@@ -164,17 +164,7 @@
 
 	.brand-concept__wrap
 	{
-		padding-top: 525px;
-	}
-	
-	.brand-concept__big-box
-	{
-		max-width: 350px;
-	}
-
-	.brand-concept__small-box
-	{
-		max-width: 350px;
+		padding-top: 150%;
 	}
 	/*------------
 		commit
@@ -264,6 +254,16 @@
 		font-size: 50px;
 	}
 	
+
+	.text-block h1.big-title 
+	{
+		font-size: 46px;
+	}
+
+	.brand-concept__title
+	{
+		font-size: 40px;
+	}
 
 	/*------------
 		commit
