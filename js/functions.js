@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload')
+	const boxes = document.querySelectorAll('.lazyload, .animate')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -14,6 +14,10 @@ $(() => {
 				entry.target.srcset = entry.target.getAttribute('data-srcset')
 
 				entry.target.classList.add('loaded')
+			}
+
+			if (entry.intersectionRatio >= 0.2 && entry.target.classList.contains('animate') && !entry.target.classList.contains('animated')) {
+				entry.target.classList.add('animated')
 			}
 		}
 	}

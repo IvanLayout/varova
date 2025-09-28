@@ -4568,14 +4568,29 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: #DEDDDC;
 }
 
+.range__field{
+	width: 50%;
+	position: relative;
+}
+
+.range-rub{
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 15px;
+	line-height: 51px;
+	padding-left: 24px;
+	pointer-events: none;
+}
+
 .range .range__input
 {
     color: #2C2828;
     font: 15px var(--font-family);
 
     display: block;
-
-    width: 50%;
+	width: 100%;
+    
     height: 51px;
     padding: 0 20px;
 

@@ -350,10 +350,20 @@ $(() => {
 		min      : 0,
 		max      : 100000,
 		from     : 0,
-		to       : 100000,
+		to       : 23500,
 		step     : 1,
 		onChange : function (data) {
-			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU') )
+			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU'))
+			$('.price_range input.do').val( data.to.toLocaleString('ru-RU') )
+	
+			let widthTextOt = $('.price_range input.ot').closest('.range').find('.irs-from')
+			let widthTextDo = $('.price_range input.do').closest('.range').find('.irs-to')
+
+			$('.price_range input.ot').closest('.range__field').find('.range-rub').css('margin-left', widthTextOt.width())
+			$('.price_range input.do').closest('.range__field').find('.range-rub').css('margin-left', widthTextDo.width())
+		},
+		onUpdate: data => {
+			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU'))
 			$('.price_range input.do').val( data.to.toLocaleString('ru-RU') )
 		}
 	}).data("ionRangeSlider")
@@ -363,6 +373,12 @@ $(() => {
 			from : $('.price_range input.ot').val().replace(/\s/g,''),
 			to : $('.price_range input.do').val().replace(/\s/g,'')
 		})
+	
+		let widthTextOt = $('.price_range input.ot').closest('.range').find('.irs-from')
+		let widthTextDo = $('.price_range input.do').closest('.range').find('.irs-to')
+
+		$('.price_range input.ot').closest('.range__field').find('.range-rub').css('margin-left', widthTextOt.width())
+		$('.price_range input.do').closest('.range__field').find('.range-rub').css('margin-left', widthTextDo.width())
 	})
 
 	$('.reset-btn').click(function(){
@@ -432,6 +448,18 @@ $(() => {
 	if ($('.advantages-page__wrap').length){
 		advantagesSlider2()
 	}
+
+	$('body').on('click', '[data-href-link]', function(e) {
+		e.preventDefault()
+
+		let value = $(this).data('href-link'),
+			$temp = $("<input>");
+
+		$("body").append($temp);
+		$temp.val(value).select();
+		document.execCommand("copy");
+		$temp.remove();
+	})
 });
 
 
