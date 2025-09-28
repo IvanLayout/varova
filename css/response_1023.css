@@ -1419,4 +1419,28 @@
 	.advantages-page{
 		padding-top: 40px;
 	}
+
+	.modal-product__coll{
+		width: 48%;
+	}
+
+	.modal-product__desc{
+		padding-left: 0;
+	}
+
+	.modal-product__logo img {
+		display: block;
+		max-width: 120px;
+	}
+
+	.modal-product__colr{
+		width: 52%;
+	}
+
+	.fancybox__slide .f-button[data-fancybox-close] {
+		top: 15px;
+		right: 15px;
+		width: 32px;
+		height: 32px;
+	}
 }

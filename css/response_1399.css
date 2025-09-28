@@ -309,4 +309,17 @@
 	.advantages-page__bot{
 		margin-top: 80px;
 	}
+
+	.modal-product__coll {
+        padding: 30px 20px;
+    }
+
+	.modal-product__title {
+        font-size: 26px;
+    }
+
+	.fancybox__slide .f-button[data-fancybox-close]{
+		top: 20px;
+		right: 20px;
+	}
 }

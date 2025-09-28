@@ -257,13 +257,36 @@ $(() => {
 		{
 			on: {
 				init: (fancyboxRef) => {
-					if ( $(this).attr('data-modal-big') ) {
-						$('body').addClass('_big-modal')
+					if ($('.modal-product__slider').length) {
+						new Swiper('.modal-product__slider:not(.swiper-initialized)', {
+							loop: false,
+							watchSlidesProgress: true,
+							watchOverflow: true,
+							spaceBetween: 0,
+							slidesPerView: 1,
+							preloadImages: false,
+							lazy: {
+								loadPrevNext: true,
+								elementClass: 'lazyload',
+								enabled: true,
+								loadedClass: 'loaded',
+								checkInView: true,
+								loadOnTransitionStart: true
+							},
+							navigation: {
+								nextEl: '.slider-button-next',
+								prevEl: '.slider-button-prev'
+							},
+						})
+					}
+
+					if ( $(this).attr('data-modal-top') ) {
+						$('body').addClass('_top-modal')
 					}
 				},
 				destroy: (fancyboxRef) => {
-					if ( $(this).attr('data-modal-big') ) {
-						$('body').removeClass('_big-modal')
+					if ( $(this).attr('data-modal-top') ) {
+						$('body').removeClass('_top-modal')
 					}
 				},
 			},
@@ -280,8 +303,6 @@ $(() => {
 			autoStart: false,
 		}
 	})
-
-	Fancybox.bind("[data-fancybox-video]", {})
 
 
 	// Аккордион

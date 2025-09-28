@@ -197,7 +197,7 @@
 		margin-top: 5px;
 	}
 
-	.swiper-slide
+	.product-thumbs .swiper-slide
 	{
 		width: 100px;
 	}
@@ -573,6 +573,14 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+
+	.modal-size__col:last-child{
+		border-radius: 0 0 8px 8px;
+	}
+
+	.modal-size__ring{
+		margin: 0 auto;
+	}
 	/*------------
 		commit
 	------------*/
@@ -691,5 +699,22 @@
 		max-width: 480px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+
+	.modal-product__coll{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.modal-product__colr{
+		width: 100%;
+	}
+
+	.modal-product__btn{
+		bottom: 0;
+		position: relative;
+		margin-top: 20px;
+		padding-bottom: 20px;
 	}
 }
