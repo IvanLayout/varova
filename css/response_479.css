@@ -80,6 +80,11 @@
 	}
 
 
+	.product-info__size-btn
+	{
+		margin-bottom: 0;
+	}
+
 	.product-info__select-name
 	{
 		font-size: 16px;
