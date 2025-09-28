@@ -535,16 +535,6 @@
 		position: static;
 	}
 
-	.brand-concept__tabs
-	{
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		align-content: flex-start;
-		flex-wrap: wrap;
-	}
-
 	.brand-concept__info
 	{
 		width: 100%;
