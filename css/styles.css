@@ -1986,7 +1986,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	width: 14px;
 	height: 9px;
 
-    margin-top: -4px;
+    margin-top: -3px;
 
 	background: url(../images/ic_arrow2.svg) 50%/contain no-repeat;
 }
