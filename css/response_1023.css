@@ -1074,20 +1074,6 @@
 	}
 
 
-	.about-page__coll
-	{
-		width: 100%;
-		padding-top: 0;
-	}
-
-	.about-page__colr
-	{
-		width: 100%;
-		margin-top: 30px;
-		margin-left: 0;
-	}
-
-
 	.text-block h1.big-title 
 	{
 		font-size: 76px;
@@ -1096,6 +1082,11 @@
 	.big-title span
 	{
 		padding-left: 0;
+	}
+
+	.big-title.big-title_center
+	{
+		display: inline-block;
 	}
 
 

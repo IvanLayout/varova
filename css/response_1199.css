@@ -375,16 +375,6 @@
 	}
 
 
-	.about-page__coll
-	{
-		width: 150px;
-	}
-
-	.about-page__colr
-	{
-		width: calc(100% - 170px);
-	}
-
 
 	.text-block h5 
 	{
