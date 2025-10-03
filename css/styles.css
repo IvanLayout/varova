@@ -1410,12 +1410,17 @@ button
     font-size: 14px;
 }
 
+.form__agree-marg
+{
+	margin-top: 30px;
+}
+
 .form__agree a
 {
     color: #2C2927;
 
     text-decoration: none;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid #2C2927;
 
     transition: border .2s linear;
 }
@@ -1424,7 +1429,7 @@ button
 {
     .form__agree a:hover
     {
-        border-color: #2C2927;
+        border-color: transparent;
     }
 }
 
@@ -8871,7 +8876,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	max-width: 360px;
 }
 
-.form-subscribe__submit
+.form-subscribe__btn
 {
 	margin-top: 18px;
 	padding-left: 20px;
@@ -8961,6 +8966,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	border-radius: 8px;
 }
 
+.modal-inner
+{
+	width: 540px;
+	padding: 60px 40px;
+	text-align: center;
+}
+
 .modal__wrap{
 	width: 100%;
 }
@@ -8984,6 +8996,36 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 20px;
 }
 
+
+
+.modal-inner__title
+{
+	font-family: var(--font-family2);
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.modal-inner__desc
+{
+	color: #6D6D6D;
+	margin-top: 10px;
+}
+
+.form-modal
+{
+	margin-top: 30px;
+}
+
+.form-modal .form__line 
+{
+    margin-bottom: 20px;
+}
+
+.form-modal .form__input,
+.form-modal .form__submit-btn
+{
+	border-radius: 999px;
+}
 
 
 .modal-size__cols

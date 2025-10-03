@@ -581,6 +581,13 @@
 	.modal-size__ring{
 		margin: 0 auto;
 	}
+
+
+	.modal-inner
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	/*------------
 		commit
 	------------*/

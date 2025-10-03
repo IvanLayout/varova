@@ -989,11 +989,11 @@
 						<div class="footer__col">
 							<div class="footer__title">Подписаться на рассылку</div>
 
-							<form action="" class="form-subscribe">
+							<div class="form-subscribe">
 								<div class="form-subscribe__desc">Оставайтесь в курсе последних событий, новых предложений и специальных акций.</div>
 
-								<button type="submit" class="btn-black form-subscribe__submit">Подписаться</button>
-							</form>
+								<button type="button" data-content="#modal-subscribe" class="btn-black form-subscribe__btn modal-btn">Подписаться</button>
+							</div>
 						</div>
 					</div>
 
@@ -1029,6 +1029,30 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+
+		<div id="modal-subscribe" class="modal modal-inner">
+			<div class="modal__wrap">
+				<div class="modal-inner__title">Самое интересное</div>
+
+				<div class="modal-inner__desc">
+					Будьте в курсе последних новостей, новых поступлений и выгодных предложений
+				</div>
+
+				<form action="" class="form form-modal">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="mail" value="" placeholder="Email" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-black">Подписаться</button>
+
+					<div class="form__agree form__agree-marg">
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div id="modal-size" class="modal modal-size">
