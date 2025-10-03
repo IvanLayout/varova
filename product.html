@@ -488,7 +488,7 @@
 												</div>
 												
 												<div class="product-info__btn">
-													<a class="btn-black" href="/">Быстрая покупка</a>
+													<button type="button" data-content="#modal-buy" data-modal-top="top" class="modal-btn btn-black">Быстрая покупка</button>
 												</div>
 
 												<div class="product-info__btn product-info__btn-width-mob">
@@ -992,7 +992,7 @@
 							<div class="form-subscribe">
 								<div class="form-subscribe__desc">Оставайтесь в курсе последних событий, новых предложений и специальных акций.</div>
 
-								<button type="button" data-content="#modal-subscribe" class="btn-black form-subscribe__btn modal-btn">Подписаться</button>
+								<button type="button" data-content="#modal-subscribe" data-modal-top="top" class="btn-black form-subscribe__btn modal-btn">Подписаться</button>
 							</div>
 						</div>
 					</div>
@@ -1029,6 +1029,40 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+
+		<div id="modal-buy" class="modal modal-inner">
+			<div class="modal__wrap">
+				<div class="modal-inner__title">Быстрая покупка</div>
+
+				<div class="modal-inner__desc">
+					Хотите намекнуть о подарке близкому человеку? Заполните в форме ниже его данные, и он получит письмо с вашим намеком
+				</div>
+
+				<form action="" class="form form-modal">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Имя получателя" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="mail" value="" placeholder="Email" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Ваше имя" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-black">Подобрать</button>
+
+					<div class="form__agree form__agree-marg">
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div id="modal-subscribe" class="modal modal-inner">
