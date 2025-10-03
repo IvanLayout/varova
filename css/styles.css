@@ -5569,7 +5569,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin: 10px 0 0 10px;
 }
 
-.product-info__btn a
+.product-info__btn a,
+.product-info__btn button
 {
 	width: 100%;
 }
@@ -5691,6 +5692,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 12px;
 	line-height: 40px;
 	padding: 0 20px;
+	width: 100%;
 
 	display: flex;
 	justify-content: center;
@@ -5766,7 +5768,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	text-decoration: none;
 }
 
-.product-info__link a .product-info__link-text
+.product-info__link a .product-info__link-text,
+.product-info__link button .product-info__link-text
 {
 	border-bottom: 1px dashed currentColor;
 	transition: border .2s linear;
@@ -5795,7 +5798,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (any-hover: hover) 
 {
-	.product-info__link a.product-info__link-wrap:hover .product-info__link-text
+	.product-info__link a.product-info__link-wrap:hover .product-info__link-text,
+	.product-info__link button.product-info__link-wrap:hover .product-info__link-text
 	{
 		border-color: transparent;
 	}

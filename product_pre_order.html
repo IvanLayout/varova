@@ -458,7 +458,7 @@
 										</div>
 
 										<div class="product-info__box-item _bot-content">
-											<button type="button" data-content="#modal-size" data-modal-top="top" class="product-info__size-btn modal-btn"><span>Подобрать размер</span></button>
+											<button type="button" data-content="#modal-size2" data-modal-top="top" class="product-info__size-btn modal-btn"><span>Подобрать размер</span></button>
 										</div>
 									</div>
 
@@ -499,13 +499,13 @@
 									<div class="product-info__box">
 										<div class="product-info__box-item">
 											<div class="product-info__link">
-												<a href="/" class="product-info__link-wrap">
+												<button type="button" data-content="#modal-gift" data-modal-top="top" class="modal-btn product-info__link-wrap">
 													<span class="product-info__link-icon">
 														<img data-src="images/ic_gift.svg" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 	
 													<span class="product-info__link-text">Намекнуть о подарке</span>
-												</a>
+												</button>
 											</div>
 										</div>
 
@@ -1031,6 +1031,74 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+
+		<div id="modal-size2" class="modal modal-inner">
+			<div class="modal__wrap">
+				<div class="modal-inner__title">Подобрать размер</div>
+
+				<div class="modal-inner__desc">
+					Будьте в курсе последних новостей, <br>новых поступлений и выгодных предложений
+				</div>
+
+				<form action="" class="form form-modal">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Как к Вам обращаться?" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="tel" value="" placeholder="+7 (999) 999-99-99" data-mask="+7 (999) 999-99-99" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="mail" value="" placeholder="Email" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-black">Подобрать</button>
+
+					<div class="form__agree form__agree-marg">
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-gift" class="modal modal-inner">
+			<div class="modal__wrap">
+				<div class="modal-inner__title">Намекнуть о подарке</div>
+
+				<div class="modal-inner__desc">
+					Хотите намекнуть о подарке близкому человеку? Заполните в форме ниже его данные, и он получит письмо с вашим намеком
+				</div>
+
+				<form action="" class="form form-modal">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Имя получателя" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="mail" value="" placeholder="Email" class="form__input">
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" placeholder="Ваше имя" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-black">Подобрать</button>
+
+					<div class="form__agree form__agree-marg">
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div id="modal-subscribe" class="modal modal-inner">
