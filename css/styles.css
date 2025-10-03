@@ -6543,6 +6543,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .checkout__flex
 {
 	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 .checkout__coll
@@ -6580,6 +6582,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 40px;
     border-radius: 8px;
     background: #FFF;
+
+	position: sticky;
+	top: 30px;
+	left: 0;
 }
 
 .checkout-total__title

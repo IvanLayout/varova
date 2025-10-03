@@ -972,6 +972,8 @@
 	.checkout__bg
 	{
 		padding: 0;
+		position: relative;
+		top: 0;
 	}
 
 	.checkout-total__title
