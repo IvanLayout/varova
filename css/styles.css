@@ -3752,7 +3752,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 	height: 131px;
 	position: relative;
-	padding-bottom: 31px;
+	padding-bottom: 41px;
 }
 
 .portfolio__product::after
@@ -3779,10 +3779,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .portfolio__info-name
 {
-	display: block;
-	margin-top: 10px;
 	color: #2C2927;
 	line-height: 1.4;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .portfolio__info:hover .portfolio__info-name
+	{
+        border-bottom-color: currentColor;
+    }
 }
 
 .portfolio__cats
@@ -9481,7 +9489,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	.portfolio__product
 	{
 		height: 110px;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
 
 	.portfolio__name
