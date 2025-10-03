@@ -3452,6 +3452,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: block;
 	overflow: hidden;
 	border-radius: 8px;
+	margin-bottom: 22px;
 }
 
 .main-news__img
@@ -3493,13 +3494,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .main-news__name
 {
-	display: block;
 	text-decoration: none;
-	margin-top: 22px;
 
 	font-weight: 600;
 	color: #2C2927;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
 }
+
+@media (any-hover: hover) 
+{
+    .main-news__item:hover .main-news__name
+	{
+        border-bottom-color: currentColor;
+    }
+}
+
 
 .main-news__desc
 {
