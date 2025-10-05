@@ -298,6 +298,29 @@ $(() => {
 	})
 
 
+	// Отправка форм
+	$('body').on('submit', '.form.ajax-submit', function(e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src  : '#modal-cod',
+			type : 'inline',
+			opts : {
+				touch : false,
+				speed : 300,
+				backFocus : false,
+				trapFocus : false,
+				autoFocus : false,
+				mobile : {
+					clickSlide: "close"
+				}
+			}
+		}])
+	})
+
+
 	// Увеличение картинки
 	Fancybox.bind('.fancy-img', {
 		Image: {
