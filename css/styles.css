@@ -3596,10 +3596,30 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 21px;
 }
 
-.tabs__button_number + .tabs__button_number
+
+.tabs__item + .tabs__item
 {
 	margin-left: 15px;
 }
+
+.tabs__item
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.tabs__data
+{
+	display: none;
+}
+
+/* .tabs__button_number + .tabs__button_number
+{
+	margin-left: 15px;
+} */
 
 .tabs__button_number
 {
