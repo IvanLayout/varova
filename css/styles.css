@@ -3613,11 +3613,25 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-items: center;
 	align-content: center;
 	flex-wrap: nowrap;
+	width: 40px;
+	transition: width .2s linear;
 }
 
-.tabs__data
+.tabs__item._active{
+	width: calc(100% - 165px);
+}
+
+.tabs__data{
+	opacity: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition: opacity .5s linear;
+}
+
+.tabs__data._active
 {
-	display: none;
+	opacity: 1;
 }
 
 /* .tabs__button_number + .tabs__button_number
