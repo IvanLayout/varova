@@ -134,11 +134,11 @@
 								<use xlink:href="images/sprite.svg#lupa"></use>
 							</svg>
 						</button>
-						<a href="/" class="header__btn">
+						<button type="button" data-content="#modal-login" class="header__btn modal-btn">
 							<svg width="15" height="17">
 								<use xlink:href="images/sprite.svg#user"></use>
 							</svg>
-						</a>
+						</button>
 						<a href="/" class="header__btn">
 							<svg width="19" height="17">
 								<use xlink:href="images/sprite.svg#favorite"></use>
@@ -304,11 +304,15 @@
 					</div>
 
 					<div class="first-section__abs1">
-						<img data-src="images/first_section_abs1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+						<div class="animate fadeZoom" data-delay="3">
+							<img data-src="images/first_section_abs1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+						</div>
 					</div>
 
 					<div class="first-section__abs2">
-						<img data-src="images/first_section_abs2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+						<div class="animate fadeZoom" data-delay="9">
+							<img data-src="images/first_section_abs2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+						</div>
 					</div>
 
 					<div class="cont">
@@ -424,6 +428,7 @@
 
 										<div class="main-about__desc">Стена плача - это место, где миллионы людей веками обращаются с самыми важными просьбами. Это точка пересечения всех религий, тысяч судеб, молитв и надежд. Именно сюда Александра привозит украшения, чтобы они несли поддержку в исполнении ваших сокровенных желаний.</div>
 									</div>
+
 									<div class="main-about__colr">
 										<div class="main-about__images _flex">
 											<div class="main-about__images-col">
@@ -1389,16 +1394,16 @@
 					<section class="advantages advantages_bg _padt _padb">
 						<img data-src="images/bg4.jpg" src="images/img_plug.png" alt="" class="lazyload reviews__bg">
 						<div class="cont">
-							<div class="tabs-container">
+							<div class="tabs-container animate">
 								<div class="tab-content level1 _active" id="tab-advantages1">
-									<div class="advantages__wrap _flex animate">
-										<div class="advantages__box fadeInRight" data-delay="3">
+									<div class="advantages__wrap _flex">
+										<div class="advantages__box fadeInLeft" data-delay="3">
 											<div class="advantages__title">
 												<span class="advantages__pad">Стильная</span> <br><span class="advantages__grey">брендовая</span> <br>упаковка
 											</div>
 										</div>
 
-										<div class="advantages__box fadeInLeft" data-delay="3">
+										<div class="advantages__box fadeInRight" data-delay="3">
 											<div class="advantages__img">
 												<span>
 													<img data-src="images/tmp/advantages1.jpg" src="images/img_plug.png" alt="" class="lazyload">
@@ -1414,13 +1419,13 @@
 
 								<div class="tab-content level1" id="tab-advantages2">
 									<div class="advantages__wrap _flex">
-										<div class="advantages__box">
+										<div class="advantages__box fadeInLeft" data-delay="3">
 											<div class="advantages__title">
 												<span class="advantages__pad advantages__grey">Эксклюзивный</span> <br>запатентованный <br>дизайн
 											</div>
 										</div>
 
-										<div class="advantages__box">
+										<div class="advantages__box fadeInRight" data-delay="3">
 											<div class="advantages__img">
 												<span>
 													<img data-src="images/tmp/advantages2.jpg" src="images/img_plug.png" alt="" class="lazyload">
@@ -1436,13 +1441,13 @@
 
 								<div class="tab-content level1" id="tab-advantages3">
 									<div class="advantages__wrap _flex">
-										<div class="advantages__box">
+										<div class="advantages__box fadeInLeft" data-delay="3">
 											<div class="advantages__title">
 												<span class="advantages__pad advantages__grey">Украшения</span> <br><span class="advantages__grey">с</span> энергетикой <br>Стены Плача
 											</div>
 										</div>
 
-										<div class="advantages__box">
+										<div class="advantages__box fadeInRight" data-delay="3">
 											<div class="advantages__img">
 												<span>
 													<img data-src="images/tmp/advantages3.jpg" src="images/img_plug.png" alt="" class="lazyload">
@@ -1458,13 +1463,13 @@
 
 								<div class="tab-content level1" id="tab-advantages4">
 									<div class="advantages__wrap _flex">
-										<div class="advantages__box">
+										<div class="advantages__box fadeInLeft" data-delay="3">
 											<div class="advantages__title">
 												<span class="advantages__pad advantages__grey">Иерусалимская</span> <br>красная нить <br>в подарок
 											</div>
 										</div>
 
-										<div class="advantages__box">
+										<div class="advantages__box fadeInRight" data-delay="3">
 											<div class="advantages__img">
 												<span>
 													<img data-src="images/tmp/advantages4.jpg" src="images/img_plug.png" alt="" class="lazyload">

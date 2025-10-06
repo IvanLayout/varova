@@ -209,6 +209,17 @@ $(() => {
 			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
 			parent.find('.tab-content.' + level).removeClass('_active')
 
+			if ( parent.hasClass('animated') ) {
+				parent.removeClass('animated')
+
+				setTimeout(function(){
+					if ( !parent.hasClass('animated') ) {
+					console.log('asd')
+						parent.addClass('animated')
+					}
+				},50)
+			}
+
 			$(this).addClass('_active')
 			$(activeTab).addClass('_active')
 		}

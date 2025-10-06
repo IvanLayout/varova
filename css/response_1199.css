@@ -61,16 +61,26 @@
 
 	.first-section__abs1
 	{
+		width: 300px;
 		height: 300px;
+		border-radius: 70px;
+	}
+
+	.first-section__abs1 img{
 		border-radius: 70px;
 	}
 
 	.first-section__abs2
 	{
+		width: 130px;
 		height: 130px;
         border-radius: 30px;
 
 		margin-left: 140px;
+	}
+
+	.first-section__abs2 img{
+        border-radius: 30px;
 	}
 
 	.first-section__video-link
