@@ -486,12 +486,16 @@ $(window).on('load', () => {
 	// informationAnim.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")
 
 	.add("start")
-	.fromTo('.main-about__coll', { scale: 0, opacity: 0 }, { duration: 0.1, opacity: 1, scale: 1 }, "start")
-	.to('.main-about__coll', { duration: 0.1, delay: .1, opacity: 0, scale: 3 }, "end")
-	.fromTo('.main-about__img1 img', { scale: 0, opacity: 0 }, { duration: 0.1, delay: .1, opacity: 1, scale: 1 }, "start")
-	.fromTo('.main-about__img2 img', { scale: 0, opacity: 0 }, { duration: 0.1, delay: .2, opacity: 1, scale: 1 }, "start")
-	.fromTo('.main-about__img3 img', { scale: 0, opacity: 0 }, { duration: 0.1, delay: .3, opacity: 1, scale: 1 }, "start")
-	.fromTo('.main-about__name', { scale: 0, opacity: 0 }, { duration: 0.1, delay: .4, opacity: 1, scale: 1 }, "start")
+	.fromTo('.main-about__coll', { scale: 1, opacity: 1 }, { duration: 0.1, opacity: 0, scale: 2, x: '-30%' }, "start")
+	.fromTo('.main-about__name span', { scale: 1, opacity: 1 }, { duration: 0.1, opacity: 0, scale: 2 }, "start")
+	.fromTo('.main-about__img3 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .2, opacity: 0, scale: 3, x: '250%' }, "start")
+	.fromTo('.main-about__img2 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .3, opacity: 0, scale: 3, y: '250%' }, "start")
+	.fromTo('.main-about__img1 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .4, opacity: 0, scale: 3, y: "-250%" }, "start")
+	// .to('.main-about__coll', { duration: 0.1, delay: .1, opacity: 0, scale: 2 }, "start")
+	// .to('.main-about__img3 img', { duration: 0.1, delay: .2, opacity: 0, scale: 2 }, "start")
+	// .to('.main-about__img2 img', { duration: 0.1, delay: .3, opacity: 0, scale: 2 }, "start")
+	// .to('.main-about__img1 img', { duration: 0.1, delay: .4, opacity: 0, scale: 2 }, "start")
+	// .to('.main-about__name span', { duration: 0.1, delay: .5, opacity: 0, scale: 2 }, "start")
 
 	if ( $('.main-info__top').length ) {
 		setHeight($('.main-info__top'))

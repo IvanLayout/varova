@@ -7816,7 +7816,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 ------------*/
 .main-about{
 	background: url(../images/main_about_line.svg) 0 100%/100% auto no-repeat;
-	/* min-height: 1500px; */
+	min-height: 200vh;
 }
 
 .main-about__items{
@@ -7919,7 +7919,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	color: #fff;
 }
 
-.main-about__name::after{
+.main-about__name span::after{
 	content: attr(data-name);
 	position: absolute;
 	left: 0;
