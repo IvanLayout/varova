@@ -7816,7 +7816,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 ------------*/
 .main-about{
 	background: url(../images/main_about_line.svg) 0 100%/100% auto no-repeat;
-	min-height: 200vh;
+	/* min-height: 200vh; */
 }
 
 .main-about__items{
@@ -7834,10 +7834,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: flex;
 	flex-direction: column;
 		justify-content: center;
-}
-
-.main-about__item + .main-about__item{
-	opacity: 0;
 }
 
 .main-about__item .cont{
@@ -7919,7 +7915,17 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	color: #fff;
 }
 
-.main-about__name span::after{
+.main-about__name span{
+	display: inline-block;
+}
+
+.main-about__name + .main-about__name{
+	mix-blend-mode: difference;
+	color: #c4c4c4;
+	z-index: 2;
+}
+
+/* .main-about__name::after{
 	content: attr(data-name);
 	position: absolute;
 	left: 0;
@@ -7929,7 +7935,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	mix-blend-mode: difference;
 	color: #c4c4c4;
 	z-index: 2;
-}
+} */
 
 .main-about__images-col{
 	width: 62.38%;

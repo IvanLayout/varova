@@ -469,7 +469,7 @@ $(window).on('load', () => {
 			trigger: ".main-about",
 			scrub: true,
 			start: "top",
-			end: "bottom",
+			end: $(window).height()*3,
 			pin: true,
 			// duration: 100,
 			// markers: true,
@@ -486,11 +486,24 @@ $(window).on('load', () => {
 	// informationAnim.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")
 
 	.add("start")
-	.fromTo('.main-about__coll', { scale: 1, opacity: 1 }, { duration: 0.1, opacity: 0, scale: 2, x: '-30%' }, "start")
-	.fromTo('.main-about__name span', { scale: 1, opacity: 1 }, { duration: 0.1, opacity: 0, scale: 2 }, "start")
-	.fromTo('.main-about__img3 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .2, opacity: 0, scale: 3, x: '250%' }, "start")
-	.fromTo('.main-about__img2 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .3, opacity: 0, scale: 3, y: '250%' }, "start")
-	.fromTo('.main-about__img1 img', { scale: 1, opacity: 1 }, { duration: 0.1, delay: .4, opacity: 0, scale: 3, y: "-250%" }, "start")
+	.fromTo('.main-about__item1 .main-about__name span', { scale: .2, opacity: .5 }, { duration: 0.1, delay: .05, opacity: 1, scale: 1 }, "start")
+	.fromTo('.main-about__item1 .main-about__img3 img', { scale: .3, opacity: .3 }, { duration: 0.1, delay: .05, opacity: 1, scale: 1}, "start")
+	.fromTo('.main-about__item1 .main-about__img2 img', { scale: .1, opacity: .1 }, { duration: 0.1, delay: .07, opacity: 1, scale: 1,}, "start")
+	.fromTo('.main-about__item1 .main-about__img1 img', { scale: .5, opacity: .5 }, { duration: 0.1, delay: .09, opacity: 1, scale: 1,}, "start")
+	.fromTo('.main-about__item1 .main-about__coll', { scale: 1, opacity: 1 }, { duration: 0.2, delay: .1, opacity: 0, scale: 2, x: '-30%' }, "start")
+	.to('.main-about__item1 .main-about__name span', { duration: 0.1, delay: .15, opacity: 0, scale: 2 }, "start")
+	.to('.main-about__item1 .main-about__img3 img', { duration: 0.1, delay: .15, opacity: 0, scale: 3, x: '250%' }, "start")
+	.to('.main-about__item1 .main-about__img2 img', { duration: 0.1, delay: .17, opacity: 0, scale: 3, y: '250%' }, "start")
+	.to('.main-about__item1 .main-about__img1 img', { duration: 0.1, delay: .19, opacity: 0, scale: 3, y: "-250%" }, "start")
+	.fromTo('.main-about__item2 .main-about__coll', { scale: 0, opacity: 0, x: "-100%" }, { duration: 0.1, opacity: 1, scale: 1, x: 0}, "end")
+	.fromTo('.main-about__item2 .main-about__name span', { scale: 0, opacity: 0}, { duration: 0.1, delay: .05, opacity: 1, scale: 1 }, "end")
+	.fromTo('.main-about__item2 .main-about__img3 img', { scale: 0, opacity: 0, x: "250%" }, { duration: 0.1, delay: .05, opacity: 1, scale: 1, x: 0}, "end")
+	.fromTo('.main-about__item2 .main-about__img2 img', { scale: 0, opacity: 0, y: "250%" }, { duration: 0.1, delay: .07, opacity: 1, scale: 1, y: 0}, "end")
+	.fromTo('.main-about__item2 .main-about__img1 img', { scale: 0, opacity: 0, y: "-250%" }, { duration: 0.1, delay: .09, opacity: 1, scale: 1, y: 0}, "end")
+	// .to('.main-about__item2 .main-about__name span', { duration: 0.1, delay: 1.15, opacity: 0, scale: 2 }, "start")
+	// .to('.main-about__img3 img', { duration: 0.1, delay: .15, opacity: 0, scale: 3, x: '250%' }, "start")
+	// .to('.main-about__item2 .main-about__item2 .main-about__img2 img', { duration: 0.1, delay: 1.17, opacity: 0, scale: 3, y: '250%' }, "start")
+	// .to('.main-about__item2 .main-about__img1 img', { duration: 0.1, delay: 1.19, opacity: 0, scale: 3, y: "-250%" }, "start")
 	// .to('.main-about__coll', { duration: 0.1, delay: .1, opacity: 0, scale: 2 }, "start")
 	// .to('.main-about__img3 img', { duration: 0.1, delay: .2, opacity: 0, scale: 2 }, "start")
 	// .to('.main-about__img2 img', { duration: 0.1, delay: .3, opacity: 0, scale: 2 }, "start")
