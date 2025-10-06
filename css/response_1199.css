@@ -472,4 +472,21 @@
         margin-top: 30px;
         padding-left: 40px;
     }
+
+
+	.bg1__pattern {
+		display: none;
+	}
+
+	.bg2__pattern{
+		display: none;
+	}
+
+	.pattern3__img{
+		display: none;
+	}
+
+	.pattern4__img{
+		display: none;
+	}
 }
