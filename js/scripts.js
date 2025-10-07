@@ -501,7 +501,7 @@ $(window).on('load', () => {
 	.fromTo('.main-about__item1 .main-about__img3 img', { scale: .3, opacity: .3 }, { duration: 0.1, delay: .05, opacity: 1, scale: 1}, "start")
 	.fromTo('.main-about__item1 .main-about__img2 img', { scale: .1, opacity: .1 }, { duration: 0.1, delay: .07, opacity: 1, scale: 1,}, "start")
 	.fromTo('.main-about__item1 .main-about__img1 img', { scale: .5, opacity: .5 }, { duration: 0.1, delay: .09, opacity: 1, scale: 1,}, "start")
-	.fromTo('.main-about__item1 .main-about__coll', { scale: 1, opacity: 1 }, { duration: 0.2, delay: .1, opacity: 0, scale: 2, x: '-30%' }, "start")
+	.fromTo('.main-about__item1 .main-about__coll', { scale: 1, opacity: 1 }, { duration: 0.2, delay: .2, opacity: 0, scale: 2, x: '-30%' }, "start")
 	.to('.main-about__item1 .main-about__name span', { duration: 0.1, delay: .15, opacity: 0, scale: 2 }, "start")
 	.to('.main-about__item1 .main-about__img3 img', { duration: 0.1, delay: .15, opacity: 0, scale: 3, x: '250%' }, "start")
 	.to('.main-about__item1 .main-about__img2 img', { duration: 0.1, delay: .17, opacity: 0, scale: 3, y: '250%' }, "start")
