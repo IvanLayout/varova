@@ -670,6 +670,11 @@ button
 	display: none;
 }
 
+.header__logo
+{
+	width: 190px;
+}
+
 .header__logo a
 {
 	display: block;
@@ -818,7 +823,7 @@ button
 	line-height: 1.1;
 	font-family: var(--font-family2);
 	font-weight: 400;
-	color: #2c2828;
+	color: #2C2927;
 }
 
 .page-title._big
@@ -952,7 +957,7 @@ button
 .text-block h3
 {
 	font-family: var(--font-family2);
-    color: #2c2828;
+    color: #2C2927;
     font-size: 30px;
     font-weight: 400;
     line-height: 1.1;
@@ -983,7 +988,7 @@ button
 
 .text-block h5
 {
-    color: #2c2828;
+    color: #2C2927;
 	font-size: 21px;
     font-weight: 600;
     line-height: 1.5;
@@ -1659,7 +1664,7 @@ input[type=radio]:checked + .radio-big__wrap
 {
     position: relative;
 
-    color: #2C2828;
+    color: #2C2927;
     font-size: 16px;
     line-height: 30px;
 
@@ -2176,6 +2181,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 40px;
 	line-height: 1.1;
 	font-weight: 400;
+	color: #2C2828;
 }
 
 .main-title._pad-right
@@ -3783,6 +3789,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
     portfolio
 ------------*/
 
+.portfolio_bg
+{
+	position: relative;
+}
+
+.portfolio_bg-img
+{
+	display: none;
+}
+
+.portfolio_bg .cont
+{
+	position: relative;
+	z-index: 4;
+}
+
 .portfolio__slider
 {
 	margin-top: 30px;
@@ -4041,6 +4063,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	line-height: 1.2;
 	position: relative;
 	z-index: 3;
+
+	font-weight: 500;
 }
 
 .choose-size__desc
@@ -4491,6 +4515,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .faq__btn
 {
 	margin-top: 16px;
+}
+
+.faq__btn .btn-black
+{
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /*------------
@@ -5545,6 +5575,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-self: flex-end;
 }
 
+.product-info__box-item .btn-black
+{
+	padding-left: 20.5px;
+	padding-right: 20.5px;
+}
+
 
 .product-info__select + .product-info__select
 {
@@ -6184,6 +6220,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     color: currentColor;
     font-weight: 600;
+	font-size: 16px;
 
     margin-top: 5px;
 
@@ -6443,9 +6480,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	white-space: nowrap;
 }
 
-.points__btn
+.points__flex .points__btn
 {
 	line-height: 40px;
+	padding-left: 20.5px;
+	padding-right: 20.5px;
 }
 
 .free-ship
@@ -6518,6 +6557,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .total-cart__link
 {
 	margin-top: 10px;
+}
+
+.total-cart__link .btn-black
+{
+	padding-left: 20.5px;
+	padding-right: 20.5px;
+	line-height: 40px;
 }
 
 
@@ -7619,10 +7665,29 @@ input[type=checkbox]:checked + .checkbox-btn__text
     about-page
 ------------*/
 
+.about-page
+{
+	position: relative;
+}
+
+.about-page__pattern
+{
+	position: absolute;
+	top: -60px;
+	right: 0;
+	
+	display: block;
+
+	width: 950px;
+	height: 1139px;
+
+	pointer-events: none;
+}
 
 .about-page .cont
 {
 	max-width: 1480px;
+	position: relative;
 }
 
 .text-block__cols-width
@@ -7696,11 +7761,31 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .brand-concept
 {
 	margin-top: 120px;
+	padding-bottom: 120px;
+
+	background: linear-gradient(0deg, #ded5c6 0%, #fff 100%);
+	position: relative;
 }
+
+.brand-concept__pattern
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	display: block;
+
+	width: 1032px;
+	height: 969px;
+
+	pointer-events: none;
+}
+
 
 .brand-concept .cont
 {
 	max-width: 1480px;
+	position: relative;
 }
 
 .brand-concept__title
@@ -8658,6 +8743,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	color: #2C2927;
 	width: calc(25.66% - 30px);
 	max-width: 250px;
+
+	font-weight: 500;
 }
 
 .advantages-page__top-flex._flex{
@@ -8717,6 +8804,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	top: 17%;
 	width: calc(24% - 30px);
 	max-width: 288px;
+	font-size: 16px;
 }
 
 .advantages-page__flex._flex{
