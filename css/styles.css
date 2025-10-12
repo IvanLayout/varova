@@ -1008,6 +1008,11 @@ button
 	color: rgba(44, 41, 39, 0.7);
 }
 
+.text-block_constant p
+{
+	font-size: 16px;
+}
+
 .text-block img
 {
     display: block;
