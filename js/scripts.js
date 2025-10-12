@@ -488,7 +488,7 @@ $(window).on('load', () => {
 			trigger: ".main-about",
 			scrub: true,
 			start: "top",
-			end: $(window).height()*3,
+			end: $(window).height()*4,
 			pin: true,
 			// duration: 100,
 			// markers: true,
