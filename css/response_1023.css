@@ -608,6 +608,11 @@
 		font-size: 30px;
 	}
 
+	.choose-size__title-inner
+	{
+		font-size: 24px;
+	}
+
 	.choose-size__desc
 	{
 		width: 100%;

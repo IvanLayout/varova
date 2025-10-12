@@ -41,6 +41,12 @@
 	}
 
 
+	.choose-size__title-inner br
+	{
+		display: none;
+	}
+
+
 	.portfolio_bg
 	{
 		margin-top: 60px;
