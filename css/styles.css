@@ -785,7 +785,7 @@ button
 
     display: inline-block;
 
-    padding: 0 17px;
+    padding: 0 20.5px;
 
     text-align: center;
     vertical-align: top;
@@ -823,7 +823,7 @@ button
 	line-height: 1.1;
 	font-family: var(--font-family2);
 	font-weight: 400;
-	color: #2C2927;
+	color: #2C2828;
 }
 
 .page-title._big
@@ -831,7 +831,12 @@ button
 	font-size: 70px;
 }
 
-.head-page .text-block
+.head-page__cols .page-title
+{
+	color: #2C2927;
+}
+
+.text-block_w
 {
 	max-width: 720px;
 }
@@ -841,7 +846,7 @@ button
 	line-height: 1;
 	font-family: var(--font-family2);
 	font-weight: 400;
-	color: #2c2828;
+	color: #2C2927;
 	max-width: 1100px;
 }
 /*------------
@@ -2186,6 +2191,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 40px;
 	line-height: 1.1;
 	font-weight: 400;
+	color: #2C2927;
+}
+
+.main-title_b
+{
 	color: #2C2828;
 }
 
@@ -3530,6 +3540,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .main-news__name
 {
 	text-decoration: none;
+	font-size: 21px;
 
 	font-weight: 600;
 	color: #2C2927;
@@ -4520,12 +4531,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .faq__btn
 {
 	margin-top: 16px;
-}
-
-.faq__btn .btn-black
-{
-	padding-left: 20px;
-	padding-right: 20px;
 }
 
 /*------------
@@ -5580,12 +5585,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-self: flex-end;
 }
 
-.product-info__box-item .btn-black
-{
-	padding-left: 20.5px;
-	padding-right: 20.5px;
-}
-
 
 .product-info__select + .product-info__select
 {
@@ -6564,14 +6563,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 10px;
 }
 
-.total-cart__link .btn-black
-{
-	padding-left: 20.5px;
-	padding-right: 20.5px;
-	line-height: 40px;
-}
-
-
 /*------------
     cart-products
 ------------*/
@@ -6783,6 +6774,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.orders .checkout-total__name
+{
+	font-size: 16px;
 }
 
 .checkout-total__name a
@@ -9793,6 +9789,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	.checkout__colr 
 	{
 		width: 450px;
+	}
+
+
+	.main-news__name
+	{
+		font-size: 18px;
 	}
 
 
