@@ -534,11 +534,13 @@ $(window).on('load', () => {
 			TweenMax.fromTo('.main-about__item2 .main-about__img1 img', { scale: 0, opacity: 0, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: .08, opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, "start"),
 			TweenMax.fromTo('.main-about__item2 .main-about__coll', { scale: 0, opacity: 0, ease: "none"}, { duration: 1, delay: .08, opacity: 1, scale: 1, ease: "none"}, "start")
 		]).add([
-			TweenMax.fromTo('.main-about__item2 .main-about__name span', { opacity: 1, scale: 1, ease: "none"}, { duration: 1, delay: 1, opacity: .5, scale: 1, ease: "none" }, "start"),
-			TweenMax.fromTo('.main-about__item2 .main-about__img3 img', { opacity: 1, scale: 1, x: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: .5, scale: 1.5, x: '60%', filter: 'blur(10px)', ease: "none"}, "start"),
-			TweenMax.fromTo('.main-about__item2 .main-about__img2 img', { opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: .5, scale: 1.5, y: '40%', filter: 'blur(10px)', ease: "none"}, "start"),
-			TweenMax.fromTo('.main-about__item2 .main-about__img1 img', { opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: .5, scale: 1.5, y: "-50%", filter: 'blur(10px)', ease: "none"}, "start"),
-			TweenMax.fromTo('.main-about__item2 .main-about__coll', { opacity: 1, scale: 1, ease: "none"}, { duration: 1, delay: 1, opacity: .5, scale: 1, ease: "none"}, "start")
+			TweenMax.fromTo('.main-about__item2 .main-about__name span', { opacity: 1, scale: 1, ease: "none"}, { duration: 1, delay: 1, opacity: 0, scale: 1, ease: "none" }, "start"),
+			TweenMax.fromTo('.main-about__item2 .main-about__img3 img', { opacity: 1, scale: 1, x: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)', ease: "none"}, "start"),
+			TweenMax.fromTo('.main-about__item2 .main-about__img2 img', { opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)', ease: "none"}, "start"),
+			TweenMax.fromTo('.main-about__item2 .main-about__img1 img', { opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: "-50%", filter: 'blur(10px)', ease: "none"}, "start"),
+			TweenMax.fromTo('.main-about__item2 .main-about__coll', { opacity: 1, scale: 1, ease: "none"}, { duration: 1, delay: 1, opacity: 0, scale: 1, ease: "none"}, "start")
+		]).add([
+			TweenMax.to({}, {}, "+=1")
 		])
 	}
 
