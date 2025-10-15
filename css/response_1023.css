@@ -642,6 +642,23 @@
 	}
 
 
+	.product-page{
+		position: relative;
+	}
+	
+	.product-page::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -132px;
+		width: 100%;
+		height: calc(100% + 192px);
+		background: linear-gradient(180deg, #e1dfdb 0%, #e1dfdb 4.2%, #e1e3e3 83.75%, #fff 100%);
+		z-index: 0;
+		pointer-events: none;
+	}
+
+
 	.footer
 	{
 		padding: 40px 0;
