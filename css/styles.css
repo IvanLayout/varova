@@ -6123,6 +6123,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-weight: 600;
 }
 
+.product-info .page-title{
+	color: #2C2927;
+}
+
 /*------------
     section-cart
 ------------*/
@@ -8737,6 +8741,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .advantages-page .page-title{
 	max-width: 864px;
+	color: #2C2927;
 }
 
 .advantages-page__top{
