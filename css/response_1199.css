@@ -242,6 +242,11 @@
 	{
 		font-size: 20px;
 	}
+
+	.main-news__name 
+	{
+        font-size: 16px;
+    }
 	
 
 	.footer__links 
