@@ -66,6 +66,16 @@
         transform: scale(0);
     }
 
+    .fadeInZoom{
+        opacity: 0;
+        transform: scale(0.5);
+
+        transition-timing-function: linear;
+        transition-property: opacity,transform;
+
+        transition-duration: 1s;
+    }
+
 
     .animAfterH::after
     {
@@ -124,6 +134,12 @@
         visibility: visible;
 
         transition-duration: 1s;
+        transform: scale(1);
+    }
+
+    ._run .fadeInZoom
+    {
+        opacity: 1;
         transform: scale(1);
     }
 

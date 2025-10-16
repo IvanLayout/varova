@@ -544,6 +544,25 @@ $(window).on('load', () => {
 		])
 	}
 
+	let lastIndex = -1;
+      let beforeLastIndex = -1;
+
+      setInterval(function() {
+        $('.first-section__abs').removeClass('_run');
+        
+        let count = $('.first-section__abs').length;
+        let newIndex;
+
+        do {
+          newIndex = Math.floor(Math.random() * count);
+        } while (newIndex === lastIndex || newIndex === beforeLastIndex);
+
+        $('.first-section__abs').eq(newIndex).addClass('_run');
+
+        beforeLastIndex = lastIndex;
+        lastIndex = newIndex;
+      }, 1000);
+
 	// .fromTo('.main-about__item1 .main-about__name span', { scale: .3, ease: "none"}, { duration: 1, delay: 0.25, delay: .08, opacity: 1, scale: 1, ease: "none" }, "start")
 	// .fromTo('.main-about__item1 .main-about__img3 img', { scale: .3, opacity: .3, x: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: .08, opacity: 1, scale: 1, x: 0, filter: 'blur(0)', ease: "none"}, "start")
 	// .fromTo('.main-about__item1 .main-about__img2 img', { scale: .3, opacity: .3, y: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: .08, opacity: 1, scale: 1, y: 0, filter: 'blur(0)', ease: "none"}, "start")
