@@ -2604,7 +2604,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	right: 50%;
 
 	margin-right: 460px;
-	opacity: .4;
+	opacity: .8;
 	z-index: 4;
 
 	height: 260px;
@@ -2661,7 +2661,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	left: 50%;
 
 	margin-left: -180px;
-	opacity: .4;
+	opacity: .8;
 	z-index: 4;
 
 	height: 300px;
@@ -2687,7 +2687,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: absolute;
 	bottom: 20%;
 	left: 50%;
-	opacity: .5;
+	opacity: .8;
 	z-index: 4;
 	margin-left: -400px;
 
@@ -2725,7 +2725,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-	opacity: .6;
+	opacity: .8;
 }
 
 .first-section__abs5 img
