@@ -9586,7 +9586,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	}
 
 
-	.first-section__abs1
+	/* .first-section__abs1
 	{
 		width: 400px;
 		height: 400px;
@@ -9601,7 +9601,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 	.first-section__abs2 img{
 		border-radius: 70px;
-	}
+	} */
 
 	.first-section__title 
 	{
@@ -9757,7 +9757,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
         height: 290px;
     }
 
-	.first-section__abs1 
+	/* .first-section__abs1 
 	{
         width: 370px;
         height: 370px;
@@ -9770,7 +9770,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		height: 210px;
 		margin-left: 200px;
 		margin-top: -50px;
-	}
+	} */
 
 	.first-section__desc
 	{

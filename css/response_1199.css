@@ -83,6 +83,14 @@
         border-radius: 30px;
 	}
 
+	.first-section__abs1,
+	.first-section__abs2,
+	.first-section__abs3,
+	.first-section__abs4,
+	.first-section__abs5{
+		display: none;
+	}
+
 	.first-section__video-link
 	{
 		font-size: 12px;

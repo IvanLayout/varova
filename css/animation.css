@@ -1,4 +1,4 @@
-@media (min-width: 1240px)
+@media (min-width: 1200px)
 {
     /*-----------------
 		Animate
@@ -141,7 +141,7 @@
 
     ._run .fadeInZoom
     {
-        animation: moveScale 1s linear forwards;
+        animation: moveScale 2s linear forwards;
     }
 
     @keyframes moveScale {

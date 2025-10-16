@@ -561,7 +561,7 @@ $(window).on('load', () => {
 
         beforeLastIndex = lastIndex;
         lastIndex = newIndex;
-      }, 1000);
+      }, 2000);
 
 	// .fromTo('.main-about__item1 .main-about__name span', { scale: .3, ease: "none"}, { duration: 1, delay: 0.25, delay: .08, opacity: 1, scale: 1, ease: "none" }, "start")
 	// .fromTo('.main-about__item1 .main-about__img3 img', { scale: .3, opacity: .3, x: 0, filter: 'blur(0)', ease: "none"}, { duration: 1, delay: .08, opacity: 1, scale: 1, x: 0, filter: 'blur(0)', ease: "none"}, "start")
