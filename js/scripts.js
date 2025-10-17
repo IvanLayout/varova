@@ -867,15 +867,41 @@ function initAboutAnimation() {
     .add([ TweenMax.to({}, {}, "+=1") ]);
 }
 
+function initAboutAnimationMob() {
+  if ($('.main-about').hasClass('animation-init-mob')) return;
+
+  $('.main-about').addClass('animation-init-mob');
+
+  let informationAnimMob = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".main-about",
+			scrub: true,
+			start: "top",
+			end: "bottom",
+			pin: true,
+		}
+	})
+	informationAnimMob.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")
+}
+
 function checkAnimationState() {
   if ($(window).width() > 1023) {
     if (!$('.main-about').hasClass('animation-init')) {
-      initAboutAnimation();
+		$('.main-about').removeClass('animation-init-mob index');
+		ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+		gsap.killTweensOf("*");
+		$('.main-about [style]').removeAttr('style');
+
+		initAboutAnimation();
     }
   } else {
-    $('.main-about').removeClass('animation-init index');
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    gsap.killTweensOf("*");
-	$('.main-about [style]').removeAttr('style');
+	if (!$('.main-about').hasClass('animation-init-mob')) {
+		$('.main-about').removeClass('animation-init index');
+		ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+		gsap.killTweensOf("*");
+		$('.main-about [style]').removeAttr('style');
+
+		initAboutAnimationMob();
+    }
   }
 }

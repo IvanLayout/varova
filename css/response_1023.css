@@ -1195,6 +1195,19 @@
 		background-position: 50% 100%;
 	}
 
+	.main-about__items{
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+		flex-wrap: nowrap;
+	}
+
+	.main-about__item{
+		position: relative;
+		flex-shrink: 0;
+	}
+
 	.main-about__colr{
 		margin-left: 24px;
 	}
