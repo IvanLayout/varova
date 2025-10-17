@@ -1201,11 +1201,14 @@
 		align-items: stretch;
 		align-content: stretch;
 		flex-wrap: nowrap;
+		width: calc(100% + 20px);
+		margin-left: -20px;
 	}
 
 	.main-about__item{
 		position: relative;
 		flex-shrink: 0;
+		padding-left: 20px;
 	}
 
 	.main-about__colr{
