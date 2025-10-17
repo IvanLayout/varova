@@ -809,12 +809,12 @@ function runRandom() {
 
     setTimeout(() => {
         $newItem.removeClass('_run');
-    }, 2000);
+    }, 3000);
 
     beforeLastIndex = lastIndex;
     lastIndex = newIndex;
 
-    setTimeout(runRandom, 1300);
+    setTimeout(runRandom, 2000);
 }
 
 function initAboutAnimation() {
@@ -877,7 +877,7 @@ function initAboutAnimationMob() {
 			trigger: ".main-about",
 			scrub: true,
 			start: "top",
-			end: "bottom",
+			end: $(window).height() * 3,
 			pin: true,
 		}
 	})

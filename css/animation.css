@@ -141,7 +141,7 @@
 
     ._run .fadeInZoom
     {
-        animation: moveScale 2s linear forwards;
+        animation: moveScale 3s linear forwards;
     }
 
     @keyframes moveScale {
