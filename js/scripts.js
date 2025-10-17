@@ -488,7 +488,7 @@ $(() => {
 
 
 $(window).on('load', () => {
-	if (!$('.main-about').length){
+	if ($('.main-about').length){
 		checkAnimationState()
 	}
 
@@ -716,7 +716,7 @@ $(window).on('resize', () => {
 		})
 	}
 
-	if (!$('.main-about').length){
+	if ($('.main-about').length){
 		checkAnimationState()
 	}
 });
