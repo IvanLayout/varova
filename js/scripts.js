@@ -488,7 +488,9 @@ $(() => {
 
 
 $(window).on('load', () => {
-	checkAnimationState()
+	if (!$('.main-about').length){
+		checkAnimationState()
+	}
 
 	gsap.registerPlugin(ScrollSmoother);
 
@@ -714,7 +716,9 @@ $(window).on('resize', () => {
 		})
 	}
 
-	checkAnimationState()
+	if (!$('.main-about').length){
+		checkAnimationState()
+	}
 });
 
 function advantagesSlider1(){
