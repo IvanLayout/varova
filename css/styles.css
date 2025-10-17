@@ -200,6 +200,7 @@ html
     min-height:         fill-available;
 
     scrollbar-width: thin;
+	scroll-behavior: smooth;
 }
 
 /* @media (min-width: 1025px)
@@ -230,7 +231,7 @@ body
     min-height: -webkit-fill-available;
     min-height:         fill-available;
 
-    background: #FFF;
+    background: #FFF;scroll-behavior: smooth;
 }
 
 ._lock-add
