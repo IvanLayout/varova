@@ -61,9 +61,11 @@
     {
         visibility: hidden;
 
-        transition-timing-function: ease-in;
+        transition-timing-function: linear;
         transition-property: opacity,transform,visibility;
-        transform: scale(0);
+        transform: scale(.9);
+        opacity: 0;
+		transform-origin: top right;
     }
 
     .fadeInZoom{
@@ -116,7 +118,7 @@
 
         opacity: 1;
 
-        transition-duration: 1s;
+        transition-duration: 2s;
         transform: none;
     }
 
@@ -127,7 +129,7 @@
 
         opacity: 1;
 
-        transition-duration: 1s;
+        transition-duration: 4s;
     }
 
     .animated.fadeZoom,
@@ -135,13 +137,14 @@
     {
         visibility: visible;
 
-        transition-duration: 1s;
+        transition-duration: 3s;
         transform: scale(1);
+		opacity: 1;
     }
 
     ._run .fadeInZoom
     {
-        animation: moveScale 3s linear forwards;
+        animation: moveScale 5s linear forwards;
     }
 
     @keyframes moveScale {

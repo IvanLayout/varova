@@ -1195,6 +1195,18 @@
 		background-position: 50% 100%;
 	}
 
+	.line-svg{
+		width: 1400px;
+		left: 50%;
+		bottom: auto;
+		top: 50%;
+		transform: translate(-50%,-50%)
+	}
+
+	.line-svg path{
+		stroke-dashoffset: 0 !important;
+	}
+
 	.main-about__items{
 		display: flex;
 		justify-content: flex-start;

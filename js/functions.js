@@ -207,6 +207,8 @@ $(() => {
 			let activeTitle = $(this).data('content-title')
 			let level = $(this).data('level')
 
+			console.log(activeTitle)
+
 			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
 			parent.find('.tab-content.' + level).removeClass('_active')
 
@@ -228,7 +230,7 @@ $(() => {
 				$(this).closest('.tabs__item').addClass('_active')
 			}
 
-			if( activeTitle.length ){
+			if( activeTitle !== 'undefined' ){
 				parent.find('.tabs__data').removeClass('_active')
 				$(activeTitle).addClass('_active')
 			}

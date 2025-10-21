@@ -336,8 +336,12 @@ $(() => {
 		new Swiper('.product-images__slider', {
 			spaceBetween: 5,
 			loop: false,
-			speed: 500,
+			speed: 1000,
 			watchOverflow: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
 			thumbs: {
 				swiper: galleryThumbs
 			}
@@ -484,22 +488,62 @@ $(() => {
 	if ( $('.first-section__abs').length ) {
 		runRandom();
 	}
+
+	
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+	if ( document.querySelector('.line-svg') ) {
+		setTimeout (function(){
+			myVivus = new Vivus('animatedSvg', {
+				type: 'delayed',
+				start: 'manual',
+				duration: 500,
+				animTimingFunction: Vivus.LINER,
+				onReady: function (myVivus) {
+					myVivus.el.classList.add('anim')
+				}
+			});
+			// new Vivus('animatedSvg2', {
+			// 	type: 'delayed',
+			// 	duration: 500,
+			// 	animTimingFunction: Vivus.LINER,
+			// 	onReady: function (myVivus) {
+			// 		myVivus.el.classList.add('anim')
+			// 	}
+			// });
+
+			// document.querySelector('.airplane1').classList.add('anim')
+			// document.querySelector('.airplane2').classList.add('anim')
+		}, 100)
+	}
+
+	// if ( document.querySelector('.main-about') ) {
+	// 	setTimeout (function(){
+	// 		new Vivus('animatedSvg3', {
+	// 			type: 'delayed',
+	// 			duration: 300,
+	// 			animTimingFunction: Vivus.LINER,
+	// 		});
+	// 	}, 200)
+	// }
+})
 
 $(window).on('load', () => {
+	ScrollSmoother.create({
+		smooth: 1.5,
+		effects: true,
+		normalizeScroll: true,
+		smoothTouch: 0.1,
+	});
+
 	if ($('.main-about').length){
 		checkAnimationState()
 	}
 
-	gsap.registerPlugin(ScrollSmoother);
+	// gsap.registerPlugin(ScrollSmoother);
 
-	ScrollSmoother.create({
-		smooth: 1.5, // how long (in seconds) it takes to "catch up" to the native scroll position
-		effects: true, // looks for data-speed and data-lag attributes on elements
-		normalizeScroll: true, // prevents native scroll (desktop) and allows smoother scrolling experience
-		smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-	});
+	
 
 	// if ( $('.main-about').length ) {
 	// 	let informationAnim = gsap.timeline({
@@ -814,12 +858,12 @@ function runRandom() {
 
     setTimeout(() => {
         $newItem.removeClass('_run');
-    }, 3000);
+    }, 5000);
 
     beforeLastIndex = lastIndex;
     lastIndex = newIndex;
 
-    setTimeout(runRandom, 2000);
+    setTimeout(runRandom, 4000);
 }
 
 function initAboutAnimation() {
@@ -834,6 +878,16 @@ function initAboutAnimation() {
       start: "top top",
       end: $(window).height() * 4,
       pin: true,
+	  onEnter: () => {
+		if ( !$('.line-svg').hasClass('_active') ){
+			$('.line-svg').addClass('_active')
+			myVivus.play();
+		}
+
+		if ( !$('.main-about').hasClass('_start') ){
+			$('.main-about').addClass('_start')
+		}
+	  },
       onToggle: (self) => {
         $('.main-about').toggleClass('index', self.isActive);
       },
@@ -863,13 +917,30 @@ function initAboutAnimation() {
       TweenMax.fromTo('.main-about__item2 .main-about__coll', { scale: 0, opacity: 0 }, { duration: 1, delay: .08, opacity: 1, scale: 1 })
     ])
     .add([
-      TweenMax.fromTo('.main-about__item2 .main-about__name span', { opacity: 1 }, { duration: 1, delay: 1, opacity: 0 }),
-      TweenMax.fromTo('.main-about__item2 .main-about__img3 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item2 .main-about__img2 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item2 .main-about__img1 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: '-50%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item2 .main-about__coll', { opacity: 1 }, { duration: 1, delay: 1, opacity: 0 })
+      TweenMax.fromTo('.main-about__item2 .main-about__name span', { opacity: 1 }, { duration: 1, delay: 1, opacity: .5 }),
+      TweenMax.fromTo('.main-about__item2 .main-about__img3 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: .5, scale: 1.25, x: '30%', filter: 'blur(5px)' }),
+      TweenMax.fromTo('.main-about__item2 .main-about__img2 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: .5, scale: 1.25, y: '20%', filter: 'blur(5px)' }),
+      TweenMax.fromTo('.main-about__item2 .main-about__img1 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: .5, scale: 1.25, y: '-25%', filter: 'blur(5px)' }),
+      TweenMax.fromTo('.main-about__item2 .main-about__coll', { opacity: 1 }, { duration: 1, delay: 1, opacity: .5 })
     ])
     .add([ TweenMax.to({}, {}, "+=1") ]);
+
+	let informationAnim2 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".anim-about",
+			scrub: true,
+			start: "top bottom",
+			end: "top top",
+		}
+	});
+
+	informationAnim2.add([
+		TweenMax.to('.main-about__item2 .main-about__name span', { duration: 1, opacity: 0 }),
+		TweenMax.to('.main-about__item2 .main-about__img3 img', { duration: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)' }),
+		TweenMax.to('.main-about__item2 .main-about__img2 img', { duration: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)' }),
+		TweenMax.to('.main-about__item2 .main-about__img1 img', { duration: 1, opacity: 0, scale: 1.5, y: '-50%', filter: 'blur(10px)' }),
+		TweenMax.to('.main-about__item2 .main-about__coll', { duration: 1, opacity: 0 })
+	])
 }
 
 function initAboutAnimationMob() {
@@ -884,6 +955,12 @@ function initAboutAnimationMob() {
 			start: "top",
 			end: $(window).height() * 3,
 			pin: true,
+			onEnter: () => {
+				if ( !$('.line-svg').hasClass('_active') ){
+					$('.line-svg').addClass('_active')
+					myVivus.play();
+				}
+			},
 		}
 	})
 	informationAnimMob.to('.main-about__items', { duration: 1, delay: 0, x: '-100%' }, "start")

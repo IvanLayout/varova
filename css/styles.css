@@ -2126,6 +2126,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
     transition: background .2s linear, color .2s linear, border .2s linear;
 }
 
+@media (any-hover: hover){
+	.tabs__button_btn:hover
+	{
+		color: #2C2927;
+		border-color: #2C2927;
+	}
+}
+
 .tabs__button_btn._active
 {
     color: #FFF;
@@ -2872,8 +2880,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .first-section__desc
 {
 	color: #fff;
-	font-size: 21px;
-	font-weight: 600;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .first-section__btn
@@ -3032,7 +3040,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	width: 100%;
 	height: 100%;
 	
-	transition: transform .4s linear;
+	transition: transform 1s linear, opacity .5s linear;
 
 	object-fit: cover;
 }
@@ -3041,7 +3049,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     .main-cats__item:hover .main-cats__img img 
 	{
-        transform: scale(1.1);
+        transform: scale(1.4);
     }
 }
 
@@ -8019,8 +8027,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
     commit
 ------------*/
 .main-about{
-	background: url(../images/main_about_line.svg) 0 100%/100% auto no-repeat;
+	/* background: url(../images/main_about_line.svg) 0 100%/100% auto no-repeat; */
 	/* min-height: 200vh; */
+}
+
+.line-svg{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.line-svg.anim{
+	opacity: 1;
 }
 
 .main-about__items{
@@ -8461,6 +8483,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .bg1{
 	background: linear-gradient(0deg, #fff 0%, #ded5c6 100%);
 	position: relative;
+	z-index: 1;
 }
 
 .bg1__pattern{
@@ -8470,6 +8493,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: block;
 	width: 1056px;
 	height: 470px;
+	transition: opacity .3s linear;
+	opacity: 0;
+}
+
+._start .bg1__pattern{
+	opacity: 1;
 }
 
 .bg2{
@@ -8522,6 +8551,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	height: 464px;
 	display: block;
 	pointer-events: none;
+	transition-delay: 1s;
 }
 
 .pattern4{
@@ -8531,11 +8561,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .pattern4__img{
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: -463px;
 	width: 764px;
-	height: 708px;
+	height: 1171px;
+	/* height: 708px; */
 	display: block;
 	pointer-events: none;
+	transition-delay: 1s;
 	z-index: 2;
 }
 
@@ -8809,7 +8841,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(180deg, #e0e2e1 0%, rgba(230, 238, 242, 0) 90%, #e4eef3 100%);
+	background: linear-gradient(180deg, #E1E1DE 0%, rgba(230, 238, 242, 0) 90%, #e4eef3 100%);
 }
 
 .advantages-page .cont{
