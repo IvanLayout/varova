@@ -4112,6 +4112,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	z-index: 2;
 }
 
+.choose-size__abs1 img{
+	display: block;
+	height: 119px;
+}
+
 .choose-size__abs2
 {
 	position: absolute;
@@ -4121,6 +4126,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: block;
 	z-index: 1;
 	margin-right: 55px;
+}
+
+.choose-size__abs2 img{
+	display: block;
+	height: 131px;
 }
 
 .choose-size__bg
@@ -8222,6 +8232,27 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	height: 100%;
 	object-fit: cover;
 	border-radius: 8px;
+}
+
+.main-about__item1 .main-about__name span{
+	transform: scale(.3);
+	opacity: 1;
+}
+.main-about__item1 .main-about__img3 img{
+	transform: scale(.3);
+	opacity: .3;
+}
+.main-about__item1 .main-about__img2 img{
+	transform: scale(.3);
+	opacity: .3;
+}
+.main-about__item1 .main-about__img1 img{
+	transform: scale(.3);
+	opacity: .3;
+}
+.main-about__item1 .main-about__coll{
+	transform: scale(.3);
+	opacity: .3;
 }
 
 .main-info{

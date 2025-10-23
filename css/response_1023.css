@@ -1239,6 +1239,27 @@
 		top: 33%;
 	}
 
+	.main-about__item1 .main-about__name span{
+		transform: scale(1);
+		opacity: 1;
+	}
+	.main-about__item1 .main-about__img3 img{
+		transform: scale(1);
+		opacity: 1;
+	}
+	.main-about__item1 .main-about__img2 img{
+		transform: scale(1);
+		opacity: 1;
+	}
+	.main-about__item1 .main-about__img1 img{
+		transform: scale(1);
+		opacity: 1;
+	}
+	.main-about__item1 .main-about__coll{
+		transform: scale(1);
+		opacity: 1;
+	}
+
 
 	.main-info__tabs{
 		position: relative;

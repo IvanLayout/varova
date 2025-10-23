@@ -676,12 +676,6 @@ $(window).on('resize', () => {
 		}
 	}
 
-	if ( $('.main-info__top').length ) {
-		$('.main-info__top').height('auto')
-
-		setHeight($('.main-info__top'))
-	}
-
 	if ( $('.main-about__coll').length ) {
 		$('.main-about__coll').height('auto')
 
@@ -762,6 +756,12 @@ $(window).on('resize', () => {
 
 	if ($('.main-about').length){
 		checkAnimationState()
+	}
+
+	if ( $('.main-info__top').length ) {
+		$('.main-info__top').height('auto')
+
+		setHeight($('.main-info__top'))
 	}
 });
 
@@ -867,47 +867,57 @@ function runRandom() {
 }
 
 function initAboutAnimation() {
-  if ($('.main-about').hasClass('animation-init')) return;
+	if ($('.main-about').hasClass('animation-init')) return;
 
-  $('.main-about').addClass('animation-init');
+	$('.main-about').addClass('animation-init');
 
-  let informationAnim = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".main-about",
-      scrub: true,
-      start: "top top",
-      end: $(window).height() * 4,
-      pin: true,
-	  onEnter: () => {
-		if ( !$('.line-svg').hasClass('_active') ){
-			$('.line-svg').addClass('_active')
-			myVivus.play();
+	let informationAnim1 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".anim-about1",
+			scrub: true,
+			start: "top bottom",
+			end: "top top",
 		}
+	});
 
-		if ( !$('.main-about').hasClass('_start') ){
-			$('.main-about').addClass('_start')
+	informationAnim1.add([
+		TweenMax.to('.main-about__item1 .main-about__name span', { duration: 1, opacity: 1, scale: 1 }),
+		TweenMax.to('.main-about__item1 .main-about__img3 img', { duration: 1, opacity: 1, scale: 1 }),
+		TweenMax.to('.main-about__item1 .main-about__img2 img', { duration: 1, opacity: 1, scale: 1 }),
+		TweenMax.to('.main-about__item1 .main-about__img1 img', { duration: 1, opacity: 1, scale: 1 }),
+		TweenMax.to('.main-about__item1 .main-about__coll', { duration: 1, opacity: 1, scale: 1 })
+	])
+
+	let informationAnim = gsap.timeline({
+		scrollTrigger: {
+		trigger: ".main-about",
+		scrub: true,
+		start: "top top",
+		end: $(window).height() * 3,
+		pin: true,
+		onEnter: () => {
+			if ( !$('.line-svg').hasClass('_active') ){
+				$('.line-svg').addClass('_active')
+				myVivus.play();
+			}
+
+			if ( !$('.main-about').hasClass('_start') ){
+				$('.main-about').addClass('_start')
+			}
+		},
+		onToggle: (self) => {
+			$('.main-about').toggleClass('index', self.isActive);
+		},
 		}
-	  },
-      onToggle: (self) => {
-        $('.main-about').toggleClass('index', self.isActive);
-      },
-    }
-  });
+	});
 
-  informationAnim
+	informationAnim
     .add([
-      TweenMax.fromTo('.main-about__item1 .main-about__name span', { scale: .3, opacity: 1 }, { duration: 1, delay: .08, opacity: 1, scale: 1 }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img3 img', { scale: .3, opacity: .3 }, { duration: 1, opacity: 1, scale: 1 }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img2 img', { scale: .3, opacity: .3 }, { duration: 1, opacity: 1, scale: 1 }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img1 img', { scale: .3, opacity: .3 }, { duration: 1, opacity: 1, scale: 1 }),
-      TweenMax.fromTo('.main-about__item1 .main-about__coll', { scale: .3, opacity: .3 }, { duration: 1, opacity: 1, scale: 1 })
-    ])
-    .add([
-      TweenMax.fromTo('.main-about__item1 .main-about__name span', { opacity: 1 }, { duration: 1, delay: 1, opacity: 0 }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img3 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img2 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item1 .main-about__img1 img', { opacity: 1, scale: 1 }, { duration: 1, delay: 1, opacity: 0, scale: 1.5, y: '-50%', filter: 'blur(10px)' }),
-      TweenMax.fromTo('.main-about__item1 .main-about__coll', { opacity: 1 }, { duration: 1, delay: 1, opacity: 0 })
+      TweenMax.to('.main-about__item1 .main-about__name span', { duration: 1, opacity: 0 }),
+      TweenMax.to('.main-about__item1 .main-about__img3 img', { duration: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)' }),
+      TweenMax.to('.main-about__item1 .main-about__img2 img', { duration: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)' }),
+      TweenMax.to('.main-about__item1 .main-about__img1 img', { duration: 1, opacity: 0, scale: 1.5, y: '-50%', filter: 'blur(10px)' }),
+      TweenMax.to('.main-about__item1 .main-about__coll', { duration: 1, opacity: 0 })
     ])
     .add([
       TweenMax.fromTo('.main-about__item2 .main-about__name span', { scale: 0, opacity: 1 }, { duration: 1, delay: .08, opacity: 1, scale: 1 }),
@@ -927,7 +937,7 @@ function initAboutAnimation() {
 
 	let informationAnim2 = gsap.timeline({
 		scrollTrigger: {
-			trigger: ".anim-about",
+			trigger: ".anim-about2",
 			scrub: true,
 			start: "top bottom",
 			end: "top top",
