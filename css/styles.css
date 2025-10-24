@@ -3661,7 +3661,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     choose-product
 ------------*/
 .choose-product_bg{
-	background: linear-gradient(180deg, #e4e2df 0%, #e5e7e8 100%);
+	background: linear-gradient(180deg, #e3e1de 0%, #e5e7e8 100%);
+	margin-top: -1px;
 }
 
 .choose-product .cont
