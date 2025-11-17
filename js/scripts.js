@@ -890,24 +890,24 @@ function initAboutAnimation() {
 
 	let informationAnim = gsap.timeline({
 		scrollTrigger: {
-		trigger: ".main-about",
-		scrub: true,
-		start: "top top",
-		end: $(window).height() * 3,
-		pin: true,
-		onEnter: () => {
-			if ( !$('.line-svg').hasClass('_active') ){
-				$('.line-svg').addClass('_active')
-				myVivus.play();
-			}
+			trigger: ".main-about",
+			scrub: true,
+			start: "top top",
+			end: $(window).height() * 3,
+			pin: true,
+			onEnter: () => {
+				if ( !$('.line-svg').hasClass('_active') ){
+					$('.line-svg').addClass('_active')
+					myVivus.play();
+				}
 
-			if ( !$('.main-about').hasClass('_start') ){
-				$('.main-about').addClass('_start')
-			}
-		},
-		onToggle: (self) => {
-			$('.main-about').toggleClass('index', self.isActive);
-		},
+				if ( !$('.main-about').hasClass('_start') ){
+					$('.main-about').addClass('_start')
+				}
+			},
+			onToggle: (self) => {
+				$('.main-about').toggleClass('index', self.isActive);
+			},
 		}
 	});
 
@@ -962,7 +962,7 @@ function initAboutAnimationMob() {
 		scrollTrigger: {
 			trigger: ".main-about",
 			scrub: true,
-			start: "top",
+			start: "top top",
 			end: $(window).height() * 3,
 			pin: true,
 			onEnter: () => {
